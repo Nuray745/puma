@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { useMatchMedia } from "../hooks/use-matchwidth";
 import RotatingBanner from "./RotatingBanner";
 import { FiSearch, FiHeart } from "react-icons/fi";
 
+const data = [
+  { id: 1, categoryName: "New & Featured", subcategory: [] },
+  { id: 2, categoryName: "Women", subcategory: [] },
+  { id: 3, categoryName: "Men", subcategory: [] },
+  { id: 4, categoryName: "Kids", subcategory: [] },
+  { id: 5, categoryName: "Collaborations", subcategory: [] },
+  { id: 6, categoryName: "Sport", subcategory: [] },
+  { id: 7, categoryName: "Sale", subcategory: [] },
+];
+
 function Header() {
   const isMobile = useMatchMedia("(max-width: 768px)");
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
     <header className="bg-[#181818] font-ff-din-exp">
@@ -31,41 +42,29 @@ function Header() {
           {/* Menyu - desktop */}
           {!isMobile && (
             <ul className="flex font-semibold text-base">
-              <li className="px-4 focus:text-white not-focus:text-gray">
-                <a href="#" className="hover:text-gray-300">
-                  New & Featured
-                </a>
-              </li>
-              <li className="px-4 focus:text-white not-focus:text-gray">
-                <a href="#" className="hover:text-gray-300 not-focus:text-gray">
-                  Women
-                </a>
-              </li>
-              <li className="px-4">
-                <a href="#" className="hover:text-gray-300">
-                  Men
-                </a>
-              </li>
-              <li className="px-4">
-                <a href="#" className="hover:text-gray-300">
-                  Kids
-                </a>
-              </li>
-              <li className="px-4">
-                <a href="#" className="hover:text-gray-300">
-                  Collaborations
-                </a>
-              </li>
-              <li className="px-4">
-                <a href="#" className="hover:text-gray-300">
-                  Sport
-                </a>
-              </li>
-              <li className="px-4">
-                <a href="#" className="hover:text-gray-300">
-                  Sale
-                </a>
-              </li>
+              {data.map((item, index) => {
+                return (
+                  <li
+                    key={item.id}
+                    className="px-4 cursor-pointer h-20 flex items-center"
+                    onMouseEnter={() => setHoveredIndex(index)}
+                    onMouseLeave={() => setHoveredIndex(null)}
+                  >
+                    <a
+                      href="#"
+                      className={`relative py-1 border-b-2 transition-all text-white ${
+                        hoveredIndex == index 
+                          ? "border-[#867454] opacity-100"
+                          : hoveredIndex !== null
+                          ? "border-transparent opacity-50"
+                          : "border-transparent opacity-100"
+                      }`}
+                    >
+                      {item.categoryName}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           )}
         </div>
@@ -75,54 +74,25 @@ function Header() {
           {/* Axtarış */}
           <button
             aria-label="Search"
-            className="cursor-pointer p-2 rounded-full hover:bg-[#404040] transition-colors"
+            className="cursor-pointer w-10 h-10 flex items-center justify-center rounded-full hover:bg-[#404040] transition-colors"
           >
-            <svg
-              className="w-6 h-6"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              id="icon"
-            >
-              <path fill="transparent" d="M0 0h24v24H0z" />
-              <path d="m19 19-4-4" stroke="currentColor" strokeWidth="2" />
-              <circle
-                cx="11"
-                cy="11"
-                r="6"
-                stroke="currentColor"
-                strokeWidth="2"
-              />
-            </svg>
+            <FiSearch className="w-5 h-6" />
           </button>
 
           {/* Ürək */}
           <button
             aria-label="Favorites"
-            className="cursor-pointer p-2 rounded-full hover:bg-[#404040] transition-colors"
+            className="cursor-pointer w-10 h-10 flex items-center justify-center rounded-full hover:bg-[#404040] transition-colors"
           >
-            <svg
-              className="w-6 h-6"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              id="icon"
-            >
-              <path fill="transparent" d="M0 0h24v24H0z" />
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M18.32 7.36c-1.26-1.868-3.813-1.804-4.99.147l-.473.787h-1.713l-.475-.787C9.493 5.556 6.941 5.492 5.68 7.36c-1.044 1.547-.863 3.697.395 5.01L12 18.555l5.926-6.186c1.258-1.313 1.439-3.463.394-5.01ZM12 5.92c-2.069-2.64-6.02-2.58-7.978.32-1.561 2.312-1.314 5.507.607 7.513L12 21.445l7.37-7.692c1.922-2.006 2.17-5.2.608-7.513-1.958-2.9-5.91-2.96-7.978-.32Z"
-                fill="currentColor"
-              />
-            </svg>
+            <FiHeart className="w-5 h-6" />
           </button>
 
           {/* Səbət */}
           <button
             aria-label="Cart"
-            className="cursor-pointer p-2 rounded-full hover:bg-[#404040] transition-colors"
+            className="cursor-pointer w-10 h-10 flex items-center justify-center rounded-full hover:bg-[#404040] transition-colors"
           >
+            {/* Burada başqa ikon svg ola bilər */}
             <svg
               className="w-6 h-6"
               xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +111,10 @@ function Header() {
           </button>
 
           {/* İstifadəçi */}
-          <button className="cursor-pointer p-2 rounded-full hover:bg-[#404040] transition-colors">
+          <button
+            aria-label="User profile"
+            className="cursor-pointer w-10 h-10 flex items-center justify-center rounded-full hover:bg-[#404040] transition-colors"
+          >
             <svg
               className="w-6 h-6"
               xmlns="http://www.w3.org/2000/svg"
