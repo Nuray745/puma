@@ -1,20 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useMatchMedia } from "../hooks/use-matchwidth";
 import RotatingBanner from "./RotatingBanner";
-
-const data = [
-  { id: 1, categoryName: "New & Featured", subcategory: [] },
-  { id: 2, categoryName: "Women", subcategory: [] },
-  { id: 3, categoryName: "Men", subcategory: [] },
-  { id: 4, categoryName: "Kids", subcategory: [] },
-  { id: 5, categoryName: "Collaborations", subcategory: [] },
-  { id: 6, categoryName: "Sport", subcategory: [] },
-  { id: 7, categoryName: "Sale", subcategory: [] },
-];
+import DesktopMenu from "./DesktopMenu";
+import axios from "axios";
 
 function Header() {
   const isBelow1100 = useMatchMedia("(max-width: 1099px)");
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/categories")
+      .then((res) => setCategories(res.data));
+  }, []);
 
   return (
     <header className="bg-[#181818] font-ff-din-exp">
@@ -22,7 +21,7 @@ function Header() {
       <RotatingBanner />
 
       {/* Əsas navbar */}
-      <nav className="relative h-16 lg:h-20 px-4 tablet:px-6 lg:px-8 text-white flex items-center justify-between">
+      <nav className="max-w-[1600px] mx-auto relative h-16 lg:h-20 px-4 tablet:px-6 lg:px-8 text-white flex items-center justify-between">
         <div className="flex items-center">
           {/* Menu and Search */}
           <div className="flex items-center gap-2">
@@ -97,7 +96,7 @@ function Header() {
           {/* Menyu - desktop */}
           {!isBelow1100 && (
             <ul className="flex font-semibold text-base ml-5">
-              {data.map((item, index) => {
+              {categories.map((item, index) => {
                 return (
                   <li
                     key={item.id}
@@ -121,7 +120,16 @@ function Header() {
                 );
               })}
             </ul>
-              
+          )}
+
+          {!isBelow1100 && hoveredIndex !== null && (
+            <div className="absolute left-0 top-full w-full z-50">
+              <DesktopMenu
+                categories={categories}
+                hoveredIndex={hoveredIndex}
+                setHoveredIndex={setHoveredIndex}
+              />
+            </div>
           )}
         </div>
 
