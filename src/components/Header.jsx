@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useMatchMedia } from "../hooks/use-matchwidth";
 import RotatingBanner from "./RotatingBanner";
 import DesktopMenu from "./DesktopMenu";
-import axios from "axios";
+import { getAllCategories } from "../services/api";
 
 function Header() {
   const isBelow1100 = useMatchMedia("(max-width: 1099px)");
@@ -10,9 +10,8 @@ function Header() {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:3001/categories")
-      .then((res) => setCategories(res.data));
+    getAllCategories()
+      .then((data) => setCategories(data));
   }, []);
 
   return (
