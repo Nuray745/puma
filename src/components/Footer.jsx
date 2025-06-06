@@ -16,7 +16,9 @@ function Footer() {
         {/* SUPPORT */}
         <div className="lg:col-span-2">
           <div
-            className="flex justify-between items-center cursor-pointer hover:bg-[#3B4047] py-2 px-1"
+            className={`flex justify-between items-center ${
+              isMobile && "hover:bg-[#3B4047] cursor-pointer"
+            } py-2 px-1`}
             onClick={() => setIsSupportOpen(!isSupportOpen)}
           >
             <h3 className="text-lg font-bold uppercase lg:mb-1">Support</h3>
@@ -143,7 +145,9 @@ function Footer() {
         {/* ABOUT */}
         <div>
           <div
-            className="flex justify-between items-center cursor-pointer hover:bg-[#3B4047] py-2 px-1"
+            className={`flex justify-between items-center ${
+              isMobile && "hover:bg-[#3B4047] cursor-pointer"
+            } py-2 px-1`}
             onClick={() => setIsAboutOpen(!isAboutOpen)}
           >
             <h3 className="text-lg font-bold uppercase lg:mb-1">About</h3>
@@ -202,7 +206,9 @@ function Footer() {
         {/* STAY UP TO DATE */}
         <div>
           <div
-            className="flex justify-between items-center cursor-pointer hover:bg-[#3B4047] py-2 px-1"
+            className={`flex justify-between items-center ${
+              isMobile && "hover:bg-[#3B4047] cursor-pointer"
+            } py-2 px-1`}
             onClick={() => setIsStayOpen(!isStayOpen)}
           >
             <h3 className="text-lg font-bold uppercase lg:mb-1">
@@ -231,7 +237,9 @@ function Footer() {
           {/* EXPLORE */}
           <div className="lg:mt-6 mt-1">
             <div
-              className="flex justify-between items-center cursor-pointer hover:bg-[#3B4047] py-2 px-1"
+              className={`flex justify-between items-center ${
+                isMobile && "hover:bg-[#3B4047] cursor-pointer"
+              } py-2 px-1`}
               onClick={() => setIsExploreOpen(!isExploreOpen)}
             >
               <h3 className="text-white font-bold text-lg lg:mb-4">EXPLORE</h3>
