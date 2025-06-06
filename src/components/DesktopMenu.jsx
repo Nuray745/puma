@@ -15,7 +15,7 @@ function DesktopMenu({ categories, hoveredIndex, setHoveredIndex }) {
               <a
                 key={i}
                 href="#"
-                className="block text-[#6C6C6C] font-bold text-lg hover:text-[#867454] leading-6 whitespace-normal"
+                className="block text-[#6C6C6C] font-bold text-[19px] hover:text-[#867454] leading-6 whitespace-normal"
               >
                 {link}
               </a>
