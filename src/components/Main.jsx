@@ -121,7 +121,7 @@ function Main() {
         </div>
 
         {/* ✅ Tablet: 541–1023px → slider */}
-        <div className="hidden tablet:flex gap-4 overflow-x-auto w-full pb-4 desktop:hidden">
+        <div className="hidden tablet:flex gap-4 overflow-x-auto w-full pb-4 nap-x snap-mandatory scroll-smooth custom-scroll desktop:hidden">
           {[
             { img: trending1, title: "MANCHESTER CITY BY KIDSUPER" },
             { img: trending2, title: "MONTERREY BY KIDSUPER" },
