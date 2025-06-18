@@ -7,7 +7,8 @@ import trending1 from './images/trending1.avif';
 import trending2 from './images/trending2.avif';
 import trending3 from './images/trending3.avif';
 import trending4 from './images/trending4.avif';
-import speedcatVideo from "./videos/speedcat.webm";
+import mainpagevideo from "./videos/mainpagevideo.webm";
+import mainpagevideoresponsive from "./videos/mainpagevideoresponsive.webm";
 
 export {
   pumaLogo,
@@ -19,6 +20,7 @@ export {
   trending2,
   trending3,
   trending4,
-  speedcatVideo
+  mainpagevideo,
+  mainpagevideoresponsive
 
 };

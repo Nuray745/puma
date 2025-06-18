@@ -38,7 +38,7 @@ function MainSlider() {
   ];
 
   return (
-    <section className="w-full px-8 " aria-label="BEST OF THE BEST">
+    <section className="w-full" aria-label="BEST OF THE BEST">
       <h4 className="text-2xl font-bold pb-6 uppercase flex justify-between">
         BEST OF THE BEST
       </h4>
@@ -48,7 +48,7 @@ function MainSlider() {
           <a
             key={idx}
             href={product.link}
-            className="flex-shrink-0 w-[310px] snap-start cursor-pointer"
+            className="flex-shrink-0 w-full tablet:w-[310px] snap-start cursor-pointer"
           >
             <div className="flex flex-col">
               <img
