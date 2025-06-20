@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { useMatchMedia } from "../hooks/use-matchwidth";
 import DesktopMenu from "./DesktopMenu";
 import { getAllCategories } from "../services/api";
@@ -10,12 +11,17 @@ function Navbar({ theme = "dark" }) {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [categories, setCategories] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   useEffect(() => {
     getAllCategories().then((data) => setCategories(data));
   }, []);
   return (
-    <div className={`sticky top-0 z-50 ${isDark ? "bg-[#181818] text-white" : "bg-white text-black"}`}>
+    <div
+      className={`sticky top-0 z-50 ${
+        isDark ? "bg-[#181818] text-white" : "bg-white text-black"
+      }`}
+    >
       <nav className="max-w-[1600px] mx-auto h-16 lg:h-20 px-4 tablet:px-6 lg:px-8 flex items-center justify-between">
         <div className="flex items-center">
           {/* Menu and Search */}
@@ -49,7 +55,9 @@ function Navbar({ theme = "dark" }) {
             {isBelow1100 && (
               <button
                 aria-label="Search"
-                 className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${isDark ? "hover:bg-[#404040]" : "hover:bg-[#3B404733]"} transition-colors`}
+                className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${
+                  isDark ? "hover:bg-[#404040]" : "hover:bg-[#3B404733]"
+                } transition-colors`}
               >
                 <svg
                   className="w-6 h-6"
@@ -78,48 +86,48 @@ function Navbar({ theme = "dark" }) {
               isBelow1100 ? "absolute left-1/2 -translate-x-1/2" : ""
             }`}
           >
-            <svg
-              className={` ${
-                isBelow1100 ? "w-10 h-10" : "w-8 h-8"
-              } cursor-pointer`}
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 48 37"
-              fill="none"
-              id="icon"
-            >
-              <path
-                fill="currentColor"
-                d="M47.689.517c-.834-1.066-2.291-.213-2.933.16-4.569 2.692-5.243 7.432-6.834 10.154-1.253 2.178-3.304 3.779-5.159 3.903-1.373.098-2.861-.167-4.338-.81-3.613-1.562-5.56-3.583-6.034-3.94-.973-.739-8.459-8.03-14.559-8.327 0 0-.744-1.5-.93-1.526C6.457.08 6 1.033 5.669 1.133c-.3.105-.825-1.024-1.13-.975C4.233.2 3.936 1.33 3.34 1.913c-.439.425-.973.398-1.275.926-.104.192-.068.53-.186.84-.253.641-1.102.708-1.11 1.394 0 .762.714.907 1.338 1.438.496.425.53.725 1.109.924.515.176 1.264-.374 1.928-.177.553.163 1.085.279 1.204.846.108.513 0 1.316-.682 1.226-.222-.03-1.194-.348-2.395-.22-1.45.154-3.105.618-3.267 2.22-.083.895 1.028 1.942 2.11 1.733.742-.143.392-1.013.797-1.433.535-.541 3.545 1.888 6.344 1.888 1.186 0 2.063-.3 2.935-1.21.078-.057.185-.203.31-.218.113.015.324.128.39.175 2.262 1.793 3.967 5.399 12.26 5.441 1.164.014 2.498.558 3.591 1.553.96.866 1.528 2.251 2.075 3.65.836 2.106 2.322 4.139 4.584 6.407.119.135 1.98 1.561 2.119 1.666.025.021.168.334.106.51-.039 1.38-.245 5.34 2.731 5.506.731.04.549-.463.549-.82-.01-.683-.129-1.371.226-2.08.507-.957-1.051-1.418-1.017-3.513.037-1.567-1.291-1.302-1.969-2.498-.381-.687-.736-1.065-.699-1.894.145-4.76-1.034-7.896-1.61-8.654-.455-.587-.847-.806-.414-1.078 2.481-1.632 3.05-3.15 3.05-3.15 1.32-3.081 2.512-5.89 4.15-7.138.332-.241 1.177-.88 1.703-1.12 1.527-.725 2.346-1.156 2.777-1.576.711-.675 1.27-2.107.588-2.96h-.001z"
-              />
-            </svg>
+            <Link to="/">
+              <svg
+                className={` ${
+                  isBelow1100 ? "w-10 h-10" : "w-8 h-8"
+                } cursor-pointer`}
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 48 37"
+                fill="none"
+                id="icon"
+              >
+                <path
+                  fill="currentColor"
+                  d="M47.689.517c-.834-1.066-2.291-.213-2.933.16-4.569 2.692-5.243 7.432-6.834 10.154-1.253 2.178-3.304 3.779-5.159 3.903-1.373.098-2.861-.167-4.338-.81-3.613-1.562-5.56-3.583-6.034-3.94-.973-.739-8.459-8.03-14.559-8.327 0 0-.744-1.5-.93-1.526C6.457.08 6 1.033 5.669 1.133c-.3.105-.825-1.024-1.13-.975C4.233.2 3.936 1.33 3.34 1.913c-.439.425-.973.398-1.275.926-.104.192-.068.53-.186.84-.253.641-1.102.708-1.11 1.394 0 .762.714.907 1.338 1.438.496.425.53.725 1.109.924.515.176 1.264-.374 1.928-.177.553.163 1.085.279 1.204.846.108.513 0 1.316-.682 1.226-.222-.03-1.194-.348-2.395-.22-1.45.154-3.105.618-3.267 2.22-.083.895 1.028 1.942 2.11 1.733.742-.143.392-1.013.797-1.433.535-.541 3.545 1.888 6.344 1.888 1.186 0 2.063-.3 2.935-1.21.078-.057.185-.203.31-.218.113.015.324.128.39.175 2.262 1.793 3.967 5.399 12.26 5.441 1.164.014 2.498.558 3.591 1.553.96.866 1.528 2.251 2.075 3.65.836 2.106 2.322 4.139 4.584 6.407.119.135 1.98 1.561 2.119 1.666.025.021.168.334.106.51-.039 1.38-.245 5.34 2.731 5.506.731.04.549-.463.549-.82-.01-.683-.129-1.371.226-2.08.507-.957-1.051-1.418-1.017-3.513.037-1.567-1.291-1.302-1.969-2.498-.381-.687-.736-1.065-.699-1.894.145-4.76-1.034-7.896-1.61-8.654-.455-.587-.847-.806-.414-1.078 2.481-1.632 3.05-3.15 3.05-3.15 1.32-3.081 2.512-5.89 4.15-7.138.332-.241 1.177-.88 1.703-1.12 1.527-.725 2.346-1.156 2.777-1.576.711-.675 1.27-2.107.588-2.96h-.001z"
+                />
+              </svg>
+            </Link>
           </div>
 
           {/* Menyu - desktop */}
           {!isBelow1100 && (
             <ul className="flex font-semibold text-base ml-5">
-              {categories.map((item, index) => {
-                return (
-                  <li
-                    key={item.id}
-                    className="px-4 cursor-pointer h-20 flex items-center"
-                    onMouseEnter={() => setHoveredIndex(index)}
-                    onMouseLeave={() => setHoveredIndex(null)}
+              {categories.map((item, index) => (
+                <li
+                  key={item.id}
+                  className="px-4 cursor-pointer h-20 flex items-center"
+                  onMouseEnter={() => setHoveredIndex(index)}
+                  onMouseLeave={() => setHoveredIndex(null)}
+                >
+                  <Link
+                    to={`/categories/${item.slug}`} 
+                    className={`relative py-1 border-b-2 transition-all text-white ${
+                      hoveredIndex == index
+                        ? "border-[#867454] opacity-100"
+                        : hoveredIndex !== null
+                        ? "border-transparent opacity-50"
+                        : "border-transparent opacity-100"
+                    }`}
                   >
-                    <a
-                      href="#"
-                      className={`relative py-1 border-b-2 transition-all text-white ${
-                        hoveredIndex == index
-                          ? "border-[#867454] opacity-100"
-                          : hoveredIndex !== null
-                          ? "border-transparent opacity-50"
-                          : "border-transparent opacity-100"
-                      }`}
-                    >
-                      {item.categoryName}
-                    </a>
-                  </li>
-                );
-              })}
+                    {item.categoryName}
+                  </Link>
+                </li>
+              ))}
             </ul>
           )}
 
@@ -136,18 +144,26 @@ function Navbar({ theme = "dark" }) {
 
         {/* İkonlar */}
         <div
-          className={`font-ff-din-exp flex gap-2 items-center ${isDark ? "text-white" : "text-black"} text-xl cursor-pointer 
+          className={`font-ff-din-exp flex gap-2 items-center ${
+            isDark ? "text-white" : "text-black"
+          } text-xl cursor-pointer 
                 ${isBelow1100 && "flex-row-reverse"}
             `}
         >
           {/* Axtarış */}
           {!isBelow1100 && (
-            <div className={`flex items-center ${isDark ? "text-white" : "text-black"} text-xl cursor-pointer`}>
+            <div
+              className={`flex items-center ${
+                isDark ? "text-white" : "text-black"
+              } text-xl cursor-pointer`}
+            >
               {/* Search button (icon only - 1280px aşağıda görünür) */}
               <div className="flex xl:hidden">
                 <button
                   aria-label="Search"
-                   className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${isDark ? "hover:bg-[#404040]" : "hover:bg-[#3B404733]"} transition-colors`}
+                  className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${
+                    isDark ? "hover:bg-[#404040]" : "hover:bg-[#3B404733]"
+                  } transition-colors`}
                 >
                   <svg
                     className="w-6 h-6"
@@ -174,7 +190,10 @@ function Navbar({ theme = "dark" }) {
               </div>
 
               {/* Search button + text (1280px yuxarıda görünür) */}
-              <div className="hidden xl:flex items-center justify-center border border-[#676d75] hover:border-white rounded-[2px] px-4 mx-3 h-10">
+              <div
+                onClick={() => setIsSearchOpen(true)}
+                className="hidden xl:flex items-center justify-center border border-[#676d75] hover:border-white rounded-[2px] px-4 mx-3 h-10"
+              >
                 <button
                   aria-label="Search"
                   className="flex items-center justify-center"
@@ -205,6 +224,55 @@ function Navbar({ theme = "dark" }) {
                   Search
                 </div>
               </div>
+              {isSearchOpen && (
+                <div className="fixed inset-0 bg-white text-black z-[9999] font-ff-din">
+                  <div className="flex items-center gap-20 p-10">
+                    {/* SEARCH BOX */}
+                    <div className="relative w-full max-w-[1296px] flex items-center border border-gray-400 rounded overflow-hidden">
+                      <input
+                        type="text"
+                        placeholder="SEARCH PUMA.COM"
+                        className="w-full px-4 py-3 text-lg outline-none"
+                        autoFocus
+                      />
+                      {/* Search icon */}
+                      <button
+                        aria-label="Search"
+                        className="flex items-center justify-center"
+                      >
+                        <svg
+                          className="w-6 h-6"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          id="icon"
+                        >
+                          <path fill="transparent" d="M0 0h24v24H0z" />
+                          <path
+                            d="m19 19-4-4"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                          />
+                          <circle
+                            cx="11"
+                            cy="11"
+                            r="6"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    {/* X close icon */}
+                    <button
+                      onClick={() => setIsSearchOpen(false)}
+                      className="absolute right-10 text-xl font-bold hover:bg-[#19191933] cursor-pointer rounded-full w-10 h-10"
+                    >
+                      ✕
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
           )}
 
@@ -212,7 +280,9 @@ function Navbar({ theme = "dark" }) {
           {!isBelow1100 && (
             <button
               aria-label="Favorites"
-              className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${isDark ? "hover:bg-[#404040]" : "hover:bg-red"} transition-colors`}
+              className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${
+                isDark ? "hover:bg-[#404040]" : "hover:bg-red"
+              } transition-colors`}
             >
               <svg
                 className="w-6 h-6"
@@ -235,7 +305,9 @@ function Navbar({ theme = "dark" }) {
           {/* Səbət */}
           <button
             aria-label="Cart"
-            className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${isDark ? "hover:bg-[#404040]" : "hover:bg-[#3B404733]"} transition-colors`}
+            className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${
+              isDark ? "hover:bg-[#404040]" : "hover:bg-[#3B404733]"
+            } transition-colors`}
           >
             {/* Burada başqa ikon svg ola bilər */}
             <svg
@@ -258,7 +330,9 @@ function Navbar({ theme = "dark" }) {
           {/* İstifadəçi */}
           <button
             aria-label="User profile"
-            className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${isDark ? "hover:bg-[#404040]" : "hover:bg-[#3B404733]"} transition-colors`}
+            className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${
+              isDark ? "hover:bg-[#404040]" : "hover:bg-[#3B404733]"
+            } transition-colors`}
           >
             <svg
               className="w-6 h-6"

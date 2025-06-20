@@ -5,6 +5,12 @@ async function getAllCategories() {
     return res.data;
 };
 
+async function getAllProducts() {
+    const res = await axiosInstance.get(`/products`);
+    return res.data;
+};
+
 export {
-    getAllCategories
+    getAllCategories,
+    getAllProducts
 };

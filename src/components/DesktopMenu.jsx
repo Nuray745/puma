@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function DesktopMenu({ categories, hoveredIndex, setHoveredIndex }) {
   return (
@@ -26,35 +27,41 @@ function DesktopMenu({ categories, hoveredIndex, setHoveredIndex }) {
         {/* Subcategories */}
         {categories[hoveredIndex]?.subcategory?.map((group, i) => (
           <div key={i} className="w-1/5 min-w-[9.6rem] pr-5">
-            <h4 className="cursor-pointer font-bold text-lg mb-2 border-b-2 pb-1">
-             <span className="text-[#181818] hover:text-[#867454]">{group.categoryName}</span>
-            </h4>
+            <Link to={`/categories/${group.slug}`}>
+              <h4 className="cursor-pointer font-bold text-lg mb-2 border-b-2 pb-1">
+                <span className="text-[#181818] hover:text-[#867454]">
+                  {group.categoryName}
+                </span>
+              </h4>
+            </Link>
 
             {/* Əgər group.children varsa */}
             {group.children?.map((item, j) =>
               item.children ? (
                 <div key={j} className="mb-4">
-                  <h5 className="font-bold cursor-pointer text-[#6C6C6C] hover:text-[#181818] text-base mb-1">
-                    {item.categoryName}
-                  </h5>
+                  <Link to={`/categories/${item.slug}`}>
+                    <h5 className="font-bold cursor-pointer text-[#6C6C6C] hover:text-[#181818] text-base mb-1">
+                      {item.categoryName}
+                    </h5>
+                  </Link>
                   {item.children.map((child, k) => (
-                    <a
+                    <Link
                       key={k}
-                      href={`/${child.slug}`}
+                      to={`/categories/${child.slug}`}
                       className="block text-[#6C6C6C] hover:text-[#181818] text-base px-6 py-1/2"
                     >
                       {child.categoryName}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               ) : (
-                <a
+                <Link
                   key={j}
-                  href={`/${item.slug}`}
+                  to={`/categories/${item.slug}`}
                   className="block text-[#6C6C6C] hover:text-[#181818] text-base py-1/2"
                 >
                   {item.categoryName}
-                </a>
+                </Link>
               )
             )}
           </div>
@@ -65,4 +72,3 @@ function DesktopMenu({ categories, hoveredIndex, setHoveredIndex }) {
 }
 
 export default DesktopMenu;
-  
