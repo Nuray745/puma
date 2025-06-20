@@ -9,13 +9,13 @@ const Card = ({ image, name, subHeader, price, description, label, colorCount, i
       : '';
 
   return (
-    <div className="w-full max-w-xs flex flex-col gap-2 font-ff-din cursor-pointer">
+    <div className="w-full tablet:max-w-xs flex flex-col gap-2 font-ff-din cursor-pointer">
       {/* Product Image */}
       <div className="w-full overflow-hidden flex items-center justify-center relative">
         <img
           src={image}
           alt={name}
-          className="object-contain h-full"
+          className="object-cover w-full"
         />
         {!isAvailable && (
           <span 
@@ -32,7 +32,7 @@ const Card = ({ image, name, subHeader, price, description, label, colorCount, i
         <p className="text-xs text-[#6C6C6C] py-2">
           {colorCount} COLOR{colorCount > 1 ? 'S' : ''}
         </p>
-        <div className="flex gap-10 mt-2">
+        <div className="flex justify-between gap-10 mt-2">
           <h2 className="text-base font-bold text-[#191919]">{name}</h2>
           <span className="text-base font-bold text-[#191919]">
             ${price.toFixed(2)}

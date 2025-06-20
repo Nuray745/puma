@@ -7828,6 +7828,4001 @@
           "__typename": "Score"
         }
       }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197670831895",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "03",
+      "masterId": "399853",
+      "variantProduct": {
+        "id": "399853_03",
+        "masterId": "399853",
+        "variantId": "197670831895",
+        "name": "Suede Classic Big Kids' Sneakers",
+        "header": "Suede Classic",
+        "subHeader": "Big KIds' Sneakers",
+        "price": 75,
+        "colorValue": "03",
+        "colorName": "PUMA Navy-PUMA White",
+        "ean": "4067979831802",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399853/03/sv01/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+        "images": [
+          {
+            "alt": "Suede Classic Big Kids' Sneakers, PUMA Navy-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399853/03/sv01/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399853/03/sv01/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Big Kids' Sneakers, PUMA Navy-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399853/03/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399853/03/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Big Kids' Sneakers, PUMA Navy-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399853/03/bv/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399853/03/bv/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Big Kids' Sneakers, PUMA Navy-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399853/03/sv02/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399853/03/sv02/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Big Kids' Sneakers, PUMA Navy-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399853/03/sv03/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399853/03/sv03/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Big Kids' Sneakers, PUMA Navy-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399853/03/sv04/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399853/03/sv04/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [
+          {
+            "id": "new",
+            "label": "New",
+            "__typename": "ProductBadge"
+          }
+        ],
+        "percentageDiscountBadge": 0,
+        "salePrice": 75,
+        "productPrice": {
+          "price": 75,
+          "salePrice": 75,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "Suede Classic Big Kids' Sneakers",
+        "id": "399853",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 5,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "PUMA Black-PUMA White",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/399853/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Big Kids' Sneakers, PUMA Black-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "For All Time Red-PUMA White",
+            "value": "02",
+            "image": {
+              "href": "https://images.puma.net/images/399853/02/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Big Kids' Sneakers, For All Time Red-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Navy-PUMA White",
+            "value": "03",
+            "image": {
+              "href": "https://images.puma.net/images/399853/03/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Big Kids' Sneakers, PUMA Navy-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Black-PUMA Black",
+            "value": "04",
+            "image": {
+              "href": "https://images.puma.net/images/399853/04/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Big Kids' Sneakers, PUMA Black-PUMA Black, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Pink Lady-PUMA White",
+            "value": "05",
+            "image": {
+              "href": "https://images.puma.net/images/399853/05/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Big Kids' Sneakers, Pink Lady-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399853/03/sv01/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+          "verticalImageHref": null,
+          "alt": "Suede Classic Big Kids' Sneakers, PUMA Navy-PUMA White, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": true,
+        "__typename": "Product",
+        "brand": "Suede",
+        "promotions": [],
+        "amountOfReviews": 0,
+        "averageRating": 0,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197670832175",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "05",
+      "masterId": "399853",
+      "variantProduct": {
+        "id": "399853_05",
+        "masterId": "399853",
+        "variantId": "197670832175",
+        "name": "Suede Classic Big Kids' Sneakers",
+        "header": "Suede Classic",
+        "subHeader": "Big KIds' Sneakers",
+        "price": 75,
+        "colorValue": "05",
+        "colorName": "Pink Lady-PUMA White",
+        "ean": "4067979832083",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399853/05/sv01/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+        "images": [
+          {
+            "alt": "Suede Classic Big Kids' Sneakers, Pink Lady-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399853/05/sv01/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399853/05/sv01/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Big Kids' Sneakers, Pink Lady-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399853/05/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399853/05/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Big Kids' Sneakers, Pink Lady-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399853/05/bv/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399853/05/bv/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Big Kids' Sneakers, Pink Lady-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399853/05/sv02/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399853/05/sv02/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Big Kids' Sneakers, Pink Lady-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399853/05/sv03/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399853/05/sv03/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Big Kids' Sneakers, Pink Lady-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399853/05/sv04/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399853/05/sv04/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [
+          {
+            "id": "best-seller",
+            "label": "Best Seller",
+            "__typename": "ProductBadge"
+          }
+        ],
+        "percentageDiscountBadge": 0,
+        "salePrice": 75,
+        "productPrice": {
+          "price": 75,
+          "salePrice": 75,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "Suede Classic Big Kids' Sneakers",
+        "id": "399853",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 5,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "PUMA Black-PUMA White",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/399853/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Big Kids' Sneakers, PUMA Black-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "For All Time Red-PUMA White",
+            "value": "02",
+            "image": {
+              "href": "https://images.puma.net/images/399853/02/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Big Kids' Sneakers, For All Time Red-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Navy-PUMA White",
+            "value": "03",
+            "image": {
+              "href": "https://images.puma.net/images/399853/03/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Big Kids' Sneakers, PUMA Navy-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Black-PUMA Black",
+            "value": "04",
+            "image": {
+              "href": "https://images.puma.net/images/399853/04/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Big Kids' Sneakers, PUMA Black-PUMA Black, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Pink Lady-PUMA White",
+            "value": "05",
+            "image": {
+              "href": "https://images.puma.net/images/399853/05/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Big Kids' Sneakers, Pink Lady-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399853/05/sv01/fnd/PNA/fmt/png/Suede-Classic-Big-Kids'-Sneakers",
+          "verticalImageHref": null,
+          "alt": "Suede Classic Big Kids' Sneakers, Pink Lady-PUMA White, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": true,
+        "__typename": "Product",
+        "brand": "Suede",
+        "promotions": [],
+        "amountOfReviews": 0,
+        "averageRating": 0,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197670834353",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "03",
+      "masterId": "399857",
+      "variantProduct": {
+        "id": "399857_03",
+        "masterId": "399857",
+        "variantId": "197670834353",
+        "name": "Suede Classic Toddlers' Sneakers",
+        "header": "Suede Classic",
+        "subHeader": "Toddlers' Sneakers",
+        "price": 65,
+        "colorValue": "03",
+        "colorName": "PUMA Navy-PUMA White",
+        "ean": "4067979834261",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399857/03/sv01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+        "images": [
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, PUMA Navy-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399857/03/sv01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399857/03/sv01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, PUMA Navy-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399857/03/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399857/03/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, PUMA Navy-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399857/03/bv/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399857/03/bv/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, PUMA Navy-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399857/03/sv02/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399857/03/sv02/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, PUMA Navy-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399857/03/sv03/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399857/03/sv03/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, PUMA Navy-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399857/03/sv04/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399857/03/sv04/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [
+          {
+            "id": "new",
+            "label": "New",
+            "__typename": "ProductBadge"
+          }
+        ],
+        "percentageDiscountBadge": 0,
+        "salePrice": 65,
+        "productPrice": {
+          "price": 65,
+          "salePrice": 65,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "Suede Classic Toddlers' Sneakers",
+        "id": "399857",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 5,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "PUMA Black-PUMA White",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/399857/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "For All Time Red-PUMA White",
+            "value": "02",
+            "image": {
+              "href": "https://images.puma.net/images/399857/02/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Toddlers' Sneakers, For All Time Red-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Navy-PUMA White",
+            "value": "03",
+            "image": {
+              "href": "https://images.puma.net/images/399857/03/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Toddlers' Sneakers, PUMA Navy-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Black-PUMA Black",
+            "value": "04",
+            "image": {
+              "href": "https://images.puma.net/images/399857/04/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA Black, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Pink Lady-PUMA White",
+            "value": "05",
+            "image": {
+              "href": "https://images.puma.net/images/399857/05/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Toddlers' Sneakers, Pink Lady-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399857/03/sv01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+          "verticalImageHref": null,
+          "alt": "Suede Classic Toddlers' Sneakers, PUMA Navy-PUMA White, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": true,
+        "__typename": "Product",
+        "brand": "Suede",
+        "promotions": [],
+        "amountOfReviews": 0,
+        "averageRating": 0,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197670834087",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "05",
+      "masterId": "399857",
+      "variantProduct": {
+        "id": "399857_05",
+        "masterId": "399857",
+        "variantId": "197670834087",
+        "name": "Suede Classic Toddlers' Sneakers",
+        "header": "Suede Classic",
+        "subHeader": "Toddlers' Sneakers",
+        "price": 65,
+        "colorValue": "05",
+        "colorName": "Pink Lady-PUMA White",
+        "ean": "4067979833998",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399857/05/sv01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+        "images": [
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, Pink Lady-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399857/05/sv01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399857/05/sv01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, Pink Lady-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399857/05/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399857/05/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, Pink Lady-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399857/05/bv/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399857/05/bv/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, Pink Lady-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399857/05/sv02/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399857/05/sv02/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, Pink Lady-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399857/05/sv03/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399857/05/sv03/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, Pink Lady-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399857/05/sv04/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399857/05/sv04/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [
+          {
+            "id": "best-seller",
+            "label": "Best Seller",
+            "__typename": "ProductBadge"
+          }
+        ],
+        "percentageDiscountBadge": 0,
+        "salePrice": 65,
+        "productPrice": {
+          "price": 65,
+          "salePrice": 65,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "Suede Classic Toddlers' Sneakers",
+        "id": "399857",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 5,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "PUMA Black-PUMA White",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/399857/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "For All Time Red-PUMA White",
+            "value": "02",
+            "image": {
+              "href": "https://images.puma.net/images/399857/02/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Toddlers' Sneakers, For All Time Red-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Navy-PUMA White",
+            "value": "03",
+            "image": {
+              "href": "https://images.puma.net/images/399857/03/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Toddlers' Sneakers, PUMA Navy-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Black-PUMA Black",
+            "value": "04",
+            "image": {
+              "href": "https://images.puma.net/images/399857/04/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA Black, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Pink Lady-PUMA White",
+            "value": "05",
+            "image": {
+              "href": "https://images.puma.net/images/399857/05/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Toddlers' Sneakers, Pink Lady-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399857/05/sv01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+          "verticalImageHref": null,
+          "alt": "Suede Classic Toddlers' Sneakers, Pink Lady-PUMA White, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": true,
+        "__typename": "Product",
+        "brand": "Suede",
+        "promotions": [],
+        "amountOfReviews": 0,
+        "averageRating": 0,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197670832403",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "05",
+      "masterId": "399854",
+      "variantProduct": {
+        "id": "399854_05",
+        "masterId": "399854",
+        "variantId": "197670832403",
+        "name": "Suede Classic Little Kids' Sneakers",
+        "header": "Suede Classic",
+        "subHeader": "Little Kids' Sneakers",
+        "price": 70,
+        "colorValue": "05",
+        "colorName": "Pink Lady-PUMA White",
+        "ean": "4067979832311",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399854/05/sv01/fnd/PNA/fmt/png/Suede-Classic-Little-Kids'-Sneakers",
+        "images": [
+          {
+            "alt": "Suede Classic Little Kids' Sneakers, Pink Lady-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399854/05/sv01/fnd/PNA/fmt/png/Suede-Classic-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399854/05/sv01/fnd/PNA/fmt/png/Suede-Classic-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Little Kids' Sneakers, Pink Lady-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399854/05/fnd/PNA/fmt/png/Suede-Classic-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399854/05/fnd/PNA/fmt/png/Suede-Classic-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Little Kids' Sneakers, Pink Lady-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399854/05/bv/fnd/PNA/fmt/png/Suede-Classic-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399854/05/bv/fnd/PNA/fmt/png/Suede-Classic-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Little Kids' Sneakers, Pink Lady-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399854/05/sv02/fnd/PNA/fmt/png/Suede-Classic-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399854/05/sv02/fnd/PNA/fmt/png/Suede-Classic-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Little Kids' Sneakers, Pink Lady-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399854/05/sv03/fnd/PNA/fmt/png/Suede-Classic-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399854/05/sv03/fnd/PNA/fmt/png/Suede-Classic-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Little Kids' Sneakers, Pink Lady-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399854/05/sv04/fnd/PNA/fmt/png/Suede-Classic-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399854/05/sv04/fnd/PNA/fmt/png/Suede-Classic-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [
+          {
+            "id": "best-seller",
+            "label": "Best Seller",
+            "__typename": "ProductBadge"
+          }
+        ],
+        "percentageDiscountBadge": 0,
+        "salePrice": 70,
+        "productPrice": {
+          "price": 70,
+          "salePrice": 70,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "Suede Classic Little Kids' Sneakers",
+        "id": "399854",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 5,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "PUMA Black-PUMA White",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/399854/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Little Kids' Sneakers, PUMA Black-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "For All Time Red-PUMA White",
+            "value": "02",
+            "image": {
+              "href": "https://images.puma.net/images/399854/02/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Little Kids' Sneakers, For All Time Red-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Navy-PUMA White",
+            "value": "03",
+            "image": {
+              "href": "https://images.puma.net/images/399854/03/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Little Kids' Sneakers, PUMA Navy-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Black-PUMA Black",
+            "value": "04",
+            "image": {
+              "href": "https://images.puma.net/images/399854/04/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Little Kids' Sneakers, PUMA Black-PUMA Black, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Pink Lady-PUMA White",
+            "value": "05",
+            "image": {
+              "href": "https://images.puma.net/images/399854/05/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Little Kids' Sneakers, Pink Lady-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399854/05/sv01/fnd/PNA/fmt/png/Suede-Classic-Little-Kids'-Sneakers",
+          "verticalImageHref": null,
+          "alt": "Suede Classic Little Kids' Sneakers, Pink Lady-PUMA White, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": true,
+        "__typename": "Product",
+        "brand": "Suede",
+        "promotions": [],
+        "amountOfReviews": 0,
+        "averageRating": 0,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197673378274",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "01",
+      "masterId": "401548",
+      "variantProduct": {
+        "id": "401548_01",
+        "masterId": "401548",
+        "variantId": "197673378274",
+        "name": "Suede XL Summer Feels Sneakers Youth",
+        "header": "Suede XL Summer Feels",
+        "subHeader": "Big Kids' Sneakers",
+        "price": 65,
+        "colorValue": "01",
+        "colorName": "Lilac Frost-PUMA White",
+        "ean": "4067983377785",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/401548/01/sv01/fnd/PNA/fmt/png/Suede-XL-Summer-Feels-Sneakers-Youth",
+        "images": [
+          {
+            "alt": "Suede XL Summer Feels Sneakers Youth, Lilac Frost-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/401548/01/sv01/fnd/PNA/fmt/png/Suede-XL-Summer-Feels-Sneakers-Youth",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/401548/01/sv01/fnd/PNA/fmt/png/Suede-XL-Summer-Feels-Sneakers-Youth",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Summer Feels Sneakers Youth, Lilac Frost-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/401548/01/mod01/fnd/PNA/fmt/png/Suede-XL-Summer-Feels-Sneakers-Youth",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_model/global/401548/01/mod01/fnd/PNA/fmt/png/Suede-XL-Summer-Feels-Sneakers-Youth",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Summer Feels Sneakers Youth, Lilac Frost-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/401548/01/mod02/fnd/PNA/fmt/png/Suede-XL-Summer-Feels-Sneakers-Youth",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_model/global/401548/01/mod02/fnd/PNA/fmt/png/Suede-XL-Summer-Feels-Sneakers-Youth",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Summer Feels Sneakers Youth, Lilac Frost-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/401548/01/fnd/PNA/fmt/png/Suede-XL-Summer-Feels-Sneakers-Youth",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/401548/01/fnd/PNA/fmt/png/Suede-XL-Summer-Feels-Sneakers-Youth",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Summer Feels Sneakers Youth, Lilac Frost-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/401548/01/bv/fnd/PNA/fmt/png/Suede-XL-Summer-Feels-Sneakers-Youth",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/401548/01/bv/fnd/PNA/fmt/png/Suede-XL-Summer-Feels-Sneakers-Youth",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Summer Feels Sneakers Youth, Lilac Frost-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/401548/01/sv02/fnd/PNA/fmt/png/Suede-XL-Summer-Feels-Sneakers-Youth",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/401548/01/sv02/fnd/PNA/fmt/png/Suede-XL-Summer-Feels-Sneakers-Youth",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Summer Feels Sneakers Youth, Lilac Frost-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/401548/01/sv03/fnd/PNA/fmt/png/Suede-XL-Summer-Feels-Sneakers-Youth",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/401548/01/sv03/fnd/PNA/fmt/png/Suede-XL-Summer-Feels-Sneakers-Youth",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Summer Feels Sneakers Youth, Lilac Frost-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/401548/01/sv04/fnd/PNA/fmt/png/Suede-XL-Summer-Feels-Sneakers-Youth",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/401548/01/sv04/fnd/PNA/fmt/png/Suede-XL-Summer-Feels-Sneakers-Youth",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [
+          {
+            "id": "new",
+            "label": "New",
+            "__typename": "ProductBadge"
+          }
+        ],
+        "percentageDiscountBadge": 0,
+        "salePrice": 65,
+        "productPrice": {
+          "price": 65,
+          "salePrice": 65,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "Suede XL Summer Feels Sneakers Youth",
+        "id": "401548",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 1,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "Lilac Frost-PUMA White",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/401548/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Summer Feels Sneakers Youth, Lilac Frost-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/401548/01/sv01/fnd/PNA/fmt/png/Suede-XL-Summer-Feels-Sneakers-Youth",
+          "verticalImageHref": null,
+          "alt": "Suede XL Summer Feels Sneakers Youth, Lilac Frost-PUMA White, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": false,
+        "__typename": "Product",
+        "brand": "Summer Feels",
+        "promotions": [],
+        "amountOfReviews": 0,
+        "averageRating": 0,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197673375426",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "29",
+      "masterId": "396579",
+      "variantProduct": {
+        "id": "396579_29",
+        "masterId": "396579",
+        "variantId": "197673375426",
+        "name": "Suede XL Toddlers' Sneakers",
+        "header": "Suede XL",
+        "subHeader": "Toddler's Alternate Closure Sneakers",
+        "price": 55,
+        "colorValue": "29",
+        "colorName": "New Navy-Frosted Ivory",
+        "ean": "4067983374937",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396579/29/sv01/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+        "images": [
+          {
+            "alt": "Suede XL Toddlers' Sneakers, New Navy-Frosted Ivory, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396579/29/sv01/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396579/29/sv01/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Toddlers' Sneakers, New Navy-Frosted Ivory, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396579/29/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396579/29/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Toddlers' Sneakers, New Navy-Frosted Ivory, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396579/29/bv/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396579/29/bv/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Toddlers' Sneakers, New Navy-Frosted Ivory, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396579/29/sv02/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396579/29/sv02/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Toddlers' Sneakers, New Navy-Frosted Ivory, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396579/29/sv03/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396579/29/sv03/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Toddlers' Sneakers, New Navy-Frosted Ivory, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396579/29/sv04/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396579/29/sv04/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [
+          {
+            "id": "best-seller",
+            "label": "Best Seller",
+            "__typename": "ProductBadge"
+          }
+        ],
+        "percentageDiscountBadge": 0,
+        "salePrice": 55,
+        "productPrice": {
+          "price": 55,
+          "salePrice": 55,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "Suede XL Toddlers' Sneakers",
+        "id": "396579",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 6,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "PUMA Black-PUMA White",
+            "value": "02",
+            "image": {
+              "href": "https://images.puma.net/images/396579/02/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Toddlers' Sneakers, PUMA Black-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "For All Time Red-PUMA White",
+            "value": "03",
+            "image": {
+              "href": "https://images.puma.net/images/396579/03/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Toddlers' Sneakers, For All Time Red-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Archive Green-PUMA White",
+            "value": "12",
+            "image": {
+              "href": "https://images.puma.net/images/396579/12/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Toddlers' Sneakers, Archive Green-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Dark Myrtle-Vapor Gray-Green Moon",
+            "value": "23",
+            "image": {
+              "href": "https://images.puma.net/images/396579/23/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Toddlers' Sneakers, Dark Myrtle-Vapor Gray-Green Moon, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "New Navy-Frosted Ivory",
+            "value": "29",
+            "image": {
+              "href": "https://images.puma.net/images/396579/29/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Toddlers' Sneakers, New Navy-Frosted Ivory, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Modern Mint-Pink Fruit",
+            "value": "30",
+            "image": {
+              "href": "https://images.puma.net/images/396579/30/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Toddlers' Sneakers, Modern Mint-Pink Fruit, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396579/29/sv01/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+          "verticalImageHref": null,
+          "alt": "Suede XL Toddlers' Sneakers, New Navy-Frosted Ivory, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": true,
+        "__typename": "Product",
+        "brand": "Suede",
+        "promotions": [],
+        "amountOfReviews": 2,
+        "averageRating": 3,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197673374009",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "30",
+      "masterId": "396579",
+      "variantProduct": {
+        "id": "396579_30",
+        "masterId": "396579",
+        "variantId": "197673374009",
+        "name": "Suede XL Toddlers' Sneakers",
+        "header": "Suede XL",
+        "subHeader": "Toddler's Alternate Closure Sneakers",
+        "price": 55,
+        "colorValue": "30",
+        "colorName": "Modern Mint-Pink Fruit",
+        "ean": "4067983373510",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396579/30/sv01/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+        "images": [
+          {
+            "alt": "Suede XL Toddlers' Sneakers, Modern Mint-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396579/30/sv01/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396579/30/sv01/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Toddlers' Sneakers, Modern Mint-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396579/30/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396579/30/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Toddlers' Sneakers, Modern Mint-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396579/30/bv/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396579/30/bv/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Toddlers' Sneakers, Modern Mint-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396579/30/sv02/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396579/30/sv02/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Toddlers' Sneakers, Modern Mint-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396579/30/sv03/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396579/30/sv03/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Toddlers' Sneakers, Modern Mint-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396579/30/sv04/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396579/30/sv04/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [],
+        "percentageDiscountBadge": 0,
+        "salePrice": 55,
+        "productPrice": {
+          "price": 55,
+          "salePrice": 55,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "Suede XL Toddlers' Sneakers",
+        "id": "396579",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 6,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "PUMA Black-PUMA White",
+            "value": "02",
+            "image": {
+              "href": "https://images.puma.net/images/396579/02/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Toddlers' Sneakers, PUMA Black-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "For All Time Red-PUMA White",
+            "value": "03",
+            "image": {
+              "href": "https://images.puma.net/images/396579/03/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Toddlers' Sneakers, For All Time Red-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Archive Green-PUMA White",
+            "value": "12",
+            "image": {
+              "href": "https://images.puma.net/images/396579/12/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Toddlers' Sneakers, Archive Green-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Dark Myrtle-Vapor Gray-Green Moon",
+            "value": "23",
+            "image": {
+              "href": "https://images.puma.net/images/396579/23/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Toddlers' Sneakers, Dark Myrtle-Vapor Gray-Green Moon, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "New Navy-Frosted Ivory",
+            "value": "29",
+            "image": {
+              "href": "https://images.puma.net/images/396579/29/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Toddlers' Sneakers, New Navy-Frosted Ivory, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Modern Mint-Pink Fruit",
+            "value": "30",
+            "image": {
+              "href": "https://images.puma.net/images/396579/30/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Toddlers' Sneakers, Modern Mint-Pink Fruit, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396579/30/sv01/fnd/PNA/fmt/png/Suede-XL-Toddlers'-Sneakers",
+          "verticalImageHref": null,
+          "alt": "Suede XL Toddlers' Sneakers, Modern Mint-Pink Fruit, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": true,
+        "__typename": "Product",
+        "brand": "Suede",
+        "promotions": [],
+        "amountOfReviews": 2,
+        "averageRating": 3,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197673375112",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "29",
+      "masterId": "396578",
+      "variantProduct": {
+        "id": "396578_29",
+        "masterId": "396578",
+        "variantId": "197673375112",
+        "name": "Suede XL Little Kids' Sneakers",
+        "header": "Suede XL",
+        "subHeader": "Little Kids' Sneakers",
+        "price": 60,
+        "colorValue": "29",
+        "colorName": "New Navy-Frosted Ivory",
+        "ean": "4067983374623",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396578/29/sv01/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+        "images": [
+          {
+            "alt": "Suede XL Little Kids' Sneakers, New Navy-Frosted Ivory, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396578/29/sv01/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396578/29/sv01/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Little Kids' Sneakers, New Navy-Frosted Ivory, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396578/29/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396578/29/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Little Kids' Sneakers, New Navy-Frosted Ivory, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396578/29/bv/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396578/29/bv/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Little Kids' Sneakers, New Navy-Frosted Ivory, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396578/29/sv02/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396578/29/sv02/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Little Kids' Sneakers, New Navy-Frosted Ivory, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396578/29/sv03/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396578/29/sv03/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Little Kids' Sneakers, New Navy-Frosted Ivory, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396578/29/sv04/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396578/29/sv04/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [],
+        "percentageDiscountBadge": 0,
+        "salePrice": 60,
+        "productPrice": {
+          "price": 60,
+          "salePrice": 60,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "Suede XL Little Kids' Sneakers",
+        "id": "396578",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 7,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "PUMA Team Royal-PUMA White",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/396578/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Little Kids' Sneakers, PUMA Team Royal-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Black-PUMA White",
+            "value": "02",
+            "image": {
+              "href": "https://images.puma.net/images/396578/02/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Little Kids' Sneakers, PUMA Black-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "For All Time Red-PUMA White",
+            "value": "03",
+            "image": {
+              "href": "https://images.puma.net/images/396578/03/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Little Kids' Sneakers, For All Time Red-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Archive Green-PUMA White",
+            "value": "12",
+            "image": {
+              "href": "https://images.puma.net/images/396578/12/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Little Kids' Sneakers, Archive Green-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Dark Myrtle-Vapor Gray-Green Moon",
+            "value": "23",
+            "image": {
+              "href": "https://images.puma.net/images/396578/23/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Little Kids' Sneakers, Dark Myrtle-Vapor Gray-Green Moon, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "New Navy-Frosted Ivory",
+            "value": "29",
+            "image": {
+              "href": "https://images.puma.net/images/396578/29/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Little Kids' Sneakers, New Navy-Frosted Ivory, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Modern Mint-Pink Fruit",
+            "value": "30",
+            "image": {
+              "href": "https://images.puma.net/images/396578/30/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Little Kids' Sneakers, Modern Mint-Pink Fruit, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396578/29/sv01/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+          "verticalImageHref": null,
+          "alt": "Suede XL Little Kids' Sneakers, New Navy-Frosted Ivory, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": true,
+        "__typename": "Product",
+        "brand": "Suede",
+        "promotions": [],
+        "amountOfReviews": 4,
+        "averageRating": 4,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197673377055",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "30",
+      "masterId": "396578",
+      "variantProduct": {
+        "id": "396578_30",
+        "masterId": "396578",
+        "variantId": "197673377055",
+        "name": "Suede XL Little Kids' Sneakers",
+        "header": "Suede XL",
+        "subHeader": "Little Kids' Sneakers",
+        "price": 60,
+        "colorValue": "30",
+        "colorName": "Modern Mint-Pink Fruit",
+        "ean": "4067983376566",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396578/30/sv01/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+        "images": [
+          {
+            "alt": "Suede XL Little Kids' Sneakers, Modern Mint-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396578/30/sv01/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396578/30/sv01/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Little Kids' Sneakers, Modern Mint-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396578/30/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396578/30/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Little Kids' Sneakers, Modern Mint-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396578/30/bv/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396578/30/bv/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Little Kids' Sneakers, Modern Mint-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396578/30/sv02/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396578/30/sv02/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Little Kids' Sneakers, Modern Mint-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396578/30/sv03/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396578/30/sv03/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Little Kids' Sneakers, Modern Mint-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396578/30/sv04/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396578/30/sv04/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [],
+        "percentageDiscountBadge": 0,
+        "salePrice": 60,
+        "productPrice": {
+          "price": 60,
+          "salePrice": 60,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "Suede XL Little Kids' Sneakers",
+        "id": "396578",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 7,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "PUMA Team Royal-PUMA White",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/396578/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Little Kids' Sneakers, PUMA Team Royal-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Black-PUMA White",
+            "value": "02",
+            "image": {
+              "href": "https://images.puma.net/images/396578/02/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Little Kids' Sneakers, PUMA Black-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "For All Time Red-PUMA White",
+            "value": "03",
+            "image": {
+              "href": "https://images.puma.net/images/396578/03/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Little Kids' Sneakers, For All Time Red-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Archive Green-PUMA White",
+            "value": "12",
+            "image": {
+              "href": "https://images.puma.net/images/396578/12/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Little Kids' Sneakers, Archive Green-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Dark Myrtle-Vapor Gray-Green Moon",
+            "value": "23",
+            "image": {
+              "href": "https://images.puma.net/images/396578/23/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Little Kids' Sneakers, Dark Myrtle-Vapor Gray-Green Moon, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "New Navy-Frosted Ivory",
+            "value": "29",
+            "image": {
+              "href": "https://images.puma.net/images/396578/29/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Little Kids' Sneakers, New Navy-Frosted Ivory, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Modern Mint-Pink Fruit",
+            "value": "30",
+            "image": {
+              "href": "https://images.puma.net/images/396578/30/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Little Kids' Sneakers, Modern Mint-Pink Fruit, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396578/30/sv01/fnd/PNA/fmt/png/Suede-XL-Little-Kids'-Sneakers",
+          "verticalImageHref": null,
+          "alt": "Suede XL Little Kids' Sneakers, Modern Mint-Pink Fruit, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": true,
+        "__typename": "Product",
+        "brand": "Suede",
+        "promotions": [],
+        "amountOfReviews": 4,
+        "averageRating": 4,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197673374429",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "30",
+      "masterId": "396577",
+      "variantProduct": {
+        "id": "396577_30",
+        "masterId": "396577",
+        "variantId": "197673374429",
+        "name": "Suede XL Big Kids' Sneakers",
+        "header": "Suede XL",
+        "subHeader": "Big Kids' Sneakers",
+        "price": 65,
+        "colorValue": "30",
+        "colorName": "Modern Mint-Pink Fruit",
+        "ean": "4067983373930",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396577/30/sv01/fnd/PNA/fmt/png/Suede-XL-Big-Kids'-Sneakers",
+        "images": [
+          {
+            "alt": "Suede XL Big Kids' Sneakers, Modern Mint-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396577/30/sv01/fnd/PNA/fmt/png/Suede-XL-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396577/30/sv01/fnd/PNA/fmt/png/Suede-XL-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Big Kids' Sneakers, Modern Mint-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396577/30/mod01/fnd/PNA/fmt/png/Suede-XL-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_model/global/396577/30/mod01/fnd/PNA/fmt/png/Suede-XL-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Big Kids' Sneakers, Modern Mint-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396577/30/mod02/fnd/PNA/fmt/png/Suede-XL-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_model/global/396577/30/mod02/fnd/PNA/fmt/png/Suede-XL-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Big Kids' Sneakers, Modern Mint-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396577/30/fnd/PNA/fmt/png/Suede-XL-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396577/30/fnd/PNA/fmt/png/Suede-XL-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Big Kids' Sneakers, Modern Mint-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396577/30/bv/fnd/PNA/fmt/png/Suede-XL-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396577/30/bv/fnd/PNA/fmt/png/Suede-XL-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Big Kids' Sneakers, Modern Mint-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396577/30/sv02/fnd/PNA/fmt/png/Suede-XL-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396577/30/sv02/fnd/PNA/fmt/png/Suede-XL-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Big Kids' Sneakers, Modern Mint-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396577/30/sv03/fnd/PNA/fmt/png/Suede-XL-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396577/30/sv03/fnd/PNA/fmt/png/Suede-XL-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede XL Big Kids' Sneakers, Modern Mint-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396577/30/sv04/fnd/PNA/fmt/png/Suede-XL-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/396577/30/sv04/fnd/PNA/fmt/png/Suede-XL-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [
+          {
+            "id": "new",
+            "label": "New",
+            "__typename": "ProductBadge"
+          }
+        ],
+        "percentageDiscountBadge": 0,
+        "salePrice": 65,
+        "productPrice": {
+          "price": 65,
+          "salePrice": 65,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "Suede XL Big Kids' Sneakers",
+        "id": "396577",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 8,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "PUMA Team Royal-PUMA White",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/396577/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Big Kids' Sneakers, PUMA Team Royal-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Black-PUMA White",
+            "value": "02",
+            "image": {
+              "href": "https://images.puma.net/images/396577/02/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Big Kids' Sneakers, PUMA Black-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "For All Time Red-PUMA White",
+            "value": "03",
+            "image": {
+              "href": "https://images.puma.net/images/396577/03/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Big Kids' Sneakers, For All Time Red-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Archive Green-PUMA White",
+            "value": "12",
+            "image": {
+              "href": "https://images.puma.net/images/396577/12/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Big Kids' Sneakers, Archive Green-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Mauved Out-PUMA White",
+            "value": "13",
+            "image": {
+              "href": "https://images.puma.net/images/396577/13/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Big Kids' Sneakers, Mauved Out-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Club Navy-Blue Horizon",
+            "value": "15",
+            "image": {
+              "href": "https://images.puma.net/images/396577/15/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Big Kids' Sneakers, Club Navy-Blue Horizon, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Dark Myrtle-Vapor Gray-Green Moon",
+            "value": "23",
+            "image": {
+              "href": "https://images.puma.net/images/396577/23/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Big Kids' Sneakers, Dark Myrtle-Vapor Gray-Green Moon, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Modern Mint-Pink Fruit",
+            "value": "30",
+            "image": {
+              "href": "https://images.puma.net/images/396577/30/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede XL Big Kids' Sneakers, Modern Mint-Pink Fruit, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/396577/30/sv01/fnd/PNA/fmt/png/Suede-XL-Big-Kids'-Sneakers",
+          "verticalImageHref": null,
+          "alt": "Suede XL Big Kids' Sneakers, Modern Mint-Pink Fruit, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": true,
+        "__typename": "Product",
+        "brand": "Suede",
+        "promotions": [],
+        "amountOfReviews": 2,
+        "averageRating": 5,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197673391662",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "01",
+      "masterId": "400553",
+      "variantProduct": {
+        "id": "400553_01",
+        "masterId": "400553",
+        "variantId": "197673391662",
+        "name": "Easy Rider Summer Feels Big Kids' Sneakers",
+        "header": "Easy Rider Summer Feels",
+        "subHeader": "Big Kids' Sneakers",
+        "price": 75,
+        "colorValue": "01",
+        "colorName": "Lilac Frost-Creamy Vanilla",
+        "ean": "4067983391170",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400553/01/sv01/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Big-Kids'-Sneakers",
+        "images": [
+          {
+            "alt": "Easy Rider Summer Feels Big Kids' Sneakers, Lilac Frost-Creamy Vanilla, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400553/01/sv01/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/400553/01/sv01/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Summer Feels Big Kids' Sneakers, Lilac Frost-Creamy Vanilla, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400553/01/mod01/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_model/global/400553/01/mod01/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Summer Feels Big Kids' Sneakers, Lilac Frost-Creamy Vanilla, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400553/01/mod02/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_model/global/400553/01/mod02/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Summer Feels Big Kids' Sneakers, Lilac Frost-Creamy Vanilla, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400553/01/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/400553/01/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Summer Feels Big Kids' Sneakers, Lilac Frost-Creamy Vanilla, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400553/01/bv/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/400553/01/bv/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Summer Feels Big Kids' Sneakers, Lilac Frost-Creamy Vanilla, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400553/01/sv02/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/400553/01/sv02/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Summer Feels Big Kids' Sneakers, Lilac Frost-Creamy Vanilla, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400553/01/sv03/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/400553/01/sv03/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Summer Feels Big Kids' Sneakers, Lilac Frost-Creamy Vanilla, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400553/01/sv04/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/400553/01/sv04/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [
+          {
+            "id": "new",
+            "label": "New",
+            "__typename": "ProductBadge"
+          }
+        ],
+        "percentageDiscountBadge": 0,
+        "salePrice": 75,
+        "productPrice": {
+          "price": 75,
+          "salePrice": 75,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "Easy Rider Summer Feels Big Kids' Sneakers",
+        "id": "400553",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 1,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "Lilac Frost-Creamy Vanilla",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/400553/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Easy Rider Summer Feels Big Kids' Sneakers, Lilac Frost-Creamy Vanilla, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400553/01/sv01/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Big-Kids'-Sneakers",
+          "verticalImageHref": null,
+          "alt": "Easy Rider Summer Feels Big Kids' Sneakers, Lilac Frost-Creamy Vanilla, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": true,
+        "__typename": "Product",
+        "brand": "Rider",
+        "promotions": [],
+        "amountOfReviews": 0,
+        "averageRating": 0,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197673391648",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "01",
+      "masterId": "400554",
+      "variantProduct": {
+        "id": "400554_01",
+        "masterId": "400554",
+        "variantId": "197673391648",
+        "name": "Easy Rider Summer Feels Sneakers Kids",
+        "header": "Easy Rider Summer Feels",
+        "subHeader": "Little Kids' Sneakers",
+        "price": 65,
+        "colorValue": "01",
+        "colorName": "Lilac Frost-Creamy Vanilla",
+        "ean": "4067983391156",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400554/01/sv01/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Sneakers-Kids",
+        "images": [
+          {
+            "alt": "Easy Rider Summer Feels Sneakers Kids, Lilac Frost-Creamy Vanilla, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400554/01/sv01/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Sneakers-Kids",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/400554/01/sv01/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Sneakers-Kids",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Summer Feels Sneakers Kids, Lilac Frost-Creamy Vanilla, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400554/01/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Sneakers-Kids",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/400554/01/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Sneakers-Kids",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Summer Feels Sneakers Kids, Lilac Frost-Creamy Vanilla, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400554/01/bv/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Sneakers-Kids",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/400554/01/bv/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Sneakers-Kids",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Summer Feels Sneakers Kids, Lilac Frost-Creamy Vanilla, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400554/01/sv02/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Sneakers-Kids",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/400554/01/sv02/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Sneakers-Kids",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Summer Feels Sneakers Kids, Lilac Frost-Creamy Vanilla, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400554/01/sv03/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Sneakers-Kids",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/400554/01/sv03/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Sneakers-Kids",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Summer Feels Sneakers Kids, Lilac Frost-Creamy Vanilla, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400554/01/sv04/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Sneakers-Kids",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/400554/01/sv04/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Sneakers-Kids",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [
+          {
+            "id": "best-seller",
+            "label": "Best Seller",
+            "__typename": "ProductBadge"
+          }
+        ],
+        "percentageDiscountBadge": 0,
+        "salePrice": 65,
+        "productPrice": {
+          "price": 65,
+          "salePrice": 65,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "Easy Rider Summer Feels Sneakers Kids",
+        "id": "400554",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 1,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "Lilac Frost-Creamy Vanilla",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/400554/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Easy Rider Summer Feels Sneakers Kids, Lilac Frost-Creamy Vanilla, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400554/01/sv01/fnd/PNA/fmt/png/Easy-Rider-Summer-Feels-Sneakers-Kids",
+          "verticalImageHref": null,
+          "alt": "Easy Rider Summer Feels Sneakers Kids, Lilac Frost-Creamy Vanilla, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": true,
+        "__typename": "Product",
+        "brand": "Rider",
+        "promotions": [],
+        "amountOfReviews": 0,
+        "averageRating": 0,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197673387481",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "16",
+      "masterId": "399372",
+      "variantProduct": {
+        "id": "399372_16",
+        "masterId": "399372",
+        "variantId": "197673387481",
+        "name": "Easy Rider Vintage Little Kids' Sneakers",
+        "header": "Easy Rider Vintage",
+        "subHeader": "Little Kids' Sneakers",
+        "price": 65,
+        "colorValue": "16",
+        "colorName": "PUMA Team Royal-For All Time Red",
+        "ean": "4067983386992",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399372/16/sv01/fnd/PNA/fmt/png/Easy-Rider-Vintage-Little-Kids'-Sneakers",
+        "images": [
+          {
+            "alt": "Easy Rider Vintage Little Kids' Sneakers, PUMA Team Royal-For All Time Red, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399372/16/sv01/fnd/PNA/fmt/png/Easy-Rider-Vintage-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399372/16/sv01/fnd/PNA/fmt/png/Easy-Rider-Vintage-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Vintage Little Kids' Sneakers, PUMA Team Royal-For All Time Red, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399372/16/fnd/PNA/fmt/png/Easy-Rider-Vintage-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399372/16/fnd/PNA/fmt/png/Easy-Rider-Vintage-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Vintage Little Kids' Sneakers, PUMA Team Royal-For All Time Red, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399372/16/bv/fnd/PNA/fmt/png/Easy-Rider-Vintage-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399372/16/bv/fnd/PNA/fmt/png/Easy-Rider-Vintage-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Vintage Little Kids' Sneakers, PUMA Team Royal-For All Time Red, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399372/16/sv02/fnd/PNA/fmt/png/Easy-Rider-Vintage-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399372/16/sv02/fnd/PNA/fmt/png/Easy-Rider-Vintage-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Vintage Little Kids' Sneakers, PUMA Team Royal-For All Time Red, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399372/16/sv03/fnd/PNA/fmt/png/Easy-Rider-Vintage-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399372/16/sv03/fnd/PNA/fmt/png/Easy-Rider-Vintage-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Vintage Little Kids' Sneakers, PUMA Team Royal-For All Time Red, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399372/16/sv04/fnd/PNA/fmt/png/Easy-Rider-Vintage-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399372/16/sv04/fnd/PNA/fmt/png/Easy-Rider-Vintage-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [
+          {
+            "id": "new",
+            "label": "New",
+            "__typename": "ProductBadge"
+          }
+        ],
+        "percentageDiscountBadge": 0,
+        "salePrice": 65,
+        "productPrice": {
+          "price": 65,
+          "salePrice": 65,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "Easy Rider Vintage Little Kids' Sneakers",
+        "id": "399372",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 5,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "PUMA Red-PUMA White",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/399372/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Easy Rider Vintage Little Kids' Sneakers, PUMA Red-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Archive Green-PUMA White",
+            "value": "03",
+            "image": {
+              "href": "https://images.puma.net/images/399372/03/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Easy Rider Vintage Little Kids' Sneakers, Archive Green-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Clyde Royal-PUMA White",
+            "value": "08",
+            "image": {
+              "href": "https://images.puma.net/images/399372/08/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Easy Rider Vintage Little Kids' Sneakers, Clyde Royal-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Black-PUMA White",
+            "value": "09",
+            "image": {
+              "href": "https://images.puma.net/images/399372/09/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Easy Rider Vintage Little Kids' Sneakers, PUMA Black-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Team Royal-For All Time Red",
+            "value": "16",
+            "image": {
+              "href": "https://images.puma.net/images/399372/16/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Easy Rider Vintage Little Kids' Sneakers, PUMA Team Royal-For All Time Red, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399372/16/sv01/fnd/PNA/fmt/png/Easy-Rider-Vintage-Little-Kids'-Sneakers",
+          "verticalImageHref": null,
+          "alt": "Easy Rider Vintage Little Kids' Sneakers, PUMA Team Royal-For All Time Red, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": true,
+        "__typename": "Product",
+        "brand": "Rider",
+        "promotions": [],
+        "amountOfReviews": 3,
+        "averageRating": 3.7,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197673387160",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "16",
+      "masterId": "399371",
+      "variantProduct": {
+        "id": "399371_16",
+        "masterId": "399371",
+        "variantId": "197673387160",
+        "name": "Easy Rider Vintage Big Kids' Sneakers",
+        "header": "Easy Rider Vintage",
+        "subHeader": "Big Kids' Sneakers",
+        "price": 70,
+        "colorValue": "16",
+        "colorName": "PUMA Team Royal-For All Time Red",
+        "ean": "4067983386671",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399371/16/sv01/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+        "images": [
+          {
+            "alt": "Easy Rider Vintage Big Kids' Sneakers, PUMA Team Royal-For All Time Red, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399371/16/sv01/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399371/16/sv01/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Vintage Big Kids' Sneakers, PUMA Team Royal-For All Time Red, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399371/16/mod01/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_model/global/399371/16/mod01/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Vintage Big Kids' Sneakers, PUMA Team Royal-For All Time Red, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399371/16/mod02/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_model/global/399371/16/mod02/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Vintage Big Kids' Sneakers, PUMA Team Royal-For All Time Red, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399371/16/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399371/16/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Vintage Big Kids' Sneakers, PUMA Team Royal-For All Time Red, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399371/16/bv/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399371/16/bv/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Vintage Big Kids' Sneakers, PUMA Team Royal-For All Time Red, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399371/16/sv02/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399371/16/sv02/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Vintage Big Kids' Sneakers, PUMA Team Royal-For All Time Red, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399371/16/sv03/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399371/16/sv03/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Vintage Big Kids' Sneakers, PUMA Team Royal-For All Time Red, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399371/16/sv04/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399371/16/sv04/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [
+          {
+            "id": "new",
+            "label": "New",
+            "__typename": "ProductBadge"
+          }
+        ],
+        "percentageDiscountBadge": 0,
+        "salePrice": 70,
+        "productPrice": {
+          "price": 70,
+          "salePrice": 70,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "Easy Rider Vintage Big Kids' Sneakers",
+        "id": "399371",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 6,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "PUMA Red-PUMA White",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/399371/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Easy Rider Vintage Big Kids' Sneakers, PUMA Red-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Archive Green-PUMA White",
+            "value": "03",
+            "image": {
+              "href": "https://images.puma.net/images/399371/03/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Easy Rider Vintage Big Kids' Sneakers, Archive Green-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Clyde Royal-PUMA White",
+            "value": "08",
+            "image": {
+              "href": "https://images.puma.net/images/399371/08/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Easy Rider Vintage Big Kids' Sneakers, Clyde Royal-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Black-PUMA White",
+            "value": "09",
+            "image": {
+              "href": "https://images.puma.net/images/399371/09/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Easy Rider Vintage Big Kids' Sneakers, PUMA Black-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Team Royal-For All Time Red",
+            "value": "16",
+            "image": {
+              "href": "https://images.puma.net/images/399371/16/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Easy Rider Vintage Big Kids' Sneakers, PUMA Team Royal-For All Time Red, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Maple Syrup-Almost Apricot",
+            "value": "20",
+            "image": {
+              "href": "https://images.puma.net/images/399371/20/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Easy Rider Vintage Big Kids' Sneakers, Maple Syrup-Almost Apricot, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399371/16/sv01/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+          "verticalImageHref": null,
+          "alt": "Easy Rider Vintage Big Kids' Sneakers, PUMA Team Royal-For All Time Red, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": true,
+        "__typename": "Product",
+        "brand": "Rider",
+        "promotions": [],
+        "amountOfReviews": 23,
+        "averageRating": 4.2,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197673387023",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "20",
+      "masterId": "399371",
+      "variantProduct": {
+        "id": "399371_20",
+        "masterId": "399371",
+        "variantId": "197673387023",
+        "name": "Easy Rider Vintage Big Kids' Sneakers",
+        "header": "Easy Rider Vintage",
+        "subHeader": "Big Kids' Sneakers",
+        "price": 70,
+        "colorValue": "20",
+        "colorName": "Maple Syrup-Almost Apricot",
+        "ean": "4067983386534",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399371/20/sv01/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+        "images": [
+          {
+            "alt": "Easy Rider Vintage Big Kids' Sneakers, Maple Syrup-Almost Apricot, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399371/20/sv01/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399371/20/sv01/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Vintage Big Kids' Sneakers, Maple Syrup-Almost Apricot, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399371/20/mod01/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_model/global/399371/20/mod01/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Vintage Big Kids' Sneakers, Maple Syrup-Almost Apricot, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399371/20/mod02/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_model/global/399371/20/mod02/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Vintage Big Kids' Sneakers, Maple Syrup-Almost Apricot, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399371/20/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399371/20/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Vintage Big Kids' Sneakers, Maple Syrup-Almost Apricot, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399371/20/bv/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399371/20/bv/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Vintage Big Kids' Sneakers, Maple Syrup-Almost Apricot, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399371/20/sv02/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399371/20/sv02/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Vintage Big Kids' Sneakers, Maple Syrup-Almost Apricot, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399371/20/sv03/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399371/20/sv03/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Easy Rider Vintage Big Kids' Sneakers, Maple Syrup-Almost Apricot, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399371/20/sv04/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399371/20/sv04/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [
+          {
+            "id": "best-seller",
+            "label": "Best Seller",
+            "__typename": "ProductBadge"
+          }
+        ],
+        "percentageDiscountBadge": 0,
+        "salePrice": 70,
+        "productPrice": {
+          "price": 70,
+          "salePrice": 70,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "Easy Rider Vintage Big Kids' Sneakers",
+        "id": "399371",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 6,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "PUMA Red-PUMA White",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/399371/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Easy Rider Vintage Big Kids' Sneakers, PUMA Red-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Archive Green-PUMA White",
+            "value": "03",
+            "image": {
+              "href": "https://images.puma.net/images/399371/03/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Easy Rider Vintage Big Kids' Sneakers, Archive Green-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Clyde Royal-PUMA White",
+            "value": "08",
+            "image": {
+              "href": "https://images.puma.net/images/399371/08/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Easy Rider Vintage Big Kids' Sneakers, Clyde Royal-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Black-PUMA White",
+            "value": "09",
+            "image": {
+              "href": "https://images.puma.net/images/399371/09/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Easy Rider Vintage Big Kids' Sneakers, PUMA Black-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Team Royal-For All Time Red",
+            "value": "16",
+            "image": {
+              "href": "https://images.puma.net/images/399371/16/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Easy Rider Vintage Big Kids' Sneakers, PUMA Team Royal-For All Time Red, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Maple Syrup-Almost Apricot",
+            "value": "20",
+            "image": {
+              "href": "https://images.puma.net/images/399371/20/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Easy Rider Vintage Big Kids' Sneakers, Maple Syrup-Almost Apricot, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399371/20/sv01/fnd/PNA/fmt/png/Easy-Rider-Vintage-Big-Kids'-Sneakers",
+          "verticalImageHref": null,
+          "alt": "Easy Rider Vintage Big Kids' Sneakers, Maple Syrup-Almost Apricot, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": true,
+        "__typename": "Product",
+        "brand": "Rider",
+        "promotions": [],
+        "amountOfReviews": 23,
+        "averageRating": 4.2,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197673314722",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "01",
+      "masterId": "400566",
+      "variantProduct": {
+        "id": "400566_01",
+        "masterId": "400566",
+        "variantId": "197673314722",
+        "name": "Palermo Moda Summer Feels Sneakers Youth",
+        "header": "Palermo Moda Summer Feels",
+        "subHeader": "Big Kids' Sneakers",
+        "price": 75,
+        "colorValue": "01",
+        "colorName": "Alpine Snow-Lilac Frost",
+        "ean": "4067983314230",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400566/01/sv01/fnd/PNA/fmt/png/Palermo-Moda-Summer-Feels-Sneakers-Youth",
+        "images": [
+          {
+            "alt": "Palermo Moda Summer Feels Sneakers Youth, Alpine Snow-Lilac Frost, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400566/01/sv01/fnd/PNA/fmt/png/Palermo-Moda-Summer-Feels-Sneakers-Youth",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/400566/01/sv01/fnd/PNA/fmt/png/Palermo-Moda-Summer-Feels-Sneakers-Youth",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Palermo Moda Summer Feels Sneakers Youth, Alpine Snow-Lilac Frost, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400566/01/mod01/fnd/PNA/fmt/png/Palermo-Moda-Summer-Feels-Sneakers-Youth",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_model/global/400566/01/mod01/fnd/PNA/fmt/png/Palermo-Moda-Summer-Feels-Sneakers-Youth",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Palermo Moda Summer Feels Sneakers Youth, Alpine Snow-Lilac Frost, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400566/01/mod02/fnd/PNA/fmt/png/Palermo-Moda-Summer-Feels-Sneakers-Youth",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_model/global/400566/01/mod02/fnd/PNA/fmt/png/Palermo-Moda-Summer-Feels-Sneakers-Youth",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Palermo Moda Summer Feels Sneakers Youth, Alpine Snow-Lilac Frost, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400566/01/fnd/PNA/fmt/png/Palermo-Moda-Summer-Feels-Sneakers-Youth",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/400566/01/fnd/PNA/fmt/png/Palermo-Moda-Summer-Feels-Sneakers-Youth",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Palermo Moda Summer Feels Sneakers Youth, Alpine Snow-Lilac Frost, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400566/01/bv/fnd/PNA/fmt/png/Palermo-Moda-Summer-Feels-Sneakers-Youth",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/400566/01/bv/fnd/PNA/fmt/png/Palermo-Moda-Summer-Feels-Sneakers-Youth",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Palermo Moda Summer Feels Sneakers Youth, Alpine Snow-Lilac Frost, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400566/01/sv02/fnd/PNA/fmt/png/Palermo-Moda-Summer-Feels-Sneakers-Youth",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/400566/01/sv02/fnd/PNA/fmt/png/Palermo-Moda-Summer-Feels-Sneakers-Youth",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Palermo Moda Summer Feels Sneakers Youth, Alpine Snow-Lilac Frost, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400566/01/sv03/fnd/PNA/fmt/png/Palermo-Moda-Summer-Feels-Sneakers-Youth",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/400566/01/sv03/fnd/PNA/fmt/png/Palermo-Moda-Summer-Feels-Sneakers-Youth",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Palermo Moda Summer Feels Sneakers Youth, Alpine Snow-Lilac Frost, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400566/01/sv04/fnd/PNA/fmt/png/Palermo-Moda-Summer-Feels-Sneakers-Youth",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/400566/01/sv04/fnd/PNA/fmt/png/Palermo-Moda-Summer-Feels-Sneakers-Youth",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [
+          {
+            "id": "new",
+            "label": "New",
+            "__typename": "ProductBadge"
+          }
+        ],
+        "percentageDiscountBadge": 0,
+        "salePrice": 75,
+        "productPrice": {
+          "price": 75,
+          "salePrice": 75,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "Palermo Moda Summer Feels Sneakers Youth",
+        "id": "400566",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 1,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "Alpine Snow-Lilac Frost",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/400566/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Palermo Moda Summer Feels Sneakers Youth, Alpine Snow-Lilac Frost, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/400566/01/sv01/fnd/PNA/fmt/png/Palermo-Moda-Summer-Feels-Sneakers-Youth",
+          "verticalImageHref": null,
+          "alt": "Palermo Moda Summer Feels Sneakers Youth, Alpine Snow-Lilac Frost, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": false,
+        "__typename": "Product",
+        "brand": "Palermo",
+        "promotions": [],
+        "amountOfReviews": 0,
+        "averageRating": 0,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197673370438",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "12",
+      "masterId": "399384",
+      "variantProduct": {
+        "id": "399384_12",
+        "masterId": "399384",
+        "variantId": "197673370438",
+        "name": "GV Special Big Kids' Sneakers",
+        "header": "GV Special",
+        "subHeader": "Big Kids' Sneakers",
+        "price": 70,
+        "colorValue": "12",
+        "colorName": "Vivid Blue-PUMA White",
+        "ean": "4067983369940",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399384/12/sv01/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+        "images": [
+          {
+            "alt": "GV Special Big Kids' Sneakers, Vivid Blue-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399384/12/sv01/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399384/12/sv01/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Big Kids' Sneakers, Vivid Blue-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399384/12/mod01/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_model/global/399384/12/mod01/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Big Kids' Sneakers, Vivid Blue-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399384/12/mod02/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_model/global/399384/12/mod02/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Big Kids' Sneakers, Vivid Blue-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399384/12/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399384/12/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Big Kids' Sneakers, Vivid Blue-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399384/12/bv/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399384/12/bv/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Big Kids' Sneakers, Vivid Blue-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399384/12/sv02/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399384/12/sv02/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Big Kids' Sneakers, Vivid Blue-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399384/12/sv03/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399384/12/sv03/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Big Kids' Sneakers, Vivid Blue-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399384/12/sv04/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399384/12/sv04/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [
+          {
+            "id": "best-seller",
+            "label": "Best Seller",
+            "__typename": "ProductBadge"
+          }
+        ],
+        "percentageDiscountBadge": 0,
+        "salePrice": 70,
+        "productPrice": {
+          "price": 70,
+          "salePrice": 70,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "GV Special Big Kids' Sneakers",
+        "id": "399384",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 5,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "PUMA White-PUMA White",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/399384/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "GV Special Big Kids' Sneakers, PUMA White-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Black-PUMA Black",
+            "value": "02",
+            "image": {
+              "href": "https://images.puma.net/images/399384/02/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "GV Special Big Kids' Sneakers, PUMA Black-PUMA Black, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA White-PUMA Black",
+            "value": "03",
+            "image": {
+              "href": "https://images.puma.net/images/399384/03/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "GV Special Big Kids' Sneakers, PUMA White-PUMA Black, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Vivid Blue-PUMA White",
+            "value": "12",
+            "image": {
+              "href": "https://images.puma.net/images/399384/12/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "GV Special Big Kids' Sneakers, Vivid Blue-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA White-Pink Fruit",
+            "value": "13",
+            "image": {
+              "href": "https://images.puma.net/images/399384/13/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "GV Special Big Kids' Sneakers, PUMA White-Pink Fruit, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399384/12/sv01/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+          "verticalImageHref": null,
+          "alt": "GV Special Big Kids' Sneakers, Vivid Blue-PUMA White, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": false,
+        "__typename": "Product",
+        "brand": "GV Special",
+        "promotions": [],
+        "amountOfReviews": 3,
+        "averageRating": 5,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197673370506",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "13",
+      "masterId": "399384",
+      "variantProduct": {
+        "id": "399384_13",
+        "masterId": "399384",
+        "variantId": "197673370506",
+        "name": "GV Special Big Kids' Sneakers",
+        "header": "GV Special",
+        "subHeader": "Big Kids' Sneakers",
+        "price": 70,
+        "colorValue": "13",
+        "colorName": "PUMA White-Pink Fruit",
+        "ean": "4067983370014",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399384/13/sv01/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+        "images": [
+          {
+            "alt": "GV Special Big Kids' Sneakers, PUMA White-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399384/13/sv01/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399384/13/sv01/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Big Kids' Sneakers, PUMA White-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399384/13/mod01/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_model/global/399384/13/mod01/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Big Kids' Sneakers, PUMA White-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399384/13/mod02/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_model/global/399384/13/mod02/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Big Kids' Sneakers, PUMA White-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399384/13/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399384/13/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Big Kids' Sneakers, PUMA White-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399384/13/bv/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399384/13/bv/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Big Kids' Sneakers, PUMA White-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399384/13/sv02/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399384/13/sv02/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Big Kids' Sneakers, PUMA White-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399384/13/sv03/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399384/13/sv03/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Big Kids' Sneakers, PUMA White-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399384/13/sv04/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399384/13/sv04/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [
+          {
+            "id": "new",
+            "label": "New",
+            "__typename": "ProductBadge"
+          }
+        ],
+        "percentageDiscountBadge": 0,
+        "salePrice": 70,
+        "productPrice": {
+          "price": 70,
+          "salePrice": 70,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "GV Special Big Kids' Sneakers",
+        "id": "399384",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 5,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "PUMA White-PUMA White",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/399384/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "GV Special Big Kids' Sneakers, PUMA White-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Black-PUMA Black",
+            "value": "02",
+            "image": {
+              "href": "https://images.puma.net/images/399384/02/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "GV Special Big Kids' Sneakers, PUMA Black-PUMA Black, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA White-PUMA Black",
+            "value": "03",
+            "image": {
+              "href": "https://images.puma.net/images/399384/03/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "GV Special Big Kids' Sneakers, PUMA White-PUMA Black, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Vivid Blue-PUMA White",
+            "value": "12",
+            "image": {
+              "href": "https://images.puma.net/images/399384/12/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "GV Special Big Kids' Sneakers, Vivid Blue-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA White-Pink Fruit",
+            "value": "13",
+            "image": {
+              "href": "https://images.puma.net/images/399384/13/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "GV Special Big Kids' Sneakers, PUMA White-Pink Fruit, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399384/13/sv01/fnd/PNA/fmt/png/GV-Special-Big-Kids'-Sneakers",
+          "verticalImageHref": null,
+          "alt": "GV Special Big Kids' Sneakers, PUMA White-Pink Fruit, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": false,
+        "__typename": "Product",
+        "brand": "GV Special",
+        "promotions": [],
+        "amountOfReviews": 3,
+        "averageRating": 5,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197673370940",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "12",
+      "masterId": "399385",
+      "variantProduct": {
+        "id": "399385_12",
+        "masterId": "399385",
+        "variantId": "197673370940",
+        "name": "GV Special Little Kids' Sneakers",
+        "header": "GV Special",
+        "subHeader": "Little Kids' Alternate Closure Sneakers",
+        "price": 65,
+        "colorValue": "12",
+        "colorName": "Vivid Blue-PUMA White",
+        "ean": "4067983370458",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399385/12/sv01/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+        "images": [
+          {
+            "alt": "GV Special Little Kids' Sneakers, Vivid Blue-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399385/12/sv01/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399385/12/sv01/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Little Kids' Sneakers, Vivid Blue-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399385/12/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399385/12/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Little Kids' Sneakers, Vivid Blue-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399385/12/bv/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399385/12/bv/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Little Kids' Sneakers, Vivid Blue-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399385/12/sv02/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399385/12/sv02/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Little Kids' Sneakers, Vivid Blue-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399385/12/sv03/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399385/12/sv03/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Little Kids' Sneakers, Vivid Blue-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399385/12/sv04/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399385/12/sv04/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [
+          {
+            "id": "new",
+            "label": "New",
+            "__typename": "ProductBadge"
+          }
+        ],
+        "percentageDiscountBadge": 0,
+        "salePrice": 65,
+        "productPrice": {
+          "price": 65,
+          "salePrice": 65,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "GV Special Little Kids' Sneakers",
+        "id": "399385",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 5,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "PUMA White-PUMA White",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/399385/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "GV Special Little Kids' Sneakers, PUMA White-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Black-PUMA Black",
+            "value": "02",
+            "image": {
+              "href": "https://images.puma.net/images/399385/02/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "GV Special Little Kids' Sneakers, PUMA Black-PUMA Black, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA White-PUMA Black",
+            "value": "03",
+            "image": {
+              "href": "https://images.puma.net/images/399385/03/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "GV Special Little Kids' Sneakers, PUMA White-PUMA Black, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Vivid Blue-PUMA White",
+            "value": "12",
+            "image": {
+              "href": "https://images.puma.net/images/399385/12/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "GV Special Little Kids' Sneakers, Vivid Blue-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA White-Pink Fruit",
+            "value": "13",
+            "image": {
+              "href": "https://images.puma.net/images/399385/13/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "GV Special Little Kids' Sneakers, PUMA White-Pink Fruit, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399385/12/sv01/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+          "verticalImageHref": null,
+          "alt": "GV Special Little Kids' Sneakers, Vivid Blue-PUMA White, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": false,
+        "__typename": "Product",
+        "brand": "GV Special",
+        "promotions": [],
+        "amountOfReviews": 8,
+        "averageRating": 4.4,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197673371077",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "13",
+      "masterId": "399385",
+      "variantProduct": {
+        "id": "399385_13",
+        "masterId": "399385",
+        "variantId": "197673371077",
+        "name": "GV Special Little Kids' Sneakers",
+        "header": "GV Special",
+        "subHeader": "Little Kids' Alternate Closure Sneakers",
+        "price": 65,
+        "colorValue": "13",
+        "colorName": "PUMA White-Pink Fruit",
+        "ean": "4067983370588",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399385/13/sv01/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+        "images": [
+          {
+            "alt": "GV Special Little Kids' Sneakers, PUMA White-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399385/13/sv01/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399385/13/sv01/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Little Kids' Sneakers, PUMA White-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399385/13/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399385/13/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Little Kids' Sneakers, PUMA White-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399385/13/bv/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399385/13/bv/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Little Kids' Sneakers, PUMA White-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399385/13/sv02/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399385/13/sv02/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Little Kids' Sneakers, PUMA White-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399385/13/sv03/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399385/13/sv03/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "GV Special Little Kids' Sneakers, PUMA White-Pink Fruit, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399385/13/sv04/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399385/13/sv04/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [],
+        "percentageDiscountBadge": 0,
+        "salePrice": 65,
+        "productPrice": {
+          "price": 65,
+          "salePrice": 65,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "GV Special Little Kids' Sneakers",
+        "id": "399385",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 5,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "PUMA White-PUMA White",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/399385/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "GV Special Little Kids' Sneakers, PUMA White-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Black-PUMA Black",
+            "value": "02",
+            "image": {
+              "href": "https://images.puma.net/images/399385/02/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "GV Special Little Kids' Sneakers, PUMA Black-PUMA Black, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA White-PUMA Black",
+            "value": "03",
+            "image": {
+              "href": "https://images.puma.net/images/399385/03/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "GV Special Little Kids' Sneakers, PUMA White-PUMA Black, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "Vivid Blue-PUMA White",
+            "value": "12",
+            "image": {
+              "href": "https://images.puma.net/images/399385/12/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "GV Special Little Kids' Sneakers, Vivid Blue-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA White-Pink Fruit",
+            "value": "13",
+            "image": {
+              "href": "https://images.puma.net/images/399385/13/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "GV Special Little Kids' Sneakers, PUMA White-Pink Fruit, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399385/13/sv01/fnd/PNA/fmt/png/GV-Special-Little-Kids'-Sneakers",
+          "verticalImageHref": null,
+          "alt": "GV Special Little Kids' Sneakers, PUMA White-Pink Fruit, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": false,
+        "__typename": "Product",
+        "brand": "GV Special",
+        "promotions": [],
+        "amountOfReviews": 8,
+        "averageRating": 4.4,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197670833547",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "01",
+      "masterId": "399856",
+      "variantProduct": {
+        "id": "399856_01",
+        "masterId": "399856",
+        "variantId": "197670833547",
+        "name": "Suede Classic Toddlers' Sneakers",
+        "header": "Suede Classic",
+        "subHeader": "Toddlers' Sneakers",
+        "price": 65,
+        "colorValue": "01",
+        "colorName": "PUMA Black-PUMA White",
+        "ean": "4067979833455",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/01/sv01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+        "images": [
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/01/sv01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399856/01/sv01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399856/01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/01/bv/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399856/01/bv/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/01/sv02/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399856/01/sv02/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/01/sv03/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399856/01/sv03/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/01/sv04/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399856/01/sv04/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [
+          {
+            "id": "new",
+            "label": "New",
+            "__typename": "ProductBadge"
+          }
+        ],
+        "percentageDiscountBadge": 0,
+        "salePrice": 65,
+        "productPrice": {
+          "price": 65,
+          "salePrice": 65,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "Suede Classic Toddlers' Sneakers",
+        "id": "399856",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 3,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "PUMA Black-PUMA White",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/399856/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "For All Time Red-PUMA White",
+            "value": "02",
+            "image": {
+              "href": "https://images.puma.net/images/399856/02/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Toddlers' Sneakers, For All Time Red-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Black-PUMA Black",
+            "value": "04",
+            "image": {
+              "href": "https://images.puma.net/images/399856/04/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA Black, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/01/sv01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+          "verticalImageHref": null,
+          "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA White, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": true,
+        "__typename": "Product",
+        "brand": "Suede",
+        "promotions": [],
+        "amountOfReviews": 0,
+        "averageRating": 0,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197670833639",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "02",
+      "masterId": "399856",
+      "variantProduct": {
+        "id": "399856_02",
+        "masterId": "399856",
+        "variantId": "197670833639",
+        "name": "Suede Classic Toddlers' Sneakers",
+        "header": "Suede Classic",
+        "subHeader": "Toddlers' Sneakers",
+        "price": 65,
+        "colorValue": "02",
+        "colorName": "For All Time Red-PUMA White",
+        "ean": "4067979833547",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/02/sv01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+        "images": [
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, For All Time Red-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/02/sv01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399856/02/sv01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, For All Time Red-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/02/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399856/02/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, For All Time Red-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/02/bv/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399856/02/bv/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, For All Time Red-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/02/sv02/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399856/02/sv02/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, For All Time Red-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/02/sv03/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399856/02/sv03/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, For All Time Red-PUMA White, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/02/sv04/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399856/02/sv04/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [],
+        "percentageDiscountBadge": 0,
+        "salePrice": 65,
+        "productPrice": {
+          "price": 65,
+          "salePrice": 65,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "Suede Classic Toddlers' Sneakers",
+        "id": "399856",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 3,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "PUMA Black-PUMA White",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/399856/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "For All Time Red-PUMA White",
+            "value": "02",
+            "image": {
+              "href": "https://images.puma.net/images/399856/02/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Toddlers' Sneakers, For All Time Red-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Black-PUMA Black",
+            "value": "04",
+            "image": {
+              "href": "https://images.puma.net/images/399856/04/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA Black, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/02/sv01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+          "verticalImageHref": null,
+          "alt": "Suede Classic Toddlers' Sneakers, For All Time Red-PUMA White, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": true,
+        "__typename": "Product",
+        "brand": "Suede",
+        "promotions": [],
+        "amountOfReviews": 0,
+        "averageRating": 0,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
+    },
+    {
+      "__typename": "ProductSearchHit",
+      "id": "197670833905",
+      "categorySlug": "new-featured",
+      "subcategorySlug": "new-featured/new-arrivals/kids",
+      "color": "04",
+      "masterId": "399856",
+      "variantProduct": {
+        "id": "399856_04",
+        "masterId": "399856",
+        "variantId": "197670833905",
+        "name": "Suede Classic Toddlers' Sneakers",
+        "header": "Suede Classic",
+        "subHeader": "Toddlers' Sneakers",
+        "price": 65,
+        "colorValue": "04",
+        "colorName": "PUMA Black-PUMA Black",
+        "ean": "4067979833813",
+        "sizeGroups": [],
+        "preview": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/04/sv01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+        "images": [
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA Black, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/04/sv01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399856/04/sv01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA Black, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/04/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399856/04/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA Black, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/04/bv/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399856/04/bv/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA Black, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/04/sv02/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399856/04/sv02/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA Black, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/04/sv03/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399856/04/sv03/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          },
+          {
+            "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA Black, extralarge",
+            "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/04/sv04/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "verticalImageHref": "https://images.puma.com/image/upload/f_auto,q_auto,t_vertical_product/global/399856/04/sv04/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+            "__typename": "ProductImage"
+          }
+        ],
+        "__typename": "Variant",
+        "badges": [],
+        "percentageDiscountBadge": 0,
+        "salePrice": 65,
+        "productPrice": {
+          "price": 65,
+          "salePrice": 65,
+          "promotionPrice": null,
+          "isSalePriceElapsed": null,
+          "tax": 0,
+          "taxRate": 0,
+          "__typename": "ProductPrice"
+        },
+        "displayOutOfStock": null,
+        "orderable": true,
+        "promotions": [],
+        "isAppExclusive": false,
+        "appOnlyDateTimeFrom": null,
+        "appOnlyDateTimeTo": null
+      },
+      "masterProduct": {
+        "name": "Suede Classic Toddlers' Sneakers",
+        "id": "399856",
+        "header": null,
+        "subHeader": null,
+        "orderableColorCount": 3,
+        "displayOutOfStock": null,
+        "colors": [
+          {
+            "name": "PUMA Black-PUMA White",
+            "value": "01",
+            "image": {
+              "href": "https://images.puma.net/images/399856/01/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "For All Time Red-PUMA White",
+            "value": "02",
+            "image": {
+              "href": "https://images.puma.net/images/399856/02/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Toddlers' Sneakers, For All Time Red-PUMA White, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          },
+          {
+            "name": "PUMA Black-PUMA Black",
+            "value": "04",
+            "image": {
+              "href": "https://images.puma.net/images/399856/04/sv01/fnd/PNA/w/80/h/80/",
+              "verticalImageHref": null,
+              "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA Black, small",
+              "__typename": "ProductImage"
+            },
+            "__typename": "ProductColor"
+          }
+        ],
+        "image": {
+          "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399856/04/sv01/fnd/PNA/fmt/png/Suede-Classic-Toddlers'-Sneakers",
+          "verticalImageHref": null,
+          "alt": "Suede Classic Toddlers' Sneakers, PUMA Black-PUMA Black, extralarge",
+          "__typename": "ProductImage"
+        },
+        "showExploreCollectionCTA": true,
+        "__typename": "Product",
+        "brand": "Suede",
+        "promotions": [],
+        "amountOfReviews": 0,
+        "averageRating": 0,
+        "disableRatings": null,
+        "disableReviews": null,
+        "score": {
+          "rating": "",
+          "amount": "",
+          "__typename": "Score"
+        }
+      }
     }
   ]
 }
