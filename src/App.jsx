@@ -1,7 +1,7 @@
 import Main from "./components/Main";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Landing from "./Layout/Landing";
-import ProdByCategory from "./pages/prodByCategory";
+import ProdByCategory from "./pages/ProdByCategory";
 import { useEffect } from "react";
 import scrollToTop from "./utils/scrollToTop";
 
