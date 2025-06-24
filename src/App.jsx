@@ -4,6 +4,8 @@ import Landing from "./Layout/Landing";
 import ProdByCategory from "./pages/ProdByCategory";
 import { useEffect } from "react";
 import scrollToTop from "./utils/scrollToTop";
+import Detail from "./pages/Detail";
+import ProdBySubCategory from "./pages/ProdBySubCategory";
 
 function App() {
   const { pathname } = useLocation();
@@ -14,6 +16,8 @@ function App() {
         <Route path="/" element={<Landing />}>
           <Route path="/" element={<Main />} />
           <Route path="/categories/:slug/*" element={<ProdByCategory />} />
+          <Route path="/categories/:id" element={<ProdBySubCategory />} />
+          <Route path="/product/:id" element={<Detail />} />
         </Route>
       </Routes>
     </div>
