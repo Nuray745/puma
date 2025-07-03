@@ -15,14 +15,27 @@ async function getProductsById(id) {
     return {...res.data,count:1};
 };
 
-async function getProdBySubId(id, limit, page) {
-    const res = await axiosInstance.get(`/products/subcategory/${id}?limit=${limit}&page=${page}`)
-    return addCount(res.data)
-};
+async function getProductsByCategoryId(categoryId) {
+  const res = await axiosInstance.get(`/products?categoryId=${categoryId}`);
+  return res.data;
+}
+
+async function getProductsBySubId(subcategoryId) {
+  const res = await axiosInstance.get(`/products?subcategoryId=${subcategoryId}`);
+  return res.data;
+}
+
+async function getProductsByItemId(clidrenID) {
+  const res = await axiosInstance.get(`/products?clidrenID=${clidrenID}`);
+  return res.data;
+}
+
 
 export {
     getAllCategories,
     getAllProducts,
     getProductsById,
-    getProdBySubId
+    getProductsByCategoryId,
+    getProductsBySubId,
+    getProductsByItemId
 };

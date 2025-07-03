@@ -115,7 +115,7 @@ function Navbar({ theme = "dark" }) {
                   onMouseLeave={() => setHoveredIndex(null)}
                 >
                   <Link
-                    to={`/categories/${item.slug}`} 
+                    to={`/categories/${item.id}`} 
                     className={`relative py-1 border-b-2 transition-all text-white ${
                       hoveredIndex == index
                         ? "border-[#867454] opacity-100"
