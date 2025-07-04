@@ -45,9 +45,12 @@ const Card = ({
         </div>
         <p className="text-base text-[#676D75]">{subHeader}</p>
         <p className="text-base text-[#676D75]">{description}</p>
+
+        {/* Product Label */}
         {label?.text && (
           <span
-            className={`inline-block mt-2 px-4 py-1 ${labelBgColor} text-white text-xs font-bold rounded-xs`}
+            className={`mt-2 inline-flex px-4 py-1 ${labelBgColor} text-white text-xs font-bold rounded-xs`}
+            style={{ alignSelf: "flex-start" }} // Keeps the label aligned with content
           >
             {label.text}
           </span>

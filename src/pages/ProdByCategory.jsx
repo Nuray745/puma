@@ -7,41 +7,57 @@ import {
   getAllCategories,
 } from "../services/api"; // Import services
 import Card from "../components/Card"; // Adjust the path if necessary
+import FilterSidebar from "../components/FilterSidebar";
 
 function ProdByCategory() {
   const { id } = useParams(); // Get dynamic 'id' from the URL
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([]); // Store filtered and sorted products
+  const [allProducts, setAllProducts] = useState([]); // Store original data (before filtering and sorting)
   const [count, setCount] = useState(8);
   const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null); // For error handling
+  const [error, setError] = useState(null);
   const [isTwoColumns, setIsTwoColumns] = useState(false); // State for grid layout
   const [categories, setCategories] = useState([]);
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false); // State for dropdown visibility
+  const [sortOption, setSortOption] = useState("Sort By"); // Default sorting option
+  const [filterOption, setFilterOption] = useState(""); // Current filter option ("new", "best")
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false); // Sidebar state
 
+  // Reset state when the 'id' changes
+  // Reset state when the 'id' changes
+  useEffect(() => {
+    setSortOption("Sort By"); // Reset to default sort option when 'id' changes
+    setCount(8); // Reset the number of products to be displayed
+    setProducts([]); // Clear products before fetching new ones
+    setAllProducts([]); // Clear all products before fetching new ones
+  }, [id]);
+
+  // Fetch products based on category, subcategory or item
   useEffect(() => {
     async function fetchProducts() {
       setIsLoading(true);
-      setError(null); // Reset error state before each fetch attempt
+      setError(null);
 
       try {
-        // First, try fetching by categoryId
         let categoryData = await getProductsByCategoryId(id);
         if (categoryData?.length > 0) {
-          setProducts(categoryData);
+          setAllProducts(categoryData); // Set original data
+          setProducts(categoryData); // Set products to display
           setIsLoading(false);
           return;
         }
 
-        // Second, if categoryData is not found, try fetching by subcategoryId
         let subData = await getProductsBySubId(id);
         if (subData?.length > 0) {
+          setAllProducts(subData);
           setProducts(subData);
           setIsLoading(false);
           return;
         }
 
-        // Finally, if no category or subcategory is found, try fetching by itemId
         let itemData = await getProductsByItemId(id);
         if (itemData?.length > 0) {
+          setAllProducts(itemData);
           setProducts(itemData);
           setIsLoading(false);
           return;
@@ -56,71 +72,109 @@ function ProdByCategory() {
     }
 
     fetchProducts();
-  }, [id]); // Re-run the effect when 'id' changes (based on URL)
+  }, [id]);
 
+  // Apply selected filter when filterOption or sortOption changes
   useEffect(() => {
-    async function fetchCategories() {
-      setIsLoading(true); // Set loading true while fetching data
-      setError(null); // Reset any previous error state
+    sortAndFilterProducts(sortOption, filterOption); // Apply both sort and filter together
+  }, [filterOption, sortOption, allProducts]);
 
-      try {
-        const data = await getAllCategories(); // Fetch all categories
-        const filteredCategory = data.filter(
-          (category) => category.id === parseInt(id)
-        ); // Filter data based on the `id`
-        setCategories(filteredCategory); // Set the filtered data to the state
-        setIsLoading(false); // Set loading to false after data is fetched
-      } catch (err) {
-        setError("An error occurred while fetching categories.");
-        setIsLoading(false); // Set loading to false if an error occurs
+  // Toggle the visibility of the sort dropdown
+  const toggleDropdown = () => {
+    setIsDropdownVisible(!isDropdownVisible);
+  };
+
+  // Handle the selected sort or filter option
+  const handleDropdownSelection = (option) => {
+    if (option === "new" || option === "best") {
+      setFilterOption(option); // Update filter option
+    } else {
+      setSortOption(option); // Update sort option
+    }
+    setIsDropdownVisible(false); // Close dropdown after selection
+  };
+
+  // Apply the selected filter to the products
+  // Sort and filter products at the same time
+  const sortAndFilterProducts = (sortOption, filterOption) => {
+    let sortedProducts = [...allProducts]; // Work on the full product list (before filtering)
+
+    // Sorting logic based on the option selected
+    if (sortOption === "Price Low to High") {
+      sortedProducts.sort(
+        (a, b) => a.variations?.[0]?.price - b.variations?.[0]?.price
+      );
+    } else if (sortOption === "Price High to Low") {
+      sortedProducts.sort(
+        (a, b) => b.variations?.[0]?.price - a.variations?.[0]?.price
+      );
+    }
+
+    // Apply the selected filter (if any)
+    if (filterOption) {
+      if (filterOption === "new") {
+        sortedProducts = sortedProducts.filter(
+          (product) => product.badge?.toLowerCase() === "new"
+        );
+      } else if (filterOption === "best") {
+        sortedProducts = sortedProducts.filter(
+          (product) => product.badge?.toLowerCase() === "best"
+        );
       }
     }
 
-    fetchCategories(); // Call the function to fetch data
-  }, [id]); // Run this effect whenever `id` changes
+    // Update the products after sorting and filtering
+    setProducts(sortedProducts);
+  };
+
+  // Open sidebar
+  const openSidebar = () => {
+    setIsSidebarOpen(true); // Open the sidebar
+  };
+
+  // Close sidebar
+  const closeSidebar = () => {
+    setIsSidebarOpen(false); // Close the sidebar
+  };
 
   return (
-    <div>
+    <div className="relative">
+      {/* Categories and Title Section */}
+      {isSidebarOpen && <FilterSidebar closeSidebar={closeSidebar} />}
+
       <div className="border-b border-[#e5e7ea] py-8 px-8">
         <div>
           <div className="flex items-center gap-3 text-base text-[#191919]">
             <div className="font-bold">Home</div>
             <div className="w-1 h-1 mt-1 rounded-full bg-[#8C9198]"></div>
-
-            {/* Display the category name */}
-            <div className="font-semibold">
-              {categories.length > 0
-                ? categories.find((item) => item.id === parseInt(id))
-                    ?.categoryName || "Category Name Not Available"
-                : "Home"}
-            </div>
-
-            {/* Display the subcategory name if available */}
+            <div className="font-semibold">Nese</div>
             {categories.length > 0 && (
               <div className="w-1 h-1 mt-1 rounded-full bg-[#8C9198]"></div>
             )}
             {categories.length > 0 &&
-              categories
-                .find((item) => item.id === parseInt(id))
-                ?.subcategory?.find((sub) => sub.id === parseInt(id))
+              categories[0]?.subcategory?.find((sub) => sub.id === parseInt(id))
                 ?.categoryName}
           </div>
 
-          {/* Display the selected category and subcategory names */}
           <div className="text-[32px] uppercase font-bold mt-8">
             {categories.length > 0 &&
-            categories.find((item) => item.id === parseInt(id))
-              ? categories
-                  .find((item) => item.id === parseInt(id))
-                  .subcategory?.find((sub) => sub.id === parseInt(id))
-                  ?.categoryName || "New Arrivals"
-              : "New Arrivals"}
+              (categories[0]?.subcategory?.find(
+                (sub) => sub.id === parseInt(id)
+              )
+                ? categories[0]?.subcategory?.find(
+                    (sub) => sub.id === parseInt(id)
+                  )?.categoryName
+                : categories[0]?.header)}
           </div>
         </div>
       </div>
 
+      {/* Filters and Sort By Section */}
       <div className="flex justify-between items-center mb-4 px-8 py-5 border-b border-[#e5e7ea]">
-        <button className="flex items-center bg-white text-black py-2 px-5 rounded-[2px] font-bold uppercase border border-[#A1A8AF] hover:border-black cursor-pointer">
+        <button
+          onClick={openSidebar} // Open sidebar on button click
+          className="focus:border-black focus:ring-0 focus:outline-none focus:shadow-[0px_0px_0px_2.5px_#777777] active:border-black active:shadow-none transition-all ease-out duration-300 flex items-center bg-white text-black py-2 px-5 rounded-[2px] font-bold uppercase border border-[#A1A8AF] hover:border-black cursor-pointer"
+        >
           Filters
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -131,19 +185,60 @@ function ProdByCategory() {
             <path d="M6 4h2v6H6V8H3V6h3V4ZM10 8V6h11v2H10ZM14 14h2v6h-2v-2H3v-2h11v-2ZM18 18v-2h3v2h-3Z" />
           </svg>
         </button>
-        <button className="flex items-center bg-white text-black py-2 px-3 rounded-[2px] font-bold uppercase border border-[#A1A8AF] hover:border-black cursor-pointer">
-          Sort By
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            className="ml-2 w-5 h-5"
+
+        {/* Sort By and Filter Button with Dropdown */}
+        <div className="relative">
+          <button
+            onClick={toggleDropdown} // Toggle dropdown visibility on button click
+            className="focus:border-black focus:ring-0 focus:outline-none focus:shadow-[0px_0px_0px_2.5px_#777777] active:border-black active:shadow-none transition-all ease-out duration-300 flex items-center bg-white text-black py-2 px-5 rounded-[2px] font-bold uppercase border border-[#A1A8AF] hover:border-black cursor-pointer"
           >
-            <path fill="transparent" d="M0 0h24v24H0z" />
-            <path d="m18 9-6 6-6-6" stroke="currentColor" strokeWidth="2" />
-          </svg>
-        </button>
+            {sortOption} {/* Display the current sort option here */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              className="ml-2 w-5 h-5"
+            >
+              <path fill="transparent" d="M0 0h24v24H0z" />
+              <path d="m18 9-6 6-6-6" stroke="currentColor" strokeWidth="2" />
+            </svg>
+          </button>
+
+          {isDropdownVisible && (
+            <div className="absolute text-xs bg-white border border-gray-200 shadow-lg mt-1 py-2 px-2 w-full rounded-md z-10">
+              <ul>
+                {/* Filter and Sort Options */}
+                <li
+                  onClick={() => handleDropdownSelection("new")}
+                  className="cursor-pointer hover:bg-gray-100 px-2 py-1"
+                >
+                  New
+                </li>
+                <li
+                  onClick={() => handleDropdownSelection("best")}
+                  className="cursor-pointer hover:bg-gray-100 px-2 py-1"
+                >
+                  Best Sellers
+                </li>
+                <li
+                  onClick={() => handleDropdownSelection("Price Low to High")}
+                  className="cursor-pointer hover:bg-gray-100 px-2 py-1"
+                >
+                  Price Low to High
+                </li>
+                <li
+                  onClick={() => handleDropdownSelection("Price High to Low")}
+                  className="cursor-pointer hover:bg-gray-100 px-2 py-1"
+                >
+                  Price High to Low
+                </li>
+              </ul>
+            </div>
+          )}
+        </div>
       </div>
+
+      {/* Products Section */}
       <div className="px-4 mx-auto">
         {isLoading ? (
           <p className="text-center my-5">Loading...</p>
@@ -159,11 +254,14 @@ function ProdByCategory() {
               <div className="text-[20px] text-[#191919] font-bold">
                 {products.length} <span className="uppercase">Products</span>
               </div>
+
               <div className="flex items-center gap-2">
+                {/* Toggle Grid Layout */}
                 <div
                   onClick={() => setIsTwoColumns(true)}
                   className={`cursor-pointer ${isTwoColumns && "border"}`}
                 >
+                  {/* Grid icon for two-column view */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 32 32"
@@ -178,10 +276,13 @@ function ProdByCategory() {
                     />
                   </svg>
                 </div>
+
+                {/* Toggle Grid Layout */}
                 <div
                   onClick={() => setIsTwoColumns(false)}
                   className={`cursor-pointer ${!isTwoColumns && "border"}`}
                 >
+                  {/* Grid icon for four-column view */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 32 32"
@@ -196,38 +297,34 @@ function ProdByCategory() {
                 </div>
               </div>
             </div>
+
             <div
               className={`grid ${
                 isTwoColumns ? "grid-cols-2" : "grid-cols-4"
               } gap-4 p-4`}
             >
-              {products.slice(0, count).map((product, i) => {
-                return (
-                  <Card
-                    key={`${product.id}-${i}`} // Ensuring unique keys by combining product id and index
-                    image={
-                      product.variations?.[0]?.preview || "default-image-url"
-                    } // Default image if unavailable
-                    name={product.name || "No Name"}
-                    subHeader={product.subHeader || "No Subheader"}
-                    price={product.variations?.[0]?.productPrice?.price}
-                    label={
-                      product.badge && {
-                        text: product.variations?.[0]?.badges?.[0]?.label || "",
-                        color:
-                          product.variations?.[0]?.badges?.[0]?.id === "new"
-                            ? "black"
-                            : product.variations?.[0]?.badges?.[0]?.id ===
-                              "blue"
-                            ? "blue"
-                            : "",
-                      }
-                    }
-                    colorCount={product.colors?.length || 0}
-                    isAvailable={product.variations?.[0]?.orderable}
-                  />
-                );
-              })}
+              {products.slice(0, count).map((product, i) => (
+                <Card
+                  key={`${product.id}-${i}`}
+                  image={
+                    product.variations?.[0]?.preview || "default-image-url"
+                  }
+                  name={product.name || "No Name"}
+                  subHeader={product.subHeader || "No Subheader"}
+                  price={product.variations?.[0]?.productPrice?.price}
+                  label={{
+                    text: product.variations?.[0]?.badges?.[0]?.label || "",
+                    color:
+                      product.variations?.[0]?.badges?.[0]?.id === "new"
+                        ? "black"
+                        : product.variations?.[0]?.badges?.[0]?.id === "best"
+                        ? "blue"
+                        : "",
+                  }}
+                  colorCount={product.colors?.length || 0}
+                  isAvailable={product.variations?.[0]?.orderable}
+                />
+              ))}
             </div>
 
             {/* Load More Button */}
