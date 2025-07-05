@@ -140,7 +140,18 @@ function ProdByCategory() {
   return (
     <div className="relative">
       {/* Categories and Title Section */}
-      {isSidebarOpen && <FilterSidebar closeSidebar={closeSidebar} />}
+      {isSidebarOpen && (
+        <div>
+          {/* Overlay */}
+          <div
+            onClick={closeSidebar}
+            className="fixed inset-0 bg-black opacity-30 z-70"
+          />
+
+          {/* Sidebar */}
+          <FilterSidebar closeSidebar={closeSidebar} />
+        </div>
+      )}
 
       <div className="border-b border-[#e5e7ea] py-8 px-8">
         <div>

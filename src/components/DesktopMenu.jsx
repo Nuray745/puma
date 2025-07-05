@@ -9,7 +9,7 @@ function DesktopMenu({ categories, hoveredIndex, setHoveredIndex }) {
       onMouseLeave={() => setHoveredIndex(null)}
     >
       <div className="max-w-[1600px] mx-auto px-10 py-12 flex gap-8 font-ff-din">
-        {/* QuickLinks */}
+        {/* Quick Links */}
         {categories[hoveredIndex]?.quickLinks?.length > 0 && (
           <div className="w-1/5 min-w-48 flex flex-col space-y-1 text-lg">
             {categories[hoveredIndex].quickLinks.map((link, i) => (
@@ -27,7 +27,7 @@ function DesktopMenu({ categories, hoveredIndex, setHoveredIndex }) {
         {/* Subcategories */}
         {categories[hoveredIndex]?.subcategory?.map((group, i) => (
           <div key={i} className="w-1/5 min-w-[9.6rem] pr-5">
-            <Link to={`/categories/${group.id}`}> 
+            <Link to={`/categories/subcategory/${group.id}`}>
               <h4 className="cursor-pointer font-bold text-lg mb-2 border-b-2 pb-1">
                 <span className="text-[#181818] hover:text-[#867454]">
                   {group.categoryName}
@@ -35,11 +35,10 @@ function DesktopMenu({ categories, hoveredIndex, setHoveredIndex }) {
               </h4>
             </Link>
 
-            {/* Əgər group.children varsa */}
             {group.children?.map((item, j) =>
               item.children ? (
                 <div key={j} className="mb-4">
-                  <Link to={`/categories/${item.id}`}>
+                  <Link to={`/categories/${group.id}/item/${item.id}`}>
                     <h5 className="font-bold cursor-pointer text-[#6C6C6C] hover:text-[#181818] text-base mb-1">
                       {item.categoryName}
                     </h5>
@@ -47,7 +46,7 @@ function DesktopMenu({ categories, hoveredIndex, setHoveredIndex }) {
                   {item.children.map((child, k) => (
                     <Link
                       key={k}
-                      to={`/categories/${child.id}`}
+                      to={`/categories/${item.id}/item/${child.id}`}
                       className="block text-[#6C6C6C] hover:text-[#181818] text-base px-6 py-1/2"
                     >
                       {child.categoryName}
@@ -57,7 +56,7 @@ function DesktopMenu({ categories, hoveredIndex, setHoveredIndex }) {
               ) : (
                 <Link
                   key={j}
-                  to={`/categories/${item.id}`} 
+                  to={`/categories/${group.id}/item/${item.id}`}
                   className="block text-[#6C6C6C] hover:text-[#181818] text-base py-1/2"
                 >
                   {item.categoryName}
