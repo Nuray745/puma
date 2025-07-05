@@ -98,9 +98,9 @@ function ProdBySubId() {
           <FilterSidebar closeSidebar={closeSidebar} />
         </>
       )}
-      <div className="border-b border-[#e5e7ea] py-8 px-8">
+      <div className="border-b border-[#e5e7ea] py-4 tablet:py-8 px-2 tablet:px-4 desktop:px-8">
         <div>
-          <div className="flex items-center gap-3 text-base text-[#191919]">
+          <div className="flex items-center gap-2 tablet:gap-3 text-xs tablet:text-base text-[#191919]">
             <div className="font-bold">Home</div>
             <div className="w-1 h-1 mt-1 rounded-full bg-[#8C9198]"></div>
             <div className="font-semibold"></div>
@@ -111,7 +111,7 @@ function ProdBySubId() {
             }
           </div>
 
-          <div className="text-[32px] uppercase font-bold mt-8">
+          <div className="text-[24px] tablet:text-[32px] uppercase font-bold mt-4 tablet:mt-8">
             {
               categories
                 .flatMap((cat) => cat.subcategory)
@@ -121,7 +121,7 @@ function ProdBySubId() {
         </div>
       </div>
 
-      <div className="flex justify-between items-center mb-4 px-8 py-5 border-b border-[#e5e7ea]">
+      <div className="flex justify-between items-center mb-4 px-2 tablet:px-4 desktop:px-8 py-3 tablet:py-5 border-b border-[#e5e7ea]">
         <button
           onClick={openSidebar}
           className="focus:border-black focus:ring-0 focus:outline-none focus:shadow-[0px_0px_0px_2.5px_#777777] active:border-black active:shadow-none transition-all ease-out duration-300 flex items-center bg-white text-black py-2 px-5 rounded-[2px] font-bold uppercase border border-[#A1A8AF] hover:border-black cursor-pointer"
@@ -187,7 +187,7 @@ function ProdBySubId() {
         </div>
       </div>
 
-      <div className="flex items-center justify-between px-8 py-5">
+      <div className="flex items-center justify-between px-2 tablet:px-4 desktop:px-8 py-3 tablet:py-5">
         <div className="text-[20px] text-[#191919] font-bold">
           {products.length} <span className="uppercase">Products</span>
         </div>
@@ -232,11 +232,11 @@ function ProdBySubId() {
       </div>
 
       <div
-        className={`grid grid-cols-1 ${
+        className={`grid  ${
           isTwoColumns
-            ? "tablet:grid-cols-2"
-            : "tablet:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
-        } gap-4 py-4 px-8`}
+            ? "grid-cols-1 tablet:grid-cols-2"
+            : "grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        } gap-4 py-4 px-2 tablet:px-4 desktop:px-8`}
       >
         {products.length > 0 &&
           products.slice(0, count).map((product, i) => {
@@ -268,7 +268,7 @@ function ProdBySubId() {
           })}
       </div>
 
-      <div className="px-8">
+      <div className="px-2 tablet:px-4 desktop:px-8">
         {count < products.length && (
           <button
             onClick={() => setCount(count + 8)}
