@@ -10,7 +10,7 @@ async function getAllProducts() {
     return res.data;
 };
 
-async function getProductsById(id) {
+async function getProductById(id) {
     const res = await axiosInstance.get(`/products/${id}`);
     return {...res.data,count:1};
 };
@@ -34,7 +34,7 @@ async function getProductsByItemId(clidrenID) {
 export {
     getAllCategories,
     getAllProducts,
-    getProductsById,
+    getProductById,
     getProductsByCategoryId,
     getProductsBySubId,
     getProductsByItemId

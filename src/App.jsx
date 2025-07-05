@@ -5,6 +5,7 @@ import Landing from "./Layout/Landing";
 import ProdById from "./pages/ProdById";
 import ProdBySubId from "./pages/ProdBySubId";
 import ProdByItemId from "./pages/ProdByItemId";
+import Detail from "./pages/Detail";
 import { useEffect } from "react";
 import scrollToTop from "./utils/scrollToTop";
 
@@ -23,6 +24,7 @@ function App() {
             path="/categories/:categoryId/item/:itemId"
             element={<ProdByItemId />}
           />
+          <Route path="/product/:id" element={<Detail />} />
         </Route>
       </Routes>
     </div>

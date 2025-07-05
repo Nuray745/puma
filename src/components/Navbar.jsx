@@ -30,26 +30,46 @@ function Navbar({ theme = "dark" }) {
             {isBelow1100 && (
               <button
                 aria-label="Menu"
-                className="cursor-pointer"
+                className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${
+                  isDark ? "hover:bg-[#404040]" : "hover:bg-[#3B404733]"
+                }`}
                 onClick={() => setIsOpen(!isOpen)}
               >
-                <svg
-                  className="w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  id="icon"
-                >
-                  <path fill="transparent" d="M0 0h24v24H0z" />
-                  <path
-                    d="M2 7V5h20v2H2Zm0 6h20v-2H2v2Zm0 6h20v-2H2v2Z"
-                    fill="currentColor"
-                  />
-                </svg>
+                {isOpen ? (
+                  <svg
+                    className="w-6 h-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    id="icon"
+                  >
+                    <path fill="transparent" d="M0 0h24v24H0z" />
+                    <path
+                      d="m10.586 12-5.293 5.293 1.414 1.414L12 13.414l5.293 5.293 1.414-1.414L13.414 12l5.293-5.293-1.414-1.414L12 10.586 6.707 5.293 5.293 6.707 10.586 12Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    className="w-6 h-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    id="icon"
+                  >
+                    <path fill="transparent" d="M0 0h24v24H0z" />
+                    <path
+                      d="M2 7V5h20v2H2Zm0 6h20v-2H2v2Zm0 6h20v-2H2v2Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                )}
               </button>
             )}
 
-            {isOpen && <MobileMenu />}
+            {isOpen && (
+              <MobileMenu categories={categories} setIsOpen={setIsOpen} />
+            )}
 
             {/* Axtarış - yalnız 1100px aşağıda sola qoyulur */}
             {isBelow1100 && (
@@ -115,7 +135,7 @@ function Navbar({ theme = "dark" }) {
                   onMouseLeave={() => setHoveredIndex(null)}
                 >
                   <Link
-                    to={`/categories/${item.id}`} 
+                    to={`/categories/${item.id}`}
                     className={`relative py-1 border-b-2 transition-all text-white ${
                       hoveredIndex == index
                         ? "border-[#867454] opacity-100"
