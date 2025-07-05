@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { getAllCategories, getProductsBySubId } from "../services/api"; // Assuming you have an API function for this
 import Card from "../components/Card"; // Adjust the path if necessary
@@ -101,14 +102,17 @@ function ProdBySubId() {
       <div className="border-b border-[#e5e7ea] py-4 tablet:py-8 px-2 tablet:px-4 desktop:px-8">
         <div>
           <div className="flex items-center gap-2 tablet:gap-3 text-xs tablet:text-base text-[#191919]">
-            <div className="font-bold">Home</div>
+            <Link to="/" className="font-bold hover:text-[#867454] transition">
+              Home
+            </Link>
             <div className="w-1 h-1 mt-1 rounded-full bg-[#8C9198]"></div>
-            <div className="font-semibold"></div>
-            {
-              categories
-                .flatMap((cat) => cat.subcategory)
-                .find((sub) => sub.id == id)?.categoryName
-            }
+            <div className="font-normal">
+              {
+                categories
+                  .flatMap((cat) => cat.subcategory)
+                  .find((sub) => sub.id == id)?.categoryName
+              }
+            </div>
           </div>
 
           <div className="text-[24px] tablet:text-[32px] uppercase font-bold mt-4 tablet:mt-8">

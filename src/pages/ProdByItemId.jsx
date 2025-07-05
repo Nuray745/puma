@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { getAllCategories, getProductsByItemId } from "../services/api";
 import Card from "../components/Card";
 import FilterSidebar from "../components/FilterSidebar";
 
 function ProdByItemId() {
-  const {categoryId, itemId } = useParams();
+  const { categoryId, itemId } = useParams();
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
   const [allProducts, setAllProducts] = useState([]);
@@ -100,15 +101,20 @@ function ProdByItemId() {
       <div className="border-b border-[#e5e7ea] py-4 tablet:py-8 px-2 tablet:px-4 desktop:px-8">
         <div>
           <div className="flex items-center gap-2 tablet:gap-3 text-xs tablet:text-base text-[#191919]">
-            <div className="font-bold">Home</div>
+            <Link to="/" className="font-bold hover:text-[#867454] transition">
+              Home
+            </Link>
             <div className="w-1 h-1 mt-1 rounded-full bg-[#8C9198]"></div>
-            <div className="font-semibold">
+            <Link
+              to={`/categories/subcategory/${categoryId}`}
+              className="font-semibold hover:text-[#867454] transition"
+            >
               {
                 categories
                   .flatMap((cat) => cat.subcategory)
                   .find((sub) => sub.id == categoryId)?.categoryName
               }
-            </div>
+            </Link>
             <div className="w-1 h-1 mt-1 rounded-full bg-[#8C9198]"></div>
             {
               categories
