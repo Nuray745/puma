@@ -5,8 +5,9 @@ import DesktopMenu from "./DesktopMenu";
 import { getAllCategories } from "../services/api";
 import MobileMenu from "./MobileMenu";
 
-function Navbar({ theme = "dark" }) {
+function Navbar({ theme = "dark", open = "false" }) {
   const isDark = theme === "dark";
+  const isMenuOpen = open === "false";
   const isBelow1100 = useMatchMedia("(max-width: 1099px)");
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [categories, setCategories] = useState([]);
@@ -16,6 +17,15 @@ function Navbar({ theme = "dark" }) {
   useEffect(() => {
     getAllCategories().then((data) => setCategories(data));
   }, []);
+
+  const toggleMobileMenu = () => {
+    setIsOpen((prev) => !prev);
+  };
+  
+  useEffect(() => {
+    console.log("isOpen dəyişdi:", isOpen);
+  }, [isOpen]);
+
   return (
     <div
       className={`sticky top-0 z-50 ${
@@ -30,14 +40,14 @@ function Navbar({ theme = "dark" }) {
             {isBelow1100 && (
               <button
                 aria-label="Menu"
+                onClick={toggleMobileMenu} // yalnız burada
                 className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${
                   isDark ? "hover:bg-[#404040]" : "hover:bg-[#3B404733]"
                 }`}
-                onClick={() => setIsOpen(!isOpen)}
               >
-                {isOpen ? (
+                {!isMenuOpen ? (
                   <svg
-                    className="w-6 h-6"
+                    className="w-6 h-6 pointer-events-none"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="none"
@@ -51,7 +61,7 @@ function Navbar({ theme = "dark" }) {
                   </svg>
                 ) : (
                   <svg
-                    className="w-6 h-6"
+                    className="w-6 h-6 pointer-events-none"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="none"
@@ -67,9 +77,7 @@ function Navbar({ theme = "dark" }) {
               </button>
             )}
 
-            {isOpen && (
-              <MobileMenu categories={categories} setIsOpen={setIsOpen} />
-            )}
+            {isOpen && <MobileMenu categories={categories} />}
 
             {/* Axtarış - yalnız 1100px aşağıda sola qoyulur */}
             {isBelow1100 && (
@@ -106,7 +114,7 @@ function Navbar({ theme = "dark" }) {
               isBelow1100 ? "absolute left-1/2 -translate-x-1/2" : ""
             }`}
           >
-            <Link to="/">
+            <Link to="/" onClick={() => setIsOpen(false)}>
               <svg
                 className={` ${
                   isBelow1100 ? "w-10 h-10" : "w-8 h-8"

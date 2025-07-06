@@ -101,9 +101,24 @@ function ProdBySubId() {
       )}
       <div className="border-b border-[#e5e7ea] py-4 tablet:py-8 px-2 tablet:px-4 desktop:px-8">
         <div>
-          <div className="flex items-center gap-2 tablet:gap-3 text-xs tablet:text-base text-[#191919]">
+          <div className="flex flex-wrap items-center gap-2 tablet:gap-3 text-xs tablet:text-base text-[#191919]">
             <Link to="/" className="font-bold hover:text-[#867454] transition">
               Home
+            </Link>
+            <div className="w-1 h-1 mt-1 rounded-full bg-[#8C9198]"></div>
+            <Link
+              to={`/categories/${
+                categories.find((cat) =>
+                  cat.subcategory.some((sub) => sub.id == id)
+                )?.id
+              }`}
+              className="font-semibold hover:text-[#867454] transition"
+            >
+              {
+                categories.find((cat) =>
+                  cat.subcategory.some((sub) => sub.id == id)
+                )?.categoryName
+              }
             </Link>
             <div className="w-1 h-1 mt-1 rounded-full bg-[#8C9198]"></div>
             <div className="font-normal">
