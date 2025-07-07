@@ -45,7 +45,7 @@ const Card = ({
         </div>
         <p className="text-[14px] tablet:text-base text-[#676D75]">{subHeader}</p>
         <p className="text-[14px] tablet:text-base text-[#676D75]">{description}</p>
-        <span className="text-[14px] tablet:text-base font-bold text-[#191919]">
+        <span className="hidden text-[14px] tablet:text-base font-bold text-[#191919]">
             ${parseFloat(price).toFixed(2) || "N/A"}
           </span>
 

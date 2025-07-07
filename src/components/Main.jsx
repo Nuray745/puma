@@ -8,7 +8,7 @@ import {
   trending4,
 } from "../assets";
 import { useMatchMedia } from "../hooks/use-matchwidth";
-import MainSlider from "./MainSlider";
+import Slider from "./Slider";
 
 function Main() {
   const sections = [
@@ -332,7 +332,8 @@ function Main() {
         </div>
       </section>
       <div className="my-10 pb-8 mobile:px-4 tablet:px-6 desktop:px-8">
-        <MainSlider />
+        <div className="uppercase text-[24px] text-[#191919] pb-4 font-bold">Newest Products</div>
+        <Slider data="new" />
       </div>
     </div>
   );

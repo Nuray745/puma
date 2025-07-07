@@ -6,12 +6,12 @@ import Navbar from '../components/Navbar'
 
 function Landing() {
   return (
- <>
+ <div className='font-ff-din'>
    <Header/>
    <Navbar />
    <Outlet/>
    <Footer/>
- </>
+ </div>
   )
 }
 
