@@ -4,6 +4,7 @@ import { useMatchMedia } from "../hooks/use-matchwidth";
 import DesktopMenu from "./DesktopMenu";
 import { getAllCategories } from "../services/api";
 import MobileMenu from "./MobileMenu";
+import SearchDetails from "./SearchDetails";
 
 function Navbar({ theme = "dark", open = "false" }) {
   const isDark = theme === "dark";
@@ -18,10 +19,6 @@ function Navbar({ theme = "dark", open = "false" }) {
     getAllCategories().then((data) => setCategories(data));
   }, []);
 
-  const toggleMobileMenu = () => {
-    setIsOpen((prev) => !prev);
-  };
-  
   useEffect(() => {
     console.log("isOpen dəyişdi:", isOpen);
   }, [isOpen]);
@@ -40,7 +37,7 @@ function Navbar({ theme = "dark", open = "false" }) {
             {isBelow1100 && (
               <button
                 aria-label="Menu"
-                onClick={toggleMobileMenu} // yalnız burada
+                onClick={() => setIsOpen(true)}
                 className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${
                   isDark ? "hover:bg-[#404040]" : "hover:bg-[#3B404733]"
                 }`}
@@ -77,7 +74,7 @@ function Navbar({ theme = "dark", open = "false" }) {
               </button>
             )}
 
-            {isOpen && <MobileMenu categories={categories} />}
+            {isOpen && <MobileMenu setIsOpen={setIsOpen} categories={categories} />}
 
             {/* Axtarış - yalnız 1100px aşağıda sola qoyulur */}
             {isBelow1100 && (
@@ -253,53 +250,7 @@ function Navbar({ theme = "dark", open = "false" }) {
                 </div>
               </div>
               {isSearchOpen && (
-                <div className="fixed inset-0 bg-white text-black z-[9999] font-ff-din">
-                  <div className="flex items-center gap-20 p-10">
-                    {/* SEARCH BOX */}
-                    <div className="relative w-full max-w-[1296px] flex items-center border border-gray-400 rounded overflow-hidden">
-                      <input
-                        type="text"
-                        placeholder="SEARCH PUMA.COM"
-                        className="w-full px-4 py-3 text-lg outline-none"
-                        autoFocus
-                      />
-                      {/* Search icon */}
-                      <button
-                        aria-label="Search"
-                        className="flex items-center justify-center"
-                      >
-                        <svg
-                          className="w-6 h-6"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          id="icon"
-                        >
-                          <path fill="transparent" d="M0 0h24v24H0z" />
-                          <path
-                            d="m19 19-4-4"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                          />
-                          <circle
-                            cx="11"
-                            cy="11"
-                            r="6"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                    {/* X close icon */}
-                    <button
-                      onClick={() => setIsSearchOpen(false)}
-                      className="absolute right-10 text-xl font-bold hover:bg-[#19191933] cursor-pointer rounded-full w-10 h-10"
-                    >
-                      ✕
-                    </button>
-                  </div>
-                </div>
+                <SearchDetails setIsSearchOpen={setIsSearchOpen} />
               )}
             </div>
           )}

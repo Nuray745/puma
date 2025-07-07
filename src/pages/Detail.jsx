@@ -2,12 +2,15 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getProductById } from "../services/api";
 import Slider from "../components/Slider";
+import ImageSliderModal from "../components/ImageSliderModal";
 
 function Detail() {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [selectedColorIndex, setSelectedColorIndex] = useState(0);
   const [selectedSize, setSelectedSize] = useState(null);
+  const [isSliderOpen, setIsSliderOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     getProductById(id).then((data) => {
@@ -33,16 +36,30 @@ function Detail() {
   return (
     <div className="px-4 desktop:px-8 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
       {/* Şəkil qalereyası */}
+      {/* Şəkil qalereyası */}
       <div className="grid grid-cols-2 gap-4 col-span-2">
         {images.map((img, idx) => (
           <img
             key={idx}
             src={img || "default-image-url"}
             alt={`product-${idx}`}
-            className="w-full aspect-square object-cover"
+            className="w-full aspect-square object-cover cursor-pointer"
+            onClick={() => {
+              setCurrentImageIndex(idx);
+              setIsSliderOpen(true);
+            }}
           />
         ))}
       </div>
+
+      {isSliderOpen && (
+        <ImageSliderModal
+          images={images}
+          currentIndex={currentImageIndex}
+          setCurrentIndex={setCurrentImageIndex}
+          onClose={() => setIsSliderOpen(false)}
+        />
+      )}
 
       {/* Məhsul məlumatları */}
       <div className="flex flex-col gap-3">
