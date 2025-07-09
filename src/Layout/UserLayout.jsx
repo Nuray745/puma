@@ -1,16 +1,16 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import Header from '../user/Header'
-import Footer from '../user/Footer'
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function UserLayout() {
   return (
- <>
-   <Header/>
-   <Outlet/>
-   <Footer/>
- </>
-  )
+    <div className="font-ff-din">
+      <Header />
+      <Outlet />
+      <Footer />
+    </div>
+  );
 }
 
-export default UserLayout
+export default UserLayout;

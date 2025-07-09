@@ -1,35 +1,57 @@
-import React from 'react';
+import React from "react";
 
 function UserPage() {
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
-      <div className="max-w-3xl mx-auto bg-white shadow-md rounded-xl p-6">
-        {/* User Info */}
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">İstifadəçi Paneli</h2>
-        <div className="mb-6">
-          <p><span className="font-medium">Ad:</span> Fatime Cavadzade</p>
-          <p><span className="font-medium">Email:</span> fatime@example.com</p>
-          <p><span className="font-medium">Telefon:</span> +994 55 123 45 67</p>
+    <div className="flex min-h-screen bg-white text-[#191919]">
+      {/* Sidebar */}
+      <aside className="w-64 bg-[#f9f9f9] p-6 border-r border-gray-200 flex flex-col justify-between">
+        <div>
+          <ul className="space-y-4 text-sm">
+            <li className="flex items-center gap-3 font-semibold border-l-4 border-black bg-white px-3 py-2 rounded-md">
+              <span>👤</span>
+              Account Overview
+            </li>
+            <li className="flex items-center gap-3 text-gray-600 hover:text-black cursor-pointer">
+              <span>📦</span>
+              My Orders
+            </li>
+            <li className="flex items-center gap-3 text-gray-600 hover:text-black cursor-pointer">
+              <span>❤️</span>
+              Wishlist
+            </li>
+            <li className="flex items-center gap-3 text-gray-600 hover:text-black cursor-pointer">
+              <span>📄</span>
+              Addresses
+            </li>
+            <li className="flex items-center gap-3 text-gray-600 hover:text-black cursor-pointer">
+              <span>⚙️</span>
+              Account Settings
+            </li>
+          </ul>
+
+          <div className="mt-10">
+            <p className="font-semibold text-sm mb-2">Need Help?</p>
+            <ul className="space-y-1 text-sm text-gray-500">
+              <li><a href="#">Shipping and Delivery</a></li>
+              <li><a href="#">Return Policy</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
         </div>
 
-        {/* Order History */}
-        <h3 className="text-xl font-semibold text-gray-700 mb-2">Sifariş Tarixçəsi</h3>
-        <ul className="space-y-2">
-          <li className="bg-gray-50 p-4 rounded-md shadow-sm">
-            #12345 – 20.04.2025 – 45 AZN
-          </li>
-          <li className="bg-gray-50 p-4 rounded-md shadow-sm">
-            #12312 – 05.03.2025 – 87 AZN
-          </li>
-        </ul>
-
-        {/* Logout Button */}
-        <div className="mt-6 text-right">
-          <button className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition">
-            Çıxış Et
+        <div className="mt-10">
+          <button className="text-sm font-semibold underline text-black hover:text-red-600">
+            LOGOUT
           </button>
         </div>
-      </div>
+      </aside>
+
+      {/* Main Content */}
+      <main className="flex-1 p-10">
+        <h1 className="text-3xl font-bold mb-2">Hello, Fatima</h1>
+        <p className="text-gray-500 text-sm">Account Overview</p>
+      </main>
     </div>
   );
 }
