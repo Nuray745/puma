@@ -257,7 +257,7 @@ function Navbar({ theme = "dark", open = "false" }) {
 
           {/* Ürək */}
           {!isBelow1100 && (
-            <button
+            <Link to={'/wishlist'}
               aria-label="Favorites"
               className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${
                 isDark ? "hover:bg-[#404040]" : "hover:bg-red"
@@ -278,11 +278,11 @@ function Navbar({ theme = "dark", open = "false" }) {
                   fill="currentColor"
                 />
               </svg>
-            </button>
+            </Link>
           )}
 
           {/* Səbət */}
-          <button
+          <Link to={'/basket'}
             aria-label="Cart"
             className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${
               isDark ? "hover:bg-[#404040]" : "hover:bg-[#3B404733]"
@@ -304,7 +304,7 @@ function Navbar({ theme = "dark", open = "false" }) {
               />
               <path fill="currentColor" d="M12 12.667H4.667V14H12v-1.333Z" />
             </svg>
-          </button>
+          </Link>
 
           {/* İstifadəçi */}
           <button

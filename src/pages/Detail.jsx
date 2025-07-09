@@ -3,6 +3,9 @@ import { useParams } from "react-router-dom";
 import { getProductById } from "../services/api";
 import Slider from "../components/Slider";
 import ImageSliderModal from "../components/ImageSliderModal";
+import { useContext } from "react";
+import { BASKET } from "../contexts/BasketContext";
+import { WISHLIST } from "../contexts/WishlistContext";
 
 function Detail() {
   const { id } = useParams();
@@ -11,6 +14,8 @@ function Detail() {
   const [selectedSize, setSelectedSize] = useState(null);
   const [isSliderOpen, setIsSliderOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const { addToBasket } = useContext(BASKET);
+  const { addToWishlist } = useContext(WISHLIST);
 
   useEffect(() => {
     getProductById(id).then((data) => {
@@ -188,7 +193,11 @@ function Detail() {
                     <p className="text-xs text-[#191919] font-bold uppercase">
                       Only {selectedStock} left
                     </p>
-                  ) : null;
+                  ) : (
+                    <p className="text-xs text-[#191919] font-bold uppercase">
+                      in stock
+                    </p>
+                  );
                 })()}
             </div>
 
@@ -223,7 +232,10 @@ function Detail() {
         {/* Əlavə düymələr */}
         <div className="flex flex-col gap-2 pt-4 border-t border-[#e5e7eb]">
           <div className="flex gap-2">
-            <button className="cursor-pointer px-6 py-3 border border-[#A1A8AF] hover:border-black rounded-[2px]">
+            <button
+              onClick={() => addToWishlist(product, selectedColorIndex, selectedSize)}
+              className="cursor-pointer px-6 py-3 border border-[#A1A8AF] hover:border-black rounded-[2px]"
+            >
               <svg
                 className="w-8 h-8"
                 xmlns="http://www.w3.org/2000/svg"
@@ -240,7 +252,12 @@ function Detail() {
                 />
               </svg>
             </button>
-            <button className="cursor-pointer w-full bg-[#191919] hover:bg-[#3c4046] text-white py-3 font-bold uppercase rounded-[2px]">
+            <button
+              className="cursor-pointer w-full bg-[#191919] hover:bg-[#3c4046] text-white py-3 font-bold uppercase rounded-[2px]"
+              onClick={() =>
+                addToBasket(product, selectedColorIndex, selectedSize)
+              }
+            >
               Add to Cart
             </button>
           </div>
