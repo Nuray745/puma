@@ -307,7 +307,8 @@ function Navbar({ theme = "dark", open = "false" }) {
           </Link>
 
           {/* İstifadəçi */}
-          <button
+          <Link
+            to={'/login'}
             aria-label="User profile"
             className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${
               isDark ? "hover:bg-[#404040]" : "hover:bg-[#3B404733]"
@@ -327,7 +328,7 @@ function Navbar({ theme = "dark", open = "false" }) {
                 clipRule="evenodd"
               />
             </svg>
-          </button>
+          </Link>
         </div>
       </nav>
     </div>
