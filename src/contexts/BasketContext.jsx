@@ -5,7 +5,7 @@ export const BASKET = createContext();
 
 function BasketContext({ children }) {
   const initial = JSON.parse(localStorage.getItem("localBasket")) || [];
-  const [basket, setBasket] = useState([]);
+  const [basket, setBasket] = useState(initial);  
 
   useEffect(() => {
     localStorage.setItem("localBasket", JSON.stringify(basket));

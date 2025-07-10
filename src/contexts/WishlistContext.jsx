@@ -4,9 +4,17 @@ import { toast } from "react-hot-toast";
 export const WISHLIST = createContext();
 
 function WishlistContext({ children }) {
-  const [wishlist, setWishlist] = useState(
-    JSON.parse(localStorage.getItem("localWishlist")) || []
-  );
+  const getInitialWishlist = () => {
+    try {
+      const stored = localStorage.getItem("localWishlist");
+      return stored ? JSON.parse(stored) : [];
+    } catch (err) {
+      console.error("Wishlist localStorage error:", err);
+      return [];
+    }
+  };
+
+  const [wishlist, setWishlist] = useState(getInitialWishlist); 
 
   useEffect(() => {
     localStorage.setItem("localWishlist", JSON.stringify(wishlist));
