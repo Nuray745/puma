@@ -266,8 +266,14 @@ function Navbar({ theme = "dark", isOpen, setIsOpen }) {
 
           {/* Ürək */}
           {!isBelow1100 && (
-            <Link
-              to={"/wishlist"}
+            <button
+              onClick={() => {
+                if (token) {
+                  window.location.href = "/wishlist";
+                } else {
+                  window.location.href = "/login";
+                }
+              }}
               aria-label="Favorites"
               className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${
                 isDark ? "hover:bg-[#404040]" : "hover:bg-red"
@@ -288,7 +294,7 @@ function Navbar({ theme = "dark", isOpen, setIsOpen }) {
                   fill="currentColor"
                 />
               </svg>
-            </Link>
+            </button>
           )}
 
           {/* Səbət */}

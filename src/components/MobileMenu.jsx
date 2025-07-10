@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function MobileMenu({ categories, setIsOpen }) {
   const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedSubcategory, setSelectedSubcategory] = useState(null);
+  const isLoggedIn = !!localStorage.getItem("token"); // true/false
 
   const handleBack = () => {
     if (selectedSubcategory) {
@@ -53,7 +54,7 @@ function MobileMenu({ categories, setIsOpen }) {
   };
 
   return (
-    <div className="fixed inset-0 bg-white z-50 overflow-y-auto scrollbar-hide">
+    <div className="relative w-full bg-white z-50 overflow-y-auto scrollbar-hide">
       {/* Main Content */}
       <div className="flex-1 pb-6 text-[#181818]">
         {(selectedCategory || selectedSubcategory) && (
@@ -88,7 +89,6 @@ function MobileMenu({ categories, setIsOpen }) {
         )}
 
         <div className="max-w-[470px] mx-auto px-5 tablet:px-6 pt-5">
-          {/* Cari səviyyə üçün siyahı */}
           {/* Cari səviyyə üçün siyahı */}
           <ul className="divide-y divide-[#e5e7ea] ">
             {currentList?.map((item) => (
@@ -156,17 +156,31 @@ function MobileMenu({ categories, setIsOpen }) {
           {!selectedCategory && !selectedSubcategory && (
             <div className="mt-1">
               <ul className="divide-y divide-[#e5e7ea] text-base font-normal">
-                {[
-                  "My Account",
-                  "Initiate Return",
-                  "Order Status",
-                  "Contact Us",
-                  "Wishlist",
-                ].map((item, index) => (
-                  <li key={index} className="py-3 cursor-pointer">
-                    {item}
-                  </li>
-                ))}
+                <li
+                  className="py-3 cursor-pointer"
+                  onClick={() => {
+                    navigate("/user");
+                    setIsOpen(false);
+                  }}
+                >
+                  My Account
+                </li>
+                <li className="py-3 cursor-pointer">Initiate Return</li>
+                <li className="py-3 cursor-pointer">Order Status</li>
+                <li className="py-3 cursor-pointer">Contact Us</li>
+                <li
+                  className="py-3 cursor-pointer"
+                  onClick={() => {
+                    if (isLoggedIn) {
+                      navigate("/wishlist");
+                    } else {
+                      navigate("/login");
+                    }
+                    setIsOpen(false);
+                  }}
+                >
+                  Wishlist
+                </li>
                 <li className="py-3 flex items-center justify-between cursor-pointer">
                   <span>Language</span>
                   <div className="flex items-center gap-2">
@@ -191,7 +205,7 @@ function MobileMenu({ categories, setIsOpen }) {
                       <path
                         fillRule="evenodd"
                         clipRule="evenodd"
-                        d="M10.19.136a11.92 11.92 0 0 0-4.203 1.477l.09.277-.25-.183c-.498.3-.973.635-1.421 1.001l.154.475-.385-.281c-.443.381-.858.795-1.241 1.236l.11.337-.244-.18a11.995 11.995 0 0 0-1.938 3.23H.93l.166-.51.166.51h.534l-.431.317.166.51-.435-.318-.434.318.165-.51-.068-.05a11.95 11.95 0 0 0-.744 3.61H.28l-.275.2a12.218 12.218 0 0 0-.004.595l.01.032-.01-.007c.004.235.016.469.033.701H10.19V.136ZM1.096 9.6l.166.51h.534l-.431.317.166.51-.435-.318-.434.318.165-.51-.43-.317H.93l.166-.51Zm1.516-3.877-.165.51h-.538l.435.317-.166.51.434-.318.431.318-.165-.51.434-.317h-.534l-.166-.51Zm-.165 3.094.165-.51.166.51h.534l-.434.318.165.51-.43-.318-.435.317.166-.51-.435-.317h.538Zm.331 2.585-.166-.51-.165.51h-.538l.435.317-.166.51.434-.318.431.318-.165-.51.434-.317h-.534ZM4.125 4.43l-.165.51h-.534l.434.317-.165.51.43-.318.435.317-.166-.51.435-.317H4.29l-.166-.51ZM3.96 7.525l.165-.51.166.51h.538l-.435.317.166.51-.435-.318-.43.318.165-.51-.434-.317h.534Zm.331 2.585-.166-.51-.165.51h-.534l.434.317-.165.51.43-.318.435.318-.166-.51.435-.317H4.29Zm1.352-6.972-.166.51h-.534l.431.317-.166.51.435-.318.434.318-.165-.51.43-.317H5.81l-.166-.51Zm-.166 3.095.166-.51.166.51h.534l-.431.317.165.51-.434-.318-.435.318.166-.51-.43-.317h.533Zm.166 2.075-.166.51h-.534l.431.317-.166.51.435-.318.434.317-.165-.51.43-.317H5.81l-.166-.51Zm0 2.584.166.51h.534l-.431.317.165.51-.434-.318-.435.318.166-.51-.43-.317h.533l.166-.51ZM7.16 1.846l-.165.51h-.538l.435.317-.166.51.434-.318.431.318-.166-.51.435-.317h-.534l-.166-.51ZM6.995 4.94l.165-.51.166.51h.534l-.435.318.166.51-.43-.318-.435.317.166-.51-.435-.317h.538Zm.165 2.075-.165.51h-.538l.435.317-.166.51.434-.318.431.318-.166-.51.435-.317h-.534l-.166-.51Zm0 2.585.166.51h.534l-.435.317.166.51-.43-.318-.435.318.166-.51-.435-.317h.538l.165-.51Zm1.248-8.22-.166.51.431-.317.435.317-.166-.51.435-.317h-.538l-.166-.51-.165.51h-.534l.434.318Zm.1 2.268.165-.51.166.51h.538l-.435.317.166.51-.435-.318-.43.318.165-.51-.434-.317h.534Zm.165 2.075-.165.51h-.534l.434.317-.166.51.431-.318.435.318-.166-.51.435-.317h-.538l-.166-.51Zm-.165 3.094.165-.51.166.51h.538l-.435.318.166.51-.435-.318-.43.317.165-.51-.434-.317h.534Zm.33 2.585-.165-.51-.165.51h-.534l.434.317-.166.51.431-.318.435.318-.166-.51.435-.317h-.538Z"
+                        d="M10.19.136a11.92 11.92 0 0 0-4.203 1.477l.09.277-.25-.183c-.498.3-.973.635-1.421 1.001l.154.475-.385-.281c-.443.381-.858.795-1.241 1.236l.11.337-.244-.18a11.995 11.995 0 0 0-1.938 3.23H.93l.166-.51.166.51h.534l-.431.317.166.51-.435-.318-.434.318.165-.51-.068-.05a11.95 11.95 0 0 0-.744 3.61H.28l-.275.2a12.218 12.218 0 0 0-.004.595l.01.032-.01-.007c.004.235.016.469.033.701H10.19V.136Z"
                         fill="#3C3B6E"
                       />
                     </svg>
@@ -202,10 +216,22 @@ function MobileMenu({ categories, setIsOpen }) {
           )}
 
           <div className="flex flex-col gap-2 py-6">
-            <button className="cursor-pointer text-base text-white w-full bg-[#191919] hover:bg-[#3c4046] py-2 uppercase font-bold rounded-[2px]">
+            <button
+              onClick={() => {
+                navigate("/login");
+                setIsOpen(false);
+              }}
+              className="cursor-pointer text-base text-white w-full bg-[#191919] hover:bg-[#3c4046] py-2 uppercase font-bold rounded-[2px]"
+            >
               Login
             </button>
-            <button className="cursor-pointer text-base text-[#191919] border border-[#A1A8AF] hover:border-black w-full bg-white py-2 uppercase font-bold rounded-[2px]">
+            <button
+              onClick={() => {
+                navigate("/create-account");
+                setIsOpen(false);
+              }}
+              className="cursor-pointer text-base text-[#191919] border border-[#A1A8AF] hover:border-black w-full bg-white py-2 uppercase font-bold rounded-[2px]"
+            >
               Join Us
             </button>
           </div>
