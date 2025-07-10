@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { BASKET } from "../contexts/BasketContext";
 import EditItemModal from "../components/EditItemModal";
 import DeleteItemModal from "../components/DeleteItemModal";
+import { Link } from "react-router-dom";
 
 function Basket() {
   const { basket, deleteFromBasket, updateQuantity } = useContext(BASKET);
@@ -24,7 +25,7 @@ function Basket() {
           <path d="M1.333 3.333H2.77l1.21 7.277c.07.418.431.724.855.724h6.669a.867.867 0 0 0 .847-.685l1.14-5.315H4.453L3.898 2H1.333v1.333ZM5.231 10l-.555-3.333h7.166L11.128 10H5.23Z" />
           <path d="M12 12.667H4.667V14H12v-1.333Z" />
         </svg>
-        <h3 className="text-[28px] text-[#181818] pt-4 font-bold">
+        <h3 className="text-[24px] tablet:text-[28px] text-[#181818] pt-4 font-bold text-center">
           Your Shopping Cart is Empty
         </h3>
       </div>
@@ -32,35 +33,38 @@ function Basket() {
   }
 
   return (
-    <div className="min-h-screen px-4 md:px-8 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div className="min-h-screen px-4 tablet:px-8 py-4 tablet:py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
       {/* Left: Products */}
-      <h2 className="col-span-3 text-[32px] text-[#191919] font-bold">
+      <h2 className="col-span-1 lg:col-span-3 text-[24px] tablet:text-[32px] text-[#191919] font-bold">
         MY SHOPPING CART{" "}
         <span className="text-[#6C6C6C] font-normal">
           ({basket.reduce((sum, item) => sum + item.count, 0)})
         </span>
       </h2>
-      <div className="lg:col-span-2 space-y-6">
+      <div className="col-span-1 lg:col-span-2 space-y-6">
         {basket.map((item) => (
-          <div
+          <Link to={`/product/${item.productId}`}
             key={item.id}
-            className="border border-[#DFE0E1] rounded p-5 flex flex-col md:flex-row justify-between gap-4"
+            className="border border-[#DFE0E1] rounded p-2 tablet:p-5 flex flex-col md:flex-row justify-between gap-4"
           >
             <div className="flex gap-5">
               <img
                 src={item.image}
                 alt={item.name}
-                className="w-48 h-48 object-cover"
+                className="w-24 h-24 tablet:w-40 tablet:h-40 desktop:w-48 aspect-square object-cover rounded"
               />
+
               <div>
-                <h3 className="font-bold text-[20px] text-[#181818]">
+                <h3 className="font-bold text-base tablet:text-[20px] text-[#181818]">
                   {item.name}
                 </h3>
-                <p className="text-base text-[#676D75]">{item.subHeader}</p>
-                <p className="text-base text-[#6C6C6C] pt-3">
+                <p className="text-sm tablet:text-base text-[#676D75]">
+                  {item.subHeader}
+                </p>
+                <p className="text-sm tablet:text-base text-[#6C6C6C] pt-3">
                   Color: <span className="text-[#191919]">{item.color}</span>
                 </p>
-                <p className="text-base text-[#6C6C6C] pb-2">
+                <p className="text-sm tablet:text-base text-[#6C6C6C] pb-2">
                   Size: <span className="text-[#191919]">{item.size}</span>
                 </p>
 
@@ -105,7 +109,7 @@ function Basket() {
 
             {/* ✅ Sil düyməsi və qiymət sağda qalır */}
             <div className="flex flex-col items-end gap-3">
-              <div className="text-[20px] text-[#191919] font-bold">
+              <div className="text-base tablet:text-[20px] text-[#191919] font-bold">
                 ${(item.price * item.count).toFixed(2)}
               </div>
               <div className="flex items-center">
@@ -179,7 +183,7 @@ function Basket() {
                 />
               )}
             </div>
-          </div>
+          </Link>
         ))}
       </div>
       {/* Right: Summary */}
