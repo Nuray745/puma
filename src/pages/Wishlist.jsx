@@ -98,9 +98,7 @@ function Wishlist() {
               key={item.id}
               className="flex items-start gap-2 tablet:gap-6 border-b border-[#DFE0E1] pb-6"
             >
-              <Link 
-                to={`/product/${item.productId}`}
-                className="relative w-full max-w-[250px]">
+              <Link to={`/product/${item.productId}`}>
                 <img
                   src={
                     item.preview ||
@@ -108,7 +106,7 @@ function Wishlist() {
                     "https://via.placeholder.com/300"
                   }
                   alt={item.name}
-                  className="w-full aspect-square object-cover rounded"
+                  className="w-full max-w-63 aspect-square object-contain rounded"
                 />
               </Link>
 
@@ -116,8 +114,12 @@ function Wishlist() {
                 <h2 className="text-base tablet:text-[20px] font-bold text-[#191919]">
                   {item.name}
                 </h2>
-                <p className="text-base tablet:text-[20px] text-[#676D75]">{item.subHeader}</p>
-                <p className="text-base tablet:text-[18px] text-[#191919]">{item.color}</p>
+                <p className="text-base tablet:text-[20px] text-[#676D75]">
+                  {item.subHeader}
+                </p>
+                <p className="text-base tablet:text-[18px] text-[#191919]">
+                  {item.color}
+                </p>
                 <p className="text-sm pt-2">
                   <strong>SIZE:</strong> {item.size}
                 </p>

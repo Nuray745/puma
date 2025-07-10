@@ -17,7 +17,8 @@ function Detail() {
   const [isSliderOpen, setIsSliderOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const { addToBasket } = useContext(BASKET);
-  const { addToWishlist } = useContext(WISHLIST);
+  const { wishlist, addToWishlist } = useContext(WISHLIST);
+
   const navigate = useNavigate();
   const cookies = new Cookies();
 
