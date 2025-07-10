@@ -17,6 +17,7 @@ import Register from "./auth/Register";
 import Error404 from "./pages/error/Error404";
 import UserPage from "./user/userPage";
 import VerifyUser from "./auth/VerifyUser";
+import UserLayout from "./Layout/UserLayout";
 
 function App() {
   const { pathname } = useLocation();
@@ -48,7 +49,9 @@ function App() {
             <Route path="/create-account" element={<Register />} />
           </Route>
           <Route path="/user" element={<VerifyUser />}>
-            <Route index element={<UserPage />} />
+            <Route path="/user" element={<UserLayout />}>
+              <Route index element={<UserPage />} />
+            </Route>
           </Route>
           <Route path="*" element={<Error404 />} />
         </Routes>

@@ -47,11 +47,8 @@ async function verifyToken() {
   const cook = new Cookies();
   const token = cook.get("login-token");
 
-  return token === "dummy-token"
-    ? { status: true }
-    : { status: false };
+  return token === "dummy-token" ? { status: true } : { status: false };
 }
-
 
 async function searchProducts(name) {
   const res = await axiosInstance.get(`/products/search?name=${name}`);

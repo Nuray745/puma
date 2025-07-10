@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Cookies } from "react-cookie";
 import { verifyToken } from "../services/api";
 import { useNavigate, Outlet } from "react-router-dom";
+import { toast } from "react-hot-toast";
 
 function VerifyUser() {
   const cook = new Cookies();
@@ -15,10 +16,10 @@ function VerifyUser() {
         if (res.status) {
           setIsLogin(true);
         } else {
+          toast.error("Zəhmət olmasa login olun");
           navigate("/login");
         }
       })
-      .catch(() => navigate("/login"))
       .finally(() => setLoading(false));
   }, []);
 

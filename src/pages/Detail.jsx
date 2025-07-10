@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { Cookies } from "react-cookie";
 import { getProductById } from "../services/api";
 import Slider from "../components/Slider";
 import ImageSliderModal from "../components/ImageSliderModal";
@@ -16,6 +18,8 @@ function Detail() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const { addToBasket } = useContext(BASKET);
   const { addToWishlist } = useContext(WISHLIST);
+  const navigate = useNavigate();
+  const cookies = new Cookies();
 
   useEffect(() => {
     getProductById(id).then((data) => {
@@ -37,6 +41,15 @@ function Detail() {
       (row) => row[0] // Yəni: "XS", "S", "M", "L", ...
     ) || [];
   const sizeRows = product.productMeasurements?.metric?.slice(1) || []; // başlığı atmırıq
+
+  const handleAddToWishlist = () => {
+    const token = cookies.get("login-token");
+    if (!token) {
+      navigate("/login");
+    } else {
+      addToWishlist(product, selectedColorIndex, selectedSize);
+    }
+  };
 
   return (
     <div className="px-4 desktop:px-8 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -233,7 +246,7 @@ function Detail() {
         <div className="flex flex-col gap-2 pt-4 border-t border-[#e5e7eb]">
           <div className="flex gap-2">
             <button
-              onClick={() => addToWishlist(product, selectedColorIndex, selectedSize)}
+              onClick={handleAddToWishlist}
               className="cursor-pointer px-6 py-3 border border-[#A1A8AF] hover:border-black rounded-[2px]"
             >
               <svg
