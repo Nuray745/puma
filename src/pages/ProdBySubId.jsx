@@ -263,26 +263,28 @@ function ProdBySubId() {
             const price = variation?.productPrice?.price || "N/A"; // Get price from variations
 
             return (
-              <Card
-                key={`${i}`} // Combine id and variantId for uniqueness
-                image={variation?.preview || "default-image-url"} // Default image if unavailable
-                name={product.name || "No Name"}
-                subHeader={product.subHeader || "No Subheader"}
-                price={price}
-                label={
-                  product.badge && {
-                    text: variation?.badges?.[0]?.label || "",
-                    color:
-                      variation?.badges?.[0]?.id === "new"
-                        ? "black"
-                        : variation?.badges?.[0]?.id === "blue"
-                        ? "blue"
-                        : "",
+              <Link to={`/product/${product.id}`} key={i}>
+                <Card
+                  key={`${i}`} // Combine id and variantId for uniqueness
+                  image={variation?.preview || "default-image-url"} // Default image if unavailable
+                  name={product.name || "No Name"}
+                  subHeader={product.subHeader || "No Subheader"}
+                  price={price}
+                  label={
+                    product.badge && {
+                      text: variation?.badges?.[0]?.label || "",
+                      color:
+                        variation?.badges?.[0]?.id === "new"
+                          ? "black"
+                          : variation?.badges?.[0]?.id === "blue"
+                          ? "blue"
+                          : "",
+                    }
                   }
-                }
-                colorCount={product.colors?.length || 1}
-                isAvailable={variation?.orderable}
-              />
+                  colorCount={product.colors?.length || 1}
+                  isAvailable={variation?.orderable}
+                />
+              </Link>
             );
           })}
       </div>

@@ -276,26 +276,28 @@ function ProdByItemId() {
             const price = variation?.productPrice?.price || "N/A";
 
             return (
-              <Card
-                key={`${i}`}
-                image={variation?.preview || "default-image-url"}
-                name={product.name || "No Name"}
-                subHeader={product.subHeader || "No Subheader"}
-                price={price}
-                label={
-                  product.badge && {
-                    text: variation?.badges?.[0]?.label || "",
-                    color:
-                      variation?.badges?.[0]?.id === "new"
-                        ? "black"
-                        : variation?.badges?.[0]?.id === "blue"
-                        ? "blue"
-                        : "",
+              <Link to={`/product/${product.id}`} key={i}>
+                <Card
+                  key={`${i}`}
+                  image={variation?.preview || "default-image-url"}
+                  name={product.name || "No Name"}
+                  subHeader={product.subHeader || "No Subheader"}
+                  price={price}
+                  label={
+                    product.badge && {
+                      text: variation?.badges?.[0]?.label || "",
+                      color:
+                        variation?.badges?.[0]?.id === "new"
+                          ? "black"
+                          : variation?.badges?.[0]?.id === "blue"
+                          ? "blue"
+                          : "",
+                    }
                   }
-                }
-                colorCount={product.colors?.length || 1}
-                isAvailable={variation?.orderable}
-              />
+                  colorCount={product.colors?.length || 1}
+                  isAvailable={variation?.orderable}
+                />
+              </Link>
             );
           })}
       </div>
