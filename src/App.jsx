@@ -16,6 +16,7 @@ import Error404 from "./pages/error/Error404";
 import UserPage from "./user/userPage";
 import VerifyUser from "./auth/VerifyUser";
 import UserLayout from "./Layout/UserLayout";
+import SearchResultsPage from "./pages/SearchResultsPage";
 
 function App() {
   const { pathname } = useLocation();
@@ -41,6 +42,10 @@ function App() {
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/login" element={<Login />} />
           <Route path="/create-account" element={<Register />} />
+          <Route
+            path="/search"
+            element={<SearchResultsPage />}
+          />
         </Route>
         <Route path="/user" element={<VerifyUser />}>
           <Route path="/user" element={<UserLayout />}>

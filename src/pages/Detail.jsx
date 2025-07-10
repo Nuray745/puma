@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { Cookies } from "react-cookie";
 import { getProductById } from "../services/api";
@@ -54,7 +54,6 @@ function Detail() {
 
   return (
     <div className="px-4 desktop:px-8 py-8 grid grid-cols-2 lg:grid-cols-3 gap-8">
-      {/* Şəkil qalereyası */}
       {/* Şəkil qalereyası */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:col-span-2">
         {images.map((img, idx) => (
