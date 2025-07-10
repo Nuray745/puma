@@ -5,6 +5,7 @@ import DesktopMenu from "./DesktopMenu";
 import { getAllCategories } from "../services/api";
 import MobileMenu from "./MobileMenu";
 import SearchDetails from "./SearchDetails";
+import { Cookies } from "react-cookie";
 
 function Navbar({ theme = "dark", open = "false" }) {
   const isDark = theme === "dark";
@@ -14,6 +15,8 @@ function Navbar({ theme = "dark", open = "false" }) {
   const [categories, setCategories] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const cookies = new Cookies();
+  const token = cookies.get("login-token");
 
   useEffect(() => {
     getAllCategories().then((data) => setCategories(data));
@@ -74,7 +77,9 @@ function Navbar({ theme = "dark", open = "false" }) {
               </button>
             )}
 
-            {isOpen && <MobileMenu setIsOpen={setIsOpen} categories={categories} />}
+            {isOpen && (
+              <MobileMenu setIsOpen={setIsOpen} categories={categories} />
+            )}
 
             {/* Axtarış - yalnız 1100px aşağıda sola qoyulur */}
             {isBelow1100 && (
@@ -257,7 +262,8 @@ function Navbar({ theme = "dark", open = "false" }) {
 
           {/* Ürək */}
           {!isBelow1100 && (
-            <Link to={'/wishlist'}
+            <Link
+              to={"/wishlist"}
               aria-label="Favorites"
               className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${
                 isDark ? "hover:bg-[#404040]" : "hover:bg-red"
@@ -282,7 +288,8 @@ function Navbar({ theme = "dark", open = "false" }) {
           )}
 
           {/* Səbət */}
-          <Link to={'/basket'}
+          <Link
+            to={"/basket"}
             aria-label="Cart"
             className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${
               isDark ? "hover:bg-[#404040]" : "hover:bg-[#3B404733]"
@@ -308,7 +315,7 @@ function Navbar({ theme = "dark", open = "false" }) {
 
           {/* İstifadəçi */}
           <Link
-            to={'/login'}
+            to={token ? "/user" : "/login"}
             aria-label="User profile"
             className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${
               isDark ? "hover:bg-[#404040]" : "hover:bg-[#3B404733]"

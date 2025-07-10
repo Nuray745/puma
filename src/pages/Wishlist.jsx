@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { WISHLIST } from "../contexts/WishlistContext";
 import { BASKET } from "../contexts/BasketContext";
 import { toast } from "react-hot-toast";
@@ -7,6 +8,7 @@ import EditItemModal from "../components/EditItemModal"; // <-- Modal komponenti
 function Wishlist() {
   const { wishlist, removeFromWishlist, updateWishlistItem } =
     useContext(WISHLIST);
+  const navigate = useNavigate();
   const { addToBasket } = useContext(BASKET);
   const [editItem, setEditItem] = useState(null); // <-- Modal üçün state
   const today = new Date().toLocaleDateString();
@@ -16,6 +18,7 @@ function Wishlist() {
       toast.error("Zəhmət olmasa ölçü seçin");
       return;
     }
+
     addToBasket(
       {
         id: item.productId,
@@ -32,6 +35,9 @@ function Wishlist() {
       0,
       item.size
     );
+
+    removeFromWishlist(item.id); // ✅ wishlist-dən sil
+    navigate("/basket");
   };
 
   const handleUpdateSize = (id, newSize) => {
