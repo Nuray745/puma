@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { Cookies } from "react-cookie";
 import { Link, useNavigate } from "react-router-dom";
 
 function MobileMenu({ categories, setIsOpen }) {
   const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedSubcategory, setSelectedSubcategory] = useState(null);
-  const isLoggedIn = !!localStorage.getItem("token"); // true/false
+  const cookies = new Cookies();
+  const token = cookies.get("login-token");
 
   const handleBack = () => {
     if (selectedSubcategory) {
@@ -171,12 +173,11 @@ function MobileMenu({ categories, setIsOpen }) {
                 <li
                   className="py-3 cursor-pointer"
                   onClick={() => {
-                    if (isLoggedIn) {
-                      navigate("/wishlist");
+                    if (token) {
+                      window.location.href = "/wishlist";
                     } else {
-                      navigate("/login");
+                      window.location.href = "/login";
                     }
-                    setIsOpen(false);
                   }}
                 >
                   Wishlist
