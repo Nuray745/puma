@@ -12,9 +12,9 @@ function UserPage() {
   };
 
   return (
-    <div className="flex min-h-screen bg-white text-[#191919]">
+    <div className="flex flex-col lg:flex-row min-h-screen bg-white text-[#191919]">
       {/* Sidebar */}
-      <aside className="w-full max-w-84 bg-[#F6F7F8] py-[56px] pr-12 pl-8 flex flex-col justify-between">
+      <aside className="order-2 w-full lg:max-w-84 bg-[#F6F7F8] pb-10 tablet:py-[30px] lg:py-[56px] tablet:pr-6 lg:pr-12 tablet:pl-6 lg:pl-8 flex flex-col justify-between">
         <div>
           <ul className="space-y-4 text-base">
             <li className="flex items-center gap-3 font-semibold border-l-2 border-black bg-white hover:bg-[#dfe0e1] cursor-pointer px-4 py-4">
@@ -104,7 +104,7 @@ function UserPage() {
             </li>
           </ul>
 
-          <div className="mt-6">
+          <div className="mt-6 px-4 lg:px-0">
             <p className="font-semibold text-[18px] mb-2">Need Help?</p>
             <ul className="space-y-2 text-base text-[#676D75]">
               <li>
@@ -123,7 +123,7 @@ function UserPage() {
           </div>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-10 px-4 lg:px-0  ">
           <button
             onClick={handleLogout}
             className="text-sm font-bold border-b-2 border-[#191919] text-[#191919] cursor-pointer"
@@ -134,9 +134,9 @@ function UserPage() {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 pt-16 pr-8 pb-6 pl-12">
-        <h1 className="text-[40px] text-[#191919] font-bold">Hello, Fatima</h1>
-        <p className="text-[18px] text-[#191919]">Account Overview</p>
+      <main className="order-1 w-full pt-6 lg:pt-16 pr-6 lg:pr-8 pb-6 pl-6 lg:pl-12">
+        <h1 className="text-[28px] lg:text-[40px] text-[#191919] font-bold">Hello, Fatima</h1>
+        <p className="text-[16px] lg:text-[18px] text-[#191919]">Account Overview</p>
       </main>
     </div>
   );
