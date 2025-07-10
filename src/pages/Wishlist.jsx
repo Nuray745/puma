@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { WISHLIST } from "../contexts/WishlistContext";
 import { BASKET } from "../contexts/BasketContext";
 import { toast } from "react-hot-toast";
@@ -48,7 +48,7 @@ function Wishlist() {
 
   if (!wishlist.length) {
     return (
-      <div className="bg-white p-8">
+      <div className="bg-white tablet:p-8">
         <div className="max-w-5xl mx-auto border border-[#DFE0E1] rounded-md shadow-md p-6">
           <div className="flex justify-between items-center border-b border-gray-300 pb-4 mb-6">
             <h1 className="text-[24px] uppercase text-[#191919]">
@@ -59,7 +59,7 @@ function Wishlist() {
             </span>
           </div>
 
-          <div className="flex flex-col items-center justify-center text-[28px] font-bold p-25">
+          <div className="flex flex-col items-center text-center justify-center text-[28px] font-bold py-25 tablet:p-25">
             <svg
               className="w-[150px] text-[rgb(204,204,204)]"
               xmlns="http://www.w3.org/2000/svg"
@@ -83,8 +83,8 @@ function Wishlist() {
   }
 
   return (
-    <div className="bg-white p-8">
-      <div className="max-w-5xl mx-auto border border-[#DFE0E1] rounded-md shadow-md p-6">
+    <div className="bg-white tablet:p-8">
+      <div className="max-w-5xl mx-auto border border-[#DFE0E1] rounded-md shadow-md p-3 tablet:p-6">
         <div className="flex justify-between items-center border-b border-gray-300 pb-4 mb-6">
           <h1 className="text-[24px] uppercase text-[#191919]">MY WISHLIST</h1>
           <span className="text-[20px] text-[#191919]">
@@ -96,9 +96,11 @@ function Wishlist() {
           {wishlist.map((item) => (
             <div
               key={item.id}
-              className="flex flex-col md:flex-row items-start gap-6 border-b border-[#DFE0E1] pb-6"
+              className="flex items-start gap-2 tablet:gap-6 border-b border-[#DFE0E1] pb-6"
             >
-              <div className="relative w-full max-w-[250px]">
+              <Link 
+                to={`/product/${item.productId}`}
+                className="relative w-full max-w-[250px]">
                 <img
                   src={
                     item.preview ||
@@ -108,14 +110,14 @@ function Wishlist() {
                   alt={item.name}
                   className="w-full aspect-square object-cover rounded"
                 />
-              </div>
+              </Link>
 
               <div className="flex-1">
-                <h2 className="text-[20px] font-bold text-[#191919]">
+                <h2 className="text-base tablet:text-[20px] font-bold text-[#191919]">
                   {item.name}
                 </h2>
-                <p className="text-[20px] text-[#676D75]">{item.subHeader}</p>
-                <p className="text-[18px] text-[#191919]">{item.color}</p>
+                <p className="text-base tablet:text-[20px] text-[#676D75]">{item.subHeader}</p>
+                <p className="text-base tablet:text-[18px] text-[#191919]">{item.color}</p>
                 <p className="text-sm pt-2">
                   <strong>SIZE:</strong> {item.size}
                 </p>
@@ -172,15 +174,15 @@ function Wishlist() {
                   </button>
                 </div>
 
-                <div className="flex justify-between items-center mt-4">
+                <div className="flex justify-between items-center tablet:mt-4">
                   <button
                     onClick={() => handleAddToCart(item)}
-                    className="w-full bg-[#191919] text-white py-3 cursor-pointer text-base font-bold rounded hover:bg-[#3c4046]"
+                    className="w-full bg-[#191919] text-white py-3 cursor-pointer text-sm tablet:text-base font-bold rounded hover:bg-[#3c4046]"
                   >
                     ADD TO CART
                   </button>
                 </div>
-                <p className="text-base text-right font-semibold ml-4 whitespace-nowrap">
+                <p className="text-sm tablet:text-base text-right font-semibold ml-4 whitespace-nowrap">
                   Item added {today}
                 </p>
               </div>
