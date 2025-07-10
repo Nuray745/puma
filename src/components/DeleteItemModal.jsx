@@ -2,8 +2,8 @@ import React from "react";
 
 function DeleteItemModal({ item, onClose, onConfirm }) {
   return (
-    <div className="fixed inset-0 bg-black/40 z-50 flex items-center justify-center p-6">
-      <div className="bg-white w-full max-w-md rounded p-6 relative">
+    <div className="fixed inset-0 bg-black/40 z-50 flex items-center justify-center p-3 tablet:p-6">
+      <div className="bg-white w-full max-w-md rounded p-2 tablet:p-6 relative">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-xl text-[#191919]">
             Are you sure you want to remove this item?
@@ -37,23 +37,25 @@ function DeleteItemModal({ item, onClose, onConfirm }) {
           />
 
           {/* Məlumatlar ortada */}
-          <div className="flex-1 flex flex-col justify-start">
-            <p className="text-base font-bold">{item.name}</p>
-            <p className="text-base text-[#676D75]">{item.subHeader}</p>
-            <p className="text-sm text-[#6C6C6C]">
-              Color: <span className="text-[#191919]"> {item.color}</span>
-            </p>
-            <p className="text-sm text-[#6C6C6C]">
-              Size: <span className="text-[#191919]">{item.size}</span>
-            </p>
-            <p className="text-sm text-[#6C6C6C]">
-              Quantity: <span className="text-[#191919]">{item.count}</span>
-            </p>
-          </div>
+          <div className="flex flex-col tablet:flex-row items-center gap-2">
+            <div className="flex-1 flex flex-col justify-start">
+              <p className="text-sm tablet:text-base font-bold">{item.name}</p>
+              <p className="text-sm tablet:text-base text-[#676D75]">{item.subHeader}</p>
+              <p className="text-xs tablet:text-sm text-[#6C6C6C]">
+                Color: <span className="text-[#191919]"> {item.color}</span>
+              </p>
+              <p className="text-xs tablet:text-sm text-[#6C6C6C]">
+                Size: <span className="text-[#191919]">{item.size}</span>
+              </p>
+              <p className="text-xs tablet:text-sm text-[#6C6C6C]">
+                Quantity: <span className="text-[#191919]">{item.count}</span>
+              </p>
+            </div>
 
-          {/* Qiymət sağda yuxarıda */}
-          <div className="self-start text-sm font-bold">
-            ${(item.price * item.count).toFixed(2)}
+            {/* Qiymət sağda yuxarıda */}
+            <div className="self-start text-sm font-bold">
+              ${(item.price * item.count).toFixed(2)}
+            </div>
           </div>
         </div>
 

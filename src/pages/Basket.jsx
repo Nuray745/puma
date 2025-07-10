@@ -16,7 +16,7 @@ function Basket() {
 
   if (basket.length === 0) {
     return (
-      <div className="min-h-screen flex flex-col justify-center items-center">
+      <div className="min-h-screen flex flex-col justify-center items-center p-4">
         <svg
           className="w-40 text-gray-300"
           viewBox="0 0 16 16"
@@ -43,16 +43,18 @@ function Basket() {
       </h2>
       <div className="col-span-1 lg:col-span-2 space-y-6">
         {basket.map((item) => (
-          <Link to={`/product/${item.productId}`}
+          <div
             key={item.id}
             className="border border-[#DFE0E1] rounded p-2 tablet:p-5 flex flex-col md:flex-row justify-between gap-4"
           >
             <div className="flex gap-5">
-              <img
-                src={item.image}
-                alt={item.name}
-                className="w-24 h-24 tablet:w-40 tablet:h-40 desktop:w-48 aspect-square object-cover rounded"
-              />
+              <Link to={`/product/${item.productId}`}>
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-full max-w-48 aspect-square object-contain rounded"
+                />
+              </Link>
 
               <div>
                 <h3 className="font-bold text-base tablet:text-[20px] text-[#181818]">
@@ -183,7 +185,7 @@ function Basket() {
                 />
               )}
             </div>
-          </Link>
+          </div>
         ))}
       </div>
       {/* Right: Summary */}

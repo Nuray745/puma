@@ -52,10 +52,10 @@ function Detail() {
   };
 
   return (
-    <div className="px-4 desktop:px-8 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div className="px-4 desktop:px-8 py-8 grid grid-cols-2 lg:grid-cols-3 gap-8">
       {/* Şəkil qalereyası */}
       {/* Şəkil qalereyası */}
-      <div className="grid grid-cols-2 gap-4 col-span-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:col-span-2">
         {images.map((img, idx) => (
           <img
             key={idx}
@@ -361,7 +361,7 @@ function Detail() {
             </div>
           )}
 
-          <div className="grid grid-cols-2 border-t border-[#e5e7eb]">
+          <div className="grid grid-cols-1 tablet:grid-cols-2 border-t border-[#e5e7eb]">
             {/* Material məlumatları */}
             {product.variations?.[0]?.materialComposition?.length > 0 && (
               <div className="pt-4 text-base">

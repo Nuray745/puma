@@ -9,8 +9,6 @@ import { useEffect } from "react";
 import scrollToTop from "./utils/scrollToTop";
 import Basket from "./pages/Basket";
 import { Toaster } from "react-hot-toast";
-import BasketContext from "./contexts/BasketContext";
-import WishlistContext from "./contexts/WishlistContext";
 import Wishlist from "./pages/Wishlist";
 import Login from "./auth/Login";
 import Register from "./auth/Register";
@@ -27,36 +25,31 @@ function App() {
   }, [pathname]);
 
   return (
-    <WishlistContext>
-      <BasketContext>
-        <Toaster position="top-center" reverseOrder={false} />
-        <Routes>
-          <Route path="/" element={<Landing />}>
-            <Route path="/" element={<Main />} />
-            <Route path="/categories/:id" element={<ProdById />} />
-            <Route
-              path="/categories/subcategory/:id"
-              element={<ProdBySubId />}
-            />
-            <Route
-              path="/categories/:categoryId/item/:itemId"
-              element={<ProdByItemId />}
-            />
-            <Route path="/product/:id" element={<Detail />} />
-            <Route path="/basket" element={<Basket />} />
-            <Route path="/wishlist" element={<Wishlist />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/create-account" element={<Register />} />
+    <>
+      <Toaster position="top-center" reverseOrder={false} />
+      <Routes>
+        <Route path="/" element={<Landing />}>
+          <Route path="/" element={<Main />} />
+          <Route path="/categories/:id" element={<ProdById />} />
+          <Route path="/categories/subcategory/:id" element={<ProdBySubId />} />
+          <Route
+            path="/categories/:categoryId/item/:itemId"
+            element={<ProdByItemId />}
+          />
+          <Route path="/product/:id" element={<Detail />} />
+          <Route path="/basket" element={<Basket />} />
+          <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/create-account" element={<Register />} />
+        </Route>
+        <Route path="/user" element={<VerifyUser />}>
+          <Route path="/user" element={<UserLayout />}>
+            <Route index element={<UserPage />} />
           </Route>
-          <Route path="/user" element={<VerifyUser />}>
-            <Route path="/user" element={<UserLayout />}>
-              <Route index element={<UserPage />} />
-            </Route>
-          </Route>
-          <Route path="*" element={<Error404 />} />
-        </Routes>
-      </BasketContext>
-    </WishlistContext>
+        </Route>
+        <Route path="*" element={<Error404 />} />
+      </Routes>
+    </>
   );
 }
 

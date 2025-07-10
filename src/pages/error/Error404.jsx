@@ -8,7 +8,7 @@ function Error404() {
       <p className="text-xl mb-6">Oops! Page not found.</p>
       <Link
         to="/login"
-        className="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700"
+        className="px-6 py-3 bg-[#191919] text-white rounded hover:bg-[#3c4046]"
       >
         Go to Login
       </Link>
