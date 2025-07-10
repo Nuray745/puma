@@ -33,8 +33,10 @@ function Register({ onRegister }) {
   };
 
   return (
-    <div className="p-8 max-w-5xl mx-auto min-h-screen flex flex-col gap-3">
-      <h2 className="text-[48px] text-[#191919] font-bold mb-4">My account</h2>
+    <div className="p-4 tablet:p-8 max-w-5xl mx-auto min-h-screen flex flex-col gap-3">
+      <h2 className="text-[32px] tablet:text-[48px] text-[#191919] font-bold mb-4">
+        My account
+      </h2>
 
       <form onSubmit={handleRegister} className="max-w-lg mx-auto w-full">
         {/* Tabs */}
@@ -100,7 +102,27 @@ function Register({ onRegister }) {
             onClick={() => setShowPassword(!showPassword)}
             title="Show/Hide password"
           >
-            👁️
+            <svg
+              className="w-6 h-6"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              id="icon"
+            >
+              <path fill="transparent" d="M0 0h24v24H0z" />
+              <path
+                d="M20.953 12c-2.966 8-14.94 8-17.906 0 2.966-8 14.94-8 17.906 0Z"
+                stroke="currentColor"
+                strokeWidth="2"
+              />
+              <circle
+                cx="12"
+                cy="12"
+                r="4"
+                stroke="currentColor"
+                strokeWidth="2"
+              />
+            </svg>
           </span>
         </div>
 

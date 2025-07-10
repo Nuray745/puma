@@ -51,8 +51,8 @@ function Login() {
   };
 
   return (
-    <div className="p-8 max-w-5xl mx-auto min-h-screen flex flex-col gap-5">
-      <h2 className="text-[48px] text-[#191919] font-bold mb-4">My account</h2>
+    <div className="p-4 tablet:p-8 max-w-5xl mx-auto min-h-screen flex flex-col gap-5">
+      <h2 className="text-[32px] tablet:text-[48px] text-[#191919] font-bold mb-4">My account</h2>
 
       <form onSubmit={handleLogin} className="max-w-lg mx-auto w-full">
         {/* Tabs */}
