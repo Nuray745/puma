@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import RotatingBanner from "./RotatingBanner";
+import Navbar from "./Navbar";
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header className="bg-[#181818] font-ff-din-exp">
-      {/* Üstdəki mesaj */}
+    <>
       <RotatingBanner />
-    </header>
+      <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
+    </>
   );
 }
 

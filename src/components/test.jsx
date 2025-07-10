@@ -5,6 +5,7 @@ import DesktopMenu from "./DesktopMenu";
 import { getAllCategories, getAllProducts } from "../services/api";
 import SearchDetails from "./SearchDetails";
 import { Cookies } from "react-cookie";
+import MobileMenu from "./MobileMenu";
 
 function Navbar({ theme = "dark", isOpen, setIsOpen }) {
   const isDark = theme === "dark";
@@ -341,6 +342,17 @@ function Navbar({ theme = "dark", isOpen, setIsOpen }) {
             </svg>
           </Link>
         </div>
+
+        {isBelow1100 && isOpen && (
+          <div className="absolute top-full left-0 w-full bg-white z-40 shadow-md">
+            <MobileMenu categories={categories} setIsOpen={setIsOpen} />
+          </div>
+        )}
+        {isBelow1100 && isOpen && (
+          <div className="absolute top-full left-0 w-full bg-white z-40 shadow-md">
+            <MobileMenu categories={categories} setIsOpen={setIsOpen} />
+          </div>
+        )}
       </nav>
     </div>
   );

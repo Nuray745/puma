@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";
-import RotatingBanner from "./RotatingBanner";
 import { useNavigate } from "react-router-dom";
 
 function MobileMenu({ categories, setIsOpen }) {
@@ -56,12 +54,6 @@ function MobileMenu({ categories, setIsOpen }) {
 
   return (
     <div className="fixed inset-0 bg-white z-50 overflow-y-auto scrollbar-hide">
-      {/* Fixed Header */}
-      <div className="shrink-0 w-full border-b border-[#e5e7ea] bg-white z-50">
-        <RotatingBanner />
-        <Navbar theme="light" open="true" />
-      </div>
-
       {/* Main Content */}
       <div className="flex-1 pb-6 text-[#181818]">
         {(selectedCategory || selectedSubcategory) && (
