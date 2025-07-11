@@ -85,7 +85,10 @@ function Navbar({ theme = "dark", isOpen, setIsOpen }) {
             {/* Axtarış - yalnız 1100px aşağıda sola qoyulur */}
             {isBelow1100 && (
               <button
-                onClick={() => setIsSearchOpen(true)}
+                onClick={() => {
+                  setIsSearchOpen(true);
+                  setIsOpen(false);
+                }}
                 aria-label="Search"
                 className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${
                   isDark ? "hover:bg-[#404040]" : "hover:bg-[#3B404733]"
@@ -192,7 +195,10 @@ function Navbar({ theme = "dark", isOpen, setIsOpen }) {
               {/* Search button (icon only - 1280px aşağıda görünür) */}
               <div className="flex xl:hidden">
                 <button
-                  onClick={() => setIsSearchOpen(true)}
+                  onClick={() => {
+                    setIsOpen(false);
+                    setIsSearchOpen(true);
+                  }}
                   aria-label="Search"
                   className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${
                     isDark ? "hover:bg-[#404040]" : "hover:bg-[#3B404733]"
@@ -302,7 +308,8 @@ function Navbar({ theme = "dark", isOpen, setIsOpen }) {
 
           {/* Səbət */}
           <Link
-            to={"/basket"}
+            to={token ? "/basket" : "/login"}
+            onClick={() => setIsOpen(false)}
             aria-label="Cart"
             className={`relative cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${
               isDark ? "hover:bg-[#404040]" : "hover:bg-[#3B404733]"

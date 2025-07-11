@@ -5,7 +5,7 @@ function EditItemModal({ item, sizes, onClose, onUpdate }) {
 
   return (
     <div className="fixed inset-0 bg-black/40 z-100 flex items-center justify-center p-2 tablet:p-4 desktop:p-6">
-      <div className="bg-white w-full max-w-md rounded p-6 relative">
+      <div className="bg-white w-full max-w-md rounded p-2 tablet:p-6 relative">
         <div className="flex items-center justify-between pb-2">
           <p className="text-base text-[#6C6C6C]">#{item.id}</p>
           <button
