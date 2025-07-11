@@ -32,7 +32,6 @@ function SearchDetails() {
       </div>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        {/* Trending Searches */}
         <div>
           <h2 className="text-lg font-bold mb-4">TRENDING SEARCHES</h2>
           <ul className="space-y-2 text-gray-600">
@@ -44,7 +43,6 @@ function SearchDetails() {
           </ul>
         </div>
 
-        {/* Recently Viewed */}
         <div className="md:col-span-2">
           <h2 className="text-lg font-bold mb-4">RECENTLY VIEWED</h2>
           {recentlyViewed.length === 0 ? (

@@ -53,7 +53,7 @@ const Card = ({
         {label?.text && (
           <span
             className={`mt-2 inline-flex px-4 py-1 ${labelBgColor} text-white text-xs font-bold rounded-xs`}
-            style={{ alignSelf: "flex-start" }} // Keeps the label aligned with content
+            style={{ alignSelf: "flex-start" }} 
           >
             {label.text}
           </span>

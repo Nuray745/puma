@@ -6,7 +6,7 @@ const BASE_URL = import.meta.env.VITE_BASE_URL;
 const cook = new Cookies();
 const axiosInstance = setupCache(
   axios.create({
-    baseURL: BASE_URL, // Bütün istəklər bu əsas URL ilə başlayacaq
+    baseURL: BASE_URL, 
     timeout: 5000,
     headers: {
       Authorization: `Bearer ${cook.get("login-token")}`,

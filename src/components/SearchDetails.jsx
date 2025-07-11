@@ -28,7 +28,6 @@ function SearchDetails({ setIsSearchOpen, products = [] }) {
 
   return (
     <div className="fixed inset-0 bg-white text-black z-[9999] font-ff-din flex flex-col">
-      {/* Top Search Box (fixed height based on content, not hardcoded) */}
       <div className="flex-shrink-0 flex items-center gap-1 tablet:gap-5 px-2 py-3 lg:p-10 bg-[#F6F7F8]">
         <div className="relative bg-white w-full max-w-[1296px] flex items-center border border-gray-400 rounded overflow-hidden focus-within:border-black focus-within:shadow-[0_0_0_2.5px_#777777] transition-all">
           <input
@@ -90,7 +89,6 @@ function SearchDetails({ setIsSearchOpen, products = [] }) {
         </button>
       </div>
 
-      {/* Main Content - scrollable */}
       <div className="flex-1 overflow-y-auto custom-scroll px-3 md:px-6 lg:px-10 tablet:pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 py-8">
           {/* Best Sellers */}

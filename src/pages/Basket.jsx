@@ -37,7 +37,6 @@ function Basket() {
 
   return (
     <div className="min-h-screen px-4 tablet:px-8 py-4 tablet:py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
-      {/* Left: Products */}
       <h2 className="col-span-1 lg:col-span-3 text-[24px] tablet:text-[32px] text-[#191919] font-bold">
         MY SHOPPING CART{" "}
         <span className="text-[#6C6C6C] font-normal">
@@ -73,7 +72,6 @@ function Basket() {
                   Size: <span className="text-[#191919]">{item.size}</span>
                 </p>
 
-                {/* ✅ Count seçimi burada yerləşdirildi */}
                 <div className="relative inline-block ">
                   <select
                     value={item.count}
@@ -92,7 +90,6 @@ function Basket() {
                     })}
                   </select>
 
-                  {/* Custom ox (arrow) */}
                   <div className="pointer-events-none absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500">
                     <svg
                       className="w-4 h-4"
@@ -112,7 +109,6 @@ function Basket() {
               </div>
             </div>
 
-            {/* ✅ Sil düyməsi və qiymət sağda qalır */}
             <div className="flex flex-col items-end gap-3">
               <div className="text-base tablet:text-[20px] text-[#191919] font-bold">
                 ${(item.price * item.count).toFixed(2)}
@@ -180,7 +176,7 @@ function Basket() {
                   sizes={editItemSizes}
                   onClose={() => setEditItem(null)}
                   onUpdate={(id, newSize) => {
-                    updateSize(id, newSize); // ya da lazım olan funksiya
+                    updateSize(id, newSize); 
                   }}
                 />
               )}
@@ -198,7 +194,6 @@ function Basket() {
           </div>
         ))}
       </div>
-      {/* Right: Summary */}
       <div className="space-y-4 col-span-1">
         <div className="flex items-center justify-center gap-2 border border-[#DFE0E1] p-2 rounded text-sm text-[#008626] font-semibold">
           <svg

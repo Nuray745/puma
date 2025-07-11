@@ -53,7 +53,6 @@ function Main() {
 
   return (
     <div className="relative font-ff-din">
-      {/* === VIDEO === */}
       <div className="relative w-full pb-6">
         <div data-test-id="video-player-with-ga4-events">
           <video
@@ -76,7 +75,6 @@ function Main() {
         </div>
       </div>
       <section className="relative flex flex-col items-center justify-start gap-6 mobile:px-4 tablet:px-6 desktop:px-8 mx-auto">
-        {/* === HERO CONTENT === */}
         <div className="flex flex-col items-center text-center space-y-1 sm:space-y-2 md:space-y-3">
           <span>
             <h1 className="text-3xl md:text-4xl font-bold leading-tight">
@@ -95,9 +93,8 @@ function Main() {
             </a>
           </div>
         </div>
-        {/* === TRENDING GRID === */}
 
-        {/* ✅ Mobile: 0–540px */}
+        {/* Mobile: 0–540px */}
         <div className="grid grid-cols-2 gap-[10px] w-full pb-4 tablet:hidden">
           {[
             { img: trending1, title: "MANCHESTER CITY BY KIDSUPER" },
@@ -120,7 +117,7 @@ function Main() {
           ))}
         </div>
 
-        {/* ✅ Tablet: 541–1023px → slider */}
+        {/* Tablet: 541–1023px → slider */}
         <div className="hidden tablet:flex gap-4 overflow-x-auto w-full pb-4 nap-x snap-mandatory scroll-smooth custom-scroll desktop:hidden">
           {[
             { img: trending1, title: "MANCHESTER CITY BY KIDSUPER" },
@@ -143,7 +140,7 @@ function Main() {
           ))}
         </div>
 
-        {/* ✅ Desktop: ≥1024px */}
+        {/* Desktop: ≥1024px */}
         <div className="hidden lg:grid grid-cols-4 gap-[10px] w-full pb-4">
           {[
             { img: trending1, title: "MANCHESTER CITY BY KIDSUPER" },

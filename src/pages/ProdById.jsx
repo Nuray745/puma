@@ -20,7 +20,7 @@ function ProdById() {
   useEffect(() => {
     getProductsByCategoryId(id).then((data) => {
       setAllProducts(data || []);
-      setProducts(data || []); // ilk olaraq hamısını göstər
+      setProducts(data || []);
     });
   }, [id]);
 
@@ -37,16 +37,16 @@ function ProdById() {
   const handleDropdownSelection = (option) => {
     if (option === "new" || option === "best") {
       setFilterOption(option);
-      setSortOption(option === "new" ? "New" : "Best Sellers"); // ADD THIS LINE ✅
+      setSortOption(option === "new" ? "New" : "Best Sellers"); 
     } else {
       setSortOption(option);
-      setFilterOption(""); // optional: clear any previous filter
+      setFilterOption("");
     }
     setIsDropdownVisible(false);
   };
 
   const sortAndFilterProducts = (sortOption, filterOption) => {
-    let sortedProducts = [...allProducts]; // Always sort/filter from original data
+    let sortedProducts = [...allProducts]; 
 
     if (sortOption === "Price Low to High") {
       sortedProducts.sort(

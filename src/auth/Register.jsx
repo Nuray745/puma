@@ -126,7 +126,6 @@ function Register({ onRegister }) {
           </span>
         </div>
 
-        {/* Mailing List */}
         <div className="flex items-center mb-4">
           <input
             type="checkbox"
@@ -140,7 +139,6 @@ function Register({ onRegister }) {
           </label>
         </div>
 
-        {/* Legal Text */}
         <p className="text-xs text-center text-gray-500 mb-6">
           By continuing, I confirm that I have read and accept the{" "}
           <a href="/terms" className="underline">

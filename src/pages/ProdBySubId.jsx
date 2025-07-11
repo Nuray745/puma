@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import { getAllCategories, getProductsBySubId } from "../services/api"; // Assuming you have an API function for this
-import Card from "../components/Card"; // Adjust the path if necessary
+import { getAllCategories, getProductsBySubId } from "../services/api";
+import Card from "../components/Card"; 
 import FilterSidebar from "../components/FilterSidebar";
 
 function ProdBySubId() {
-  const { id } = useParams(); // Get categoryId from URL params
+  const { id } = useParams(); 
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
   const [allProducts, setAllProducts] = useState([]);
@@ -18,7 +18,6 @@ function ProdBySubId() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
-    // Fetch products based on categoryId
     getProductsBySubId(id).then((data) => {
       setAllProducts(data || []);
       setProducts(data);
@@ -38,16 +37,16 @@ function ProdBySubId() {
   const handleDropdownSelection = (option) => {
     if (option === "new" || option === "best") {
       setFilterOption(option);
-      setSortOption(option === "new" ? "New" : "Best Sellers"); // ADD THIS LINE ✅
+      setSortOption(option === "new" ? "New" : "Best Sellers"); 
     } else {
       setSortOption(option);
-      setFilterOption(""); // optional: clear any previous filter
+      setFilterOption(""); 
     }
     setIsDropdownVisible(false);
   };
 
   const sortAndFilterProducts = (sortOption, filterOption) => {
-    let sortedProducts = [...allProducts]; // Always sort/filter from original data
+    let sortedProducts = [...allProducts]; 
 
     if (sortOption === "Price Low to High") {
       sortedProducts.sort(
@@ -259,14 +258,14 @@ function ProdBySubId() {
       >
         {products.length > 0 &&
           products.slice(0, count).map((product, i) => {
-            const variation = product.variations ? product.variations[0] : {}; // Get the first variation
-            const price = variation?.productPrice?.price || "N/A"; // Get price from variations
+            const variation = product.variations ? product.variations[0] : {}; 
+            const price = variation?.productPrice?.price || "N/A";
 
             return (
               <Link to={`/product/${product.id}`} key={i}>
                 <Card
-                  key={`${i}`} // Combine id and variantId for uniqueness
-                  image={variation?.preview || "default-image-url"} // Default image if unavailable
+                  key={`${i}`} 
+                  image={variation?.preview || "default-image-url"}
                   name={product.name || "No Name"}
                   subHeader={product.subHeader || "No Subheader"}
                   price={price}

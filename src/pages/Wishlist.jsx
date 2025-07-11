@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { WISHLIST } from "../contexts/WishlistContext";
 import { BASKET } from "../contexts/BasketContext";
 import { toast } from "react-hot-toast";
-import EditItemModal from "../components/EditItemModal"; // <-- Modal komponentini import et
+import EditItemModal from "../components/EditItemModal"; 
 import { getProductById } from "../services/api";
 
 function Wishlist() {
@@ -11,7 +11,7 @@ function Wishlist() {
     useContext(WISHLIST);
   const navigate = useNavigate();
   const { addToBasket } = useContext(BASKET);
-  const [editItem, setEditItem] = useState(null); // <-- Modal üçün state
+  const [editItem, setEditItem] = useState(null);
   const today = new Date().toLocaleDateString();
   const [editItemSizes, setEditItemSizes] = useState([]);
 
@@ -38,12 +38,12 @@ function Wishlist() {
       item.size
     );
 
-    removeFromWishlist(item.id); // ✅ wishlist-dən sil
+    removeFromWishlist(item.id); 
     navigate("/basket");
   };
 
   const handleUpdateSize = (id, newSize) => {
-    updateWishlistItem(id, newSize); // <-- Contextdə ölçünü dəyiş
+    updateWishlistItem(id, newSize); 
     toast.success("Ölçü yeniləndi!");
     setEditItem(null);
   };
@@ -203,7 +203,6 @@ function Wishlist() {
         </div>
       </div>
 
-      {/* ✨ EditItemModal çağırılır */}
       {editItem && (
         <EditItemModal
           item={editItem}

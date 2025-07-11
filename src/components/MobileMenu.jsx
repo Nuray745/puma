@@ -40,11 +40,9 @@ function MobileMenu({ categories, setIsOpen }) {
 
   const handleTitleClick = () => {
     if (selectedCategory && selectedSubcategory) {
-      // children səviyyəsində → subcategory datasına apar
       navigate(`/categories/subcategory/${selectedSubcategory.id}`);
       setIsOpen(false);
     } else if (selectedCategory && !selectedSubcategory) {
-      // subcategory səviyyəsində → category datasına apar
       navigate(`/categories/${selectedCategory.id}`);
       setIsOpen(false);
     }
@@ -91,12 +89,10 @@ function MobileMenu({ categories, setIsOpen }) {
         )}
 
         <div className="max-w-[470px] mx-auto px-5 tablet:px-6 pt-5">
-          {/* Cari səviyyə üçün siyahı */}
           <ul className="divide-y divide-[#e5e7ea] ">
             {currentList?.map((item) => (
               <li key={item.id}>
                 {selectedSubcategory ? (
-                  // CHILDREN səviyyəsi üçün
                   <button
                     onClick={() => handleChildClick(item)}
                     className="cursor-pointer w-full flex items-center justify-between text-left py-2"
@@ -106,7 +102,6 @@ function MobileMenu({ categories, setIsOpen }) {
                     </span>
                   </button>
                 ) : (
-                  // CATEGORY və ya SUBCATEGORY səviyyəsi üçün
                   <button
                     onClick={() => handleClick(item)}
                     className="cursor-pointer w-full flex items-center justify-between text-left py-2"
@@ -141,7 +136,6 @@ function MobileMenu({ categories, setIsOpen }) {
             ))}
           </ul>
 
-          {/* SUBCATEGORY QUICKLINKS BURADA */}
           {selectedCategory?.quickLinks?.length > 0 && !selectedSubcategory && (
             <div>
               <ul className="divide-y divide-[#e5e7ea] border-t border-[#e5e7ea] text-base font-normal">
@@ -154,7 +148,6 @@ function MobileMenu({ categories, setIsOpen }) {
             </div>
           )}
 
-          {/* Əlavə linklər yalnız ana səviyyədə */}
           {
             <div className="mt-1">
               <ul className="divide-y divide-[#e5e7ea] text-base font-normal">

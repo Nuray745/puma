@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
-import Card from "../components/Card"; // Card komponentinin path-ini düzgün göstər
+import Card from "../components/Card"; 
 
 function SearchResultsPage() {
   const location = useLocation();

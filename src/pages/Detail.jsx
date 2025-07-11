@@ -79,11 +79,8 @@ function Detail() {
   return (
     <div className="p-4 md:p-6">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {/* md üçün ayrıca struktur, lg üçün grid */}
         <div className="hidden md:block w-full lg:col-span-2">
-          {/* md üçün – yalnız md göstərilir, lg-də gizlənir */}
           <div className="block lg:hidden space-y-2">
-            {/* İlk şəkil – tam eni tutur */}
             {images[0] && (
               <img
                 src={images[0]}
@@ -143,7 +140,6 @@ function Detail() {
           <ImageGallery images={images} />
         </div>
 
-        {/* Məhsul məlumatları */}
         <div>
           <div className="flex flex-col gap-3">
             <div>
@@ -312,7 +308,6 @@ function Detail() {
               </div>
             )}
 
-            {/* Əlavə düymələr */}
             <div className="flex flex-col gap-2 pt-4 border-t border-[#e5e7eb]">
               <div className="flex gap-2">
                 <button
@@ -356,7 +351,6 @@ function Detail() {
             </div>
 
             <div className="py-4 space-y-3">
-              {/* Shipping Message */}
               <div className="text-base text-[#4D7D04] font-bold flex items-center gap-2">
                 <svg
                   className="w-6 h-6"
@@ -379,7 +373,6 @@ function Detail() {
                 <p>This item qualifies for free shipping!</p>
               </div>
 
-              {/* Return Message */}
               <div className="text-base text-[#676D75] font-bold flex items-center gap-2">
                 <svg
                   className="w-6 h-6"
@@ -403,7 +396,6 @@ function Detail() {
               </div>
             </div>
 
-            {/* Təsvir */}
             <div>
               <h3 className="text-[20px] font-bold mb-2">Description</h3>
               <div
@@ -430,10 +422,8 @@ function Detail() {
         <Slider data="best" />
       </div>
 
-      {/* PRODUCT STORY, MATERIAL və CARE INFO bölməsi */}
       {product.productStory && (
         <section className="mt-5 rounded-md bg-[#f5f5f5] px-4 sm:px-8 py-10 text-sm text-[#191919] space-y-6">
-          {/* product.description düz mətin kimi render olunur */}
           {product.description && (
             <div className="text-base text-[#191919] leading-relaxed">
               <div className="text-[20px] font-bold uppercase pb-4">
@@ -447,7 +437,6 @@ function Detail() {
           )}
 
           <div className="grid grid-cols-1 tablet:grid-cols-2 border-t border-[#e5e7eb]">
-            {/* Material məlumatları */}
             {product.variations?.[0]?.materialComposition?.length > 0 && (
               <div className="pt-4 text-base">
                 <h4 className="font-bold text-[20px] mb-2">
@@ -463,7 +452,6 @@ function Detail() {
               </div>
             )}
 
-            {/* Qulluq təlimatları */}
             {product.productStory.careInstructions?.length > 0 && (
               <div className="pt-4 text-base">
                 <h4 className="font-bold text-[20px] mb-2">

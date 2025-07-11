@@ -5,34 +5,31 @@ import {
   getProductsBySubId,
   getProductsByItemId,
   getAllCategories,
-} from "../services/api"; // Import services
-import Card from "../components/Card"; // Adjust the path if necessary
+} from "../services/api";
+import Card from "../components/Card"; 
 import FilterSidebar from "../components/FilterSidebar";
 
 function ProdByCategory() {
-  const { id } = useParams(); // Get dynamic 'id' from the URL
-  const [products, setProducts] = useState([]); // Store filtered and sorted products
-  const [allProducts, setAllProducts] = useState([]); // Store original data (before filtering and sorting)
+  const { id } = useParams(); 
+  const [products, setProducts] = useState([]);
+  const [allProducts, setAllProducts] = useState([]);
   const [count, setCount] = useState(8);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [isTwoColumns, setIsTwoColumns] = useState(false); // State for grid layout
+  const [isTwoColumns, setIsTwoColumns] = useState(false); 
   const [categories, setCategories] = useState([]);
-  const [isDropdownVisible, setIsDropdownVisible] = useState(false); // State for dropdown visibility
-  const [sortOption, setSortOption] = useState("Sort By"); // Default sorting option
-  const [filterOption, setFilterOption] = useState(""); // Current filter option ("new", "best")
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false); // Sidebar state
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false); 
+  const [sortOption, setSortOption] = useState("Sort By");
+  const [filterOption, setFilterOption] = useState("");
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  // Reset state when the 'id' changes
-  // Reset state when the 'id' changes
   useEffect(() => {
-    setSortOption("Sort By"); // Reset to default sort option when 'id' changes
-    setCount(8); // Reset the number of products to be displayed
-    setProducts([]); // Clear products before fetching new ones
-    setAllProducts([]); // Clear all products before fetching new ones
+    setSortOption("Sort By"); 
+    setCount(8); 
+    setProducts([]); 
+    setAllProducts([]); 
   }, [id]);
 
-  // Fetch products based on category, subcategory or item
   useEffect(() => {
     async function fetchProducts() {
       setIsLoading(true);
@@ -41,8 +38,8 @@ function ProdByCategory() {
       try {
         let categoryData = await getProductsByCategoryId(id);
         if (categoryData?.length > 0) {
-          setAllProducts(categoryData); // Set original data
-          setProducts(categoryData); // Set products to display
+          setAllProducts(categoryData); 
+          setProducts(categoryData);
           setIsLoading(false);
           return;
         }
@@ -63,7 +60,7 @@ function ProdByCategory() {
           return;
         }
 
-        setProducts([]); // No products found
+        setProducts([]);
         setIsLoading(false);
       } catch (err) {
         setError("An error occurred while fetching products.");
@@ -74,32 +71,26 @@ function ProdByCategory() {
     fetchProducts();
   }, [id]);
 
-  // Apply selected filter when filterOption or sortOption changes
   useEffect(() => {
-    sortAndFilterProducts(sortOption, filterOption); // Apply both sort and filter together
+    sortAndFilterProducts(sortOption, filterOption); 
   }, [filterOption, sortOption, allProducts]);
 
-  // Toggle the visibility of the sort dropdown
   const toggleDropdown = () => {
     setIsDropdownVisible(!isDropdownVisible);
   };
 
-  // Handle the selected sort or filter option
   const handleDropdownSelection = (option) => {
     if (option === "new" || option === "best") {
-      setFilterOption(option); // Update filter option
+      setFilterOption(option);
     } else {
-      setSortOption(option); // Update sort option
+      setSortOption(option);
     }
-    setIsDropdownVisible(false); // Close dropdown after selection
+    setIsDropdownVisible(false);
   };
 
-  // Apply the selected filter to the products
-  // Sort and filter products at the same time
   const sortAndFilterProducts = (sortOption, filterOption) => {
-    let sortedProducts = [...allProducts]; // Work on the full product list (before filtering)
+    let sortedProducts = [...allProducts]; 
 
-    // Sorting logic based on the option selected
     if (sortOption === "Price Low to High") {
       sortedProducts.sort(
         (a, b) => a.variations?.[0]?.price - b.variations?.[0]?.price
@@ -110,7 +101,6 @@ function ProdByCategory() {
       );
     }
 
-    // Apply the selected filter (if any)
     if (filterOption) {
       if (filterOption === "new") {
         sortedProducts = sortedProducts.filter(
@@ -123,18 +113,16 @@ function ProdByCategory() {
       }
     }
 
-    // Update the products after sorting and filtering
     setProducts(sortedProducts);
   };
 
-  // Open sidebar
   const openSidebar = () => {
-    setIsSidebarOpen(true); // Open the sidebar
+    setIsSidebarOpen(true); 
   };
 
   // Close sidebar
   const closeSidebar = () => {
-    setIsSidebarOpen(false); // Close the sidebar
+    setIsSidebarOpen(false); 
   };
 
   return (
@@ -142,7 +130,6 @@ function ProdByCategory() {
       {/* Categories and Title Section */}
       {isSidebarOpen && (
         <div>
-          {/* Overlay */}
           <div
             onClick={closeSidebar}
             className="fixed inset-0 bg-black opacity-30 z-70"
@@ -183,7 +170,7 @@ function ProdByCategory() {
       {/* Filters and Sort By Section */}
       <div className="flex justify-between items-center mb-4 px-8 py-5 border-b border-[#e5e7ea]">
         <button
-          onClick={openSidebar} // Open sidebar on button click
+          onClick={openSidebar}
           className="focus:border-black focus:ring-0 focus:outline-none focus:shadow-[0px_0px_0px_2.5px_#777777] active:border-black active:shadow-none transition-all ease-out duration-300 flex items-center bg-white text-black py-2 px-5 rounded-[2px] font-bold uppercase border border-[#A1A8AF] hover:border-black cursor-pointer"
         >
           Filters
@@ -197,13 +184,12 @@ function ProdByCategory() {
           </svg>
         </button>
 
-        {/* Sort By and Filter Button with Dropdown */}
         <div className="relative">
           <button
-            onClick={toggleDropdown} // Toggle dropdown visibility on button click
+            onClick={toggleDropdown} 
             className="focus:border-black focus:ring-0 focus:outline-none focus:shadow-[0px_0px_0px_2.5px_#777777] active:border-black active:shadow-none transition-all ease-out duration-300 flex items-center bg-white text-black py-2 px-5 rounded-[2px] font-bold uppercase border border-[#A1A8AF] hover:border-black cursor-pointer"
           >
-            {sortOption} {/* Display the current sort option here */}
+            {sortOption}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"

@@ -43,7 +43,6 @@ function FilterSidebar({ closeSidebar }) {
           </button>
         </div>
 
-        {/* Accordion Filters - scrollable */}
         <div className="flex-1 px-6">
           {filterData.map((filter, index) => (
             <div key={index}>
@@ -79,7 +78,6 @@ function FilterSidebar({ closeSidebar }) {
         </div>
       </div>
 
-      {/* Show Button (fixed at bottom) */}
       <div className="px-6 pb-4 pt-8 bg-white">
         <button className="cursor-pointer w-full bg-[#191919] text-white py-3 px-6 text-[18px] font-bold tracking-wide hover:bg-[#3c4046]">
           SHOW 1607 PRODUCTS

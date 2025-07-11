@@ -143,7 +143,6 @@ function Login() {
           LOGIN
         </button>
 
-        {/* Legal Notice */}
         <p className="text-xs text-center text-gray-500 mt-4">
           By continuing, I confirm that I have read and accept the{" "}
           <a href="/terms" className="underline">

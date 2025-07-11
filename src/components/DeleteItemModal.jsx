@@ -29,14 +29,12 @@ function DeleteItemModal({ item, onClose, onConfirm }) {
         </div>
 
         <div className="flex gap-4 mb-4 border border-[#DFE0E1] p-4">
-          {/* Şəkil sola */}
           <img
             src={item.image}
             alt={item.name}
             className="w-20 h-20 object-cover"
           />
 
-          {/* Məlumatlar ortada */}
           <div className="flex flex-col tablet:flex-row items-center gap-2">
             <div className="flex-1 flex flex-col justify-start">
               <p className="text-sm tablet:text-base font-bold">{item.name}</p>
@@ -52,7 +50,6 @@ function DeleteItemModal({ item, onClose, onConfirm }) {
               </p>
             </div>
 
-            {/* Qiymət sağda yuxarıda */}
             <div className="self-start text-sm font-bold">
               ${(item.price * item.count).toFixed(2)}
             </div>
