@@ -57,22 +57,56 @@ function Detail() {
     <div className="p-4 md:p-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {/* Şəkil qalereyası */}
-        <div className="hidden md:grid md:grid-cols-2 gap-2">
-  {images.map((img, idx) => (
-    <img
-      key={idx}
-      src={img || "default-image-url"}
-      alt={`product-${idx}`}
-      className={`w-full aspect-square object-cover cursor-pointer 
-        ${idx === 0 ? "md:col-span-2 lg:col-span-1" : ""}`}
-      onClick={() => {
-        setCurrentImageIndex(idx);
-        setIsSliderOpen(true);
-      }}
-    />
-  ))}
-</div>
+        {/* md üçün ayrıca struktur, lg üçün grid */}
+        <div className="hidden md:block w-full">
+          {/* md üçün – yalnız md göstərilir, lg-də gizlənir */}
+          <div className="block lg:hidden space-y-2">
+            {/* İlk şəkil – tam eni tutur */}
+            {images[0] && (
+              <img
+                src={images[0]}
+                alt="product-main"
+                className="w-full aspect-square object-cover cursor-pointer"
+                onClick={() => {
+                  setCurrentImageIndex(0);
+                  setIsSliderOpen(true);
+                }}
+              />
+            )}
 
+            {/* Qalan şəkillər – 2 sütunlu grid */}
+            <div className="grid grid-cols-2 gap-2">
+              {images.slice(1).map((img, idx) => (
+                <img
+                  key={idx + 1}
+                  src={img}
+                  alt={`product-${idx + 1}`}
+                  className="w-full aspect-square object-cover cursor-pointer"
+                  onClick={() => {
+                    setCurrentImageIndex(idx + 1);
+                    setIsSliderOpen(true);
+                  }}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* lg və yuxarı üçün – bütün şəkillər 2-2 düzülür */}
+          <div className="hidden lg:grid lg:grid-cols-2 gap-2">
+            {images.map((img, idx) => (
+              <img
+                key={idx}
+                src={img}
+                alt={`product-${idx}`}
+                className="w-full aspect-square object-cover cursor-pointer"
+                onClick={() => {
+                  setCurrentImageIndex(idx);
+                  setIsSliderOpen(true);
+                }}
+              />
+            ))}
+          </div>
+        </div>
 
         {isSliderOpen && (
           <ImageSliderModal
