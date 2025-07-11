@@ -14,7 +14,7 @@ function WishlistContext({ children }) {
     }
   };
 
-  const [wishlist, setWishlist] = useState(getInitialWishlist); 
+  const [wishlist, setWishlist] = useState(getInitialWishlist);
 
   useEffect(() => {
     localStorage.setItem("localWishlist", JSON.stringify(wishlist));
@@ -58,9 +58,21 @@ function WishlistContext({ children }) {
     setWishlist((prev) => prev.filter((item) => item.id !== id));
   };
 
+  const updateWishlistItem = (id, newSize) => {
+    setWishlist((prev) =>
+      prev.map((item) => (item.id === id ? { ...item, size: newSize } : item))
+    );
+  };
+
   return (
     <WISHLIST.Provider
-      value={{ wishlist, setWishlist, addToWishlist, removeFromWishlist }}
+      value={{
+        wishlist,
+        setWishlist,
+        addToWishlist,
+        removeFromWishlist,
+        updateWishlistItem,
+      }}
     >
       {children}
     </WISHLIST.Provider>

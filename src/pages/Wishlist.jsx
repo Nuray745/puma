@@ -4,6 +4,7 @@ import { WISHLIST } from "../contexts/WishlistContext";
 import { BASKET } from "../contexts/BasketContext";
 import { toast } from "react-hot-toast";
 import EditItemModal from "../components/EditItemModal"; // <-- Modal komponentini import et
+import { getProductById } from "../services/api";
 
 function Wishlist() {
   const { wishlist, removeFromWishlist, updateWishlistItem } =
@@ -12,6 +13,7 @@ function Wishlist() {
   const { addToBasket } = useContext(BASKET);
   const [editItem, setEditItem] = useState(null); // <-- Modal üçün state
   const today = new Date().toLocaleDateString();
+  const [editItemSizes, setEditItemSizes] = useState([]);
 
   const handleAddToCart = (item) => {
     if (!item.size) {
@@ -129,7 +131,15 @@ function Wishlist() {
 
                 <div className="flex items-center py-2 gap-2">
                   <button
-                    onClick={() => setEditItem(item)} // <-- Edit düyməsi modalı açır
+                    onClick={async () => {
+                      const product = await getProductById(item.productId);
+                      const sizes =
+                        product.productMeasurements?.metric
+                          ?.slice(1)
+                          ?.map((row) => row[0]) || [];
+                      setEditItemSizes(sizes);
+                      setEditItem(item);
+                    }}
                     className="hover:bg-[#3B404733] rounded-full p-2 cursor-pointer"
                   >
                     <svg
@@ -197,7 +207,7 @@ function Wishlist() {
       {editItem && (
         <EditItemModal
           item={editItem}
-          sizes={["XS", "S", "M", "L", "XL"]}
+          sizes={editItemSizes}
           onClose={() => setEditItem(null)}
           onUpdate={handleUpdateSize}
         />
