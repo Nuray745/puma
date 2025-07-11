@@ -328,7 +328,7 @@ function Navbar({ theme = "dark", isOpen, setIsOpen }) {
             {/* Say göstəricisi (badge) */}
             {basket.length > 0 && (
               <span className="absolute -top-1 -right-1 bg-[rgb(172,30,30)] text-white text-xs font-semibold w-5 h-5 rounded-full flex items-center justify-center">
-                {basket.length}
+                {basket.reduce((total, item) => total + item.count, 0)}
               </span>
             )}
           </Link>
