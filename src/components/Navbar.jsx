@@ -5,6 +5,8 @@ import DesktopMenu from "./DesktopMenu";
 import { getAllCategories, getAllProducts } from "../services/api";
 import SearchDetails from "./SearchDetails";
 import { Cookies } from "react-cookie";
+import { useContext } from "react";
+import { BASKET } from "../contexts/BasketContext";
 
 function Navbar({ theme = "dark", isOpen, setIsOpen }) {
   const isDark = theme === "dark";
@@ -15,6 +17,7 @@ function Navbar({ theme = "dark", isOpen, setIsOpen }) {
   const cookies = new Cookies();
   const token = cookies.get("login-token");
   const [products, setProducts] = useState([]);
+  const { basket } = useContext(BASKET);
 
   useEffect(() => {
     getAllProducts().then((data) => setProducts(data));
@@ -301,11 +304,11 @@ function Navbar({ theme = "dark", isOpen, setIsOpen }) {
           <Link
             to={"/basket"}
             aria-label="Cart"
-            className={`cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${
+            className={`relative cursor-pointer w-10 h-10 flex items-center justify-center rounded-full ${
               isDark ? "hover:bg-[#404040]" : "hover:bg-[#3B404733]"
             } transition-colors`}
           >
-            {/* Burada başqa ikon svg ola bilər */}
+            {/* İkon */}
             <svg
               className="w-6 h-6"
               xmlns="http://www.w3.org/2000/svg"
@@ -321,6 +324,13 @@ function Navbar({ theme = "dark", isOpen, setIsOpen }) {
               />
               <path fill="currentColor" d="M12 12.667H4.667V14H12v-1.333Z" />
             </svg>
+
+            {/* Say göstəricisi (badge) */}
+            {basket.length > 0 && (
+              <span className="absolute -top-1 -right-1 bg-[rgb(172,30,30)] text-white text-xs font-semibold w-5 h-5 rounded-full flex items-center justify-center">
+                {basket.length}
+              </span>
+            )}
           </Link>
 
           {/* İstifadəçi */}
