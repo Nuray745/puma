@@ -5,7 +5,7 @@ export const BASKET = createContext();
 
 function BasketContext({ children }) {
   const initial = JSON.parse(localStorage.getItem("localBasket")) || [];
-  const [basket, setBasket] = useState(initial);  
+  const [basket, setBasket] = useState(initial);
 
   useEffect(() => {
     localStorage.setItem("localBasket", JSON.stringify(basket));
@@ -61,6 +61,12 @@ function BasketContext({ children }) {
     );
   };
 
+  const updateSize = (id, newSize) => {
+    setBasket((prev) =>
+      prev.map((item) => (item.id === id ? { ...item, size: newSize } : item))
+    );
+  };
+
   return (
     <BASKET.Provider
       value={{
@@ -69,6 +75,7 @@ function BasketContext({ children }) {
         addToBasket,
         deleteFromBasket,
         updateQuantity,
+        updateSize,
       }}
     >
       {children}

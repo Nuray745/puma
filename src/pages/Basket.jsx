@@ -3,11 +3,14 @@ import { BASKET } from "../contexts/BasketContext";
 import EditItemModal from "../components/EditItemModal";
 import DeleteItemModal from "../components/DeleteItemModal";
 import { Link } from "react-router-dom";
+import { getProductById } from "../services/api";
+
 
 function Basket() {
-  const { basket, deleteFromBasket, updateQuantity } = useContext(BASKET);
+  const { basket, deleteFromBasket, updateQuantity, updateSize } = useContext(BASKET);
   const [editItem, setEditItem] = useState(null);
   const [deleteItem, setDeleteItem] = useState(null);
+  const [editItemSizes, setEditItemSizes] = useState([]);
 
   const subtotal = basket.reduce(
     (sum, item) => sum + item.price * item.count,
@@ -116,7 +119,15 @@ function Basket() {
               </div>
               <div className="flex items-center">
                 <button
-                  onClick={() => setEditItem(item)}
+                  onClick={async () => {
+                    const product = await getProductById(item.productId);
+                    const sizes =
+                      product.productMeasurements?.metric
+                        ?.slice(1)
+                        ?.map((row) => row[0]) || [];
+                    setEditItemSizes(sizes);
+                    setEditItem(item);
+                  }}
                   className="hover:bg-[#3B404733] rounded-full p-2 cursor-pointer"
                 >
                   <svg
@@ -166,11 +177,10 @@ function Basket() {
               {editItem && (
                 <EditItemModal
                   item={editItem}
-                  sizes={["XS", "S", "M", "L", "XL", "XXL", "3XL"]}
+                  sizes={editItemSizes}
                   onClose={() => setEditItem(null)}
                   onUpdate={(id, newSize) => {
-                    // burada yeni updateSize funksiyası çağırıla bilər
-                    console.log("UPDATE SIZE:", id, newSize);
+                    updateSize(id, newSize); // ya da lazım olan funksiya
                   }}
                 />
               )}
