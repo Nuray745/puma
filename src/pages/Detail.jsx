@@ -9,6 +9,7 @@ import { useContext } from "react";
 import { BASKET } from "../contexts/BasketContext";
 import { WISHLIST } from "../contexts/WishlistContext";
 import ImageGallery from "../components/ImageGallery";
+import toast from "react-hot-toast";
 
 function Detail() {
   const { id } = useParams();
@@ -18,10 +19,18 @@ function Detail() {
   const [isSliderOpen, setIsSliderOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const { addToBasket } = useContext(BASKET);
-  const { wishlist, addToWishlist } = useContext(WISHLIST);
+  const { wishlist, addToWishlist, removeFromWishlist } = useContext(WISHLIST);
 
   const navigate = useNavigate();
   const cookies = new Cookies();
+  const isInWishlist =
+    product &&
+    wishlist.some(
+      (item) =>
+        item.productId === product.id &&
+        item.color === product.colors?.[selectedColorIndex]?.name &&
+        item.size === selectedSize
+    );
 
   useEffect(() => {
     getProductById(id).then((data) => {
@@ -44,10 +53,24 @@ function Detail() {
     ) || [];
   const sizeRows = product.productMeasurements?.metric?.slice(1) || []; // başlığı atmırıq
 
-  const handleAddToWishlist = () => {
+  const handleToggleWishlist = () => {
     const token = cookies.get("login-token");
     if (!token) {
       navigate("/login");
+      return;
+    }
+
+    if (!selectedSize) {
+      toast.error("Please select a size first");
+      return;
+    }
+
+    const uniqueId = `${product.id}-${selectedColorIndex}-${selectedSize}`;
+    const isInWishlist = wishlist.some((item) => item.id === uniqueId);
+
+    if (isInWishlist) {
+      removeFromWishlist(uniqueId);
+      toast.success("Məhsul wishlist-dən çıxarıldı!");
     } else {
       addToWishlist(product, selectedColorIndex, selectedSize);
     }
@@ -56,7 +79,6 @@ function Detail() {
   return (
     <div className="p-4 md:p-6">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {/* Şəkil qalereyası */}
         {/* md üçün ayrıca struktur, lg üçün grid */}
         <div className="hidden md:block w-full lg:col-span-2">
           {/* md üçün – yalnız md göstərilir, lg-də gizlənir */}
@@ -294,8 +316,14 @@ function Detail() {
             <div className="flex flex-col gap-2 pt-4 border-t border-[#e5e7eb]">
               <div className="flex gap-2">
                 <button
-                  onClick={handleAddToWishlist}
-                  className="cursor-pointer px-6 py-3 border border-[#A1A8AF] hover:border-black rounded-[2px]"
+                  onClick={handleToggleWishlist}
+                  className={`cursor-pointer px-6 py-3 border rounded-[2px] transition-all duration-200
+                    ${
+                      isInWishlist
+                        ? "bg-black text-white border-black"
+                        : "border-[#A1A8AF] hover:border-black"
+                    }
+                  `}
                 >
                   <svg
                     className="w-8 h-8"
