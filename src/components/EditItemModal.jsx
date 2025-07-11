@@ -2,11 +2,9 @@ import React, { useState } from "react";
 
 function EditItemModal({ item, sizes, onClose, onUpdate }) {
   const [selectedSize, setSelectedSize] = useState(item.size);
-  
-
 
   return (
-    <div className="fixed inset-0 bg-black/40 z-50 flex items-center justify-center">
+    <div className="fixed inset-0 bg-black/40 z-100 flex items-center justify-center p-2 tablet:p-4 desktop:p-6">
       <div className="bg-white w-full max-w-md rounded p-6 relative">
         <div className="flex items-center justify-between pb-2">
           <p className="text-base text-[#6C6C6C]">#{item.id}</p>
@@ -29,8 +27,12 @@ function EditItemModal({ item, sizes, onClose, onUpdate }) {
             </svg>
           </button>
         </div>
-        <h2 className="text-[28px] text-[#191919] font-bold">{item.name}</h2>
-        <p className="text-base pt-2 text-[#181818] mb-4">{item.color}</p>
+        <h2 className="text-[20px] tablet:text-[28px] text-[#191919] font-bold">
+          {item.name}
+        </h2>
+        <p className="text-sm tablet:text-base pt-2 text-[#181818] mb-4">
+          {item.color}
+        </p>
 
         <div className="grid-cols-6">
           <img
@@ -40,12 +42,12 @@ function EditItemModal({ item, sizes, onClose, onUpdate }) {
           />
         </div>
 
-        <div className="grid grid-cols-6 gap-1 border-t border-[#DFE0E1] pt-6">
+        <div className="flex flex-wrap gap-1 border-t border-[#DFE0E1] pt-6">
           {sizes.map((size) => (
             <button
               key={size}
               onClick={() => setSelectedSize(size)}
-              className={`cursor-pointer border aspect-square rounded text-sm ${
+              className={`cursor-pointer border aspect-square min-w-15 rounded text-sm ${
                 selectedSize === size
                   ? "bg-black text-white font-bold"
                   : "bg-white text-[#191919] border-[#DFE0E1]"
