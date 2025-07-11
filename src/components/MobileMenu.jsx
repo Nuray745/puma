@@ -56,9 +56,9 @@ function MobileMenu({ categories, setIsOpen }) {
   };
 
   return (
-    <div className="relative w-full bg-white z-50 overflow-y-auto scrollbar-hide">
+    <div className="bg-white">
       {/* Main Content */}
-      <div className="flex-1 pb-6 text-[#181818]">
+      <div className="flex-1 text-[#181818]">
         {(selectedCategory || selectedSubcategory) && (
           <div className="flex items-cente justify-center gap-2 p-4 bg-[#9999991A] relative">
             <button
@@ -155,7 +155,7 @@ function MobileMenu({ categories, setIsOpen }) {
           )}
 
           {/* Əlavə linklər yalnız ana səviyyədə */}
-          {!selectedCategory && !selectedSubcategory && (
+          {
             <div className="mt-1">
               <ul className="divide-y divide-[#e5e7ea] text-base font-normal">
                 <li
@@ -214,7 +214,7 @@ function MobileMenu({ categories, setIsOpen }) {
                 </li>
               </ul>
             </div>
-          )}
+          }
 
           <div className="flex flex-col gap-2 py-6">
             <button
