@@ -1482,6 +1482,12 @@
           "image": null,
           "__typename": "ProductColor"
         }
+        {
+          "name": "PUMA White",
+          "value": "02",
+          "image": null,
+          "__typename": "ProductColor"
+        }
       ],
       "image": {
         "href": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/629501/01/https://images.puma.net/images/629501/01/mod01/fnd/PNA/w/2000/h/2000//PNA/fmt/png/PUMA-x-HELIOT-EMIL-Top-Women",
